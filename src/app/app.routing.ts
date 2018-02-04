@@ -1,10 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { HomeComponent } from './home/home.component';
 import { IntroComponent } from './intro/intro.component';
+import { ExamplesComponent } from './examples/examples.component';
+import { SvgComponent } from './svg/svg.component';
+import { PrinciplesComponent } from './principles/principles.component';
+import { SelectionsComponent } from './selections/selections.component';
 
 export const appRoutes:Routes = [
-    {path: 'intro', component: IntroComponent}
+    {path: '', component: HomeComponent},
+    {path: 'examples', component: ExamplesComponent},
+    {path: 'intro', component: IntroComponent},
+    {path: 'svg', component: SvgComponent},
+    {path: 'drawing-shapes', component: ExamplesComponent},
+    {path:'principles', component: PrinciplesComponent},
+    {path: 'selections', component: SelectionsComponent}
 ]
 
 @NgModule({
@@ -21,5 +32,10 @@ export const appRoutes:Routes = [
 export class AppRoutingModule {}
 
 export const RoutableComponents = [
-    IntroComponent
+    IntroComponent,
+    HomeComponent,
+    ExamplesComponent,
+    SvgComponent,
+    PrinciplesComponent,
+    SelectionsComponent
 ]

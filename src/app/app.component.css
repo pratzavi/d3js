@@ -1,0 +1,22 @@
+@keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+
+@keyframes moveLinear
+{
+    from{float: left;}
+    to{float: right;}
+}
+
+#main-logo{
+    animation-name: moveLinear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#main-logo img{
+    width: 150px;
+}

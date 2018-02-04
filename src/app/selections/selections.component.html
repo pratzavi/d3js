@@ -1,0 +1,28 @@
+<h1>Selections</h1>
+<button class="btn btn-primary pull-right" (click)="showResults()">Show selections</button>
+<p id="concept">
+    Selections is one of the core concepts in D3.js. It is based on CSS selectors. It allows us to select one or more elements in a webpage. In addition, it allows us to modify, append, or remove elements in a relation to the pre-defined dataset.
+</p>
+<div class="methods">
+    <p><b>select()</b> -  Selects only one DOM element by matching the given CSS selector. If there are more than one elements for the given CSS selector, it selects the first one only.</p>
+    <p><b>selectAll()</b> - Selects all DOM elements by matching the given CSS selector. If you are familiar with selecting elements with jQuery, D3.js selectors are almost the same.</p>
+</div>
+<code>
+  <h2>Selection by Tag</h2>
+  <div class="well well-sm">
+      d3.select('p').text(): {{pSelector}}
+  </div>
+  <div class="well well-sm">
+      d3.selectAll("p b"): {{arraySelector}}
+  </div>
+
+  <h2>Selection by Classname</h2>
+  <div class="well well-sm">
+      d3.selectAll('.methods'): {{classSelector}}
+  </div>
+
+  <h2>Selection by Id</h2>
+  <div class="well well-sm">
+      d3.select('#concept'): {{idSelector}}
+  </div>
+</code>

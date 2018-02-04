@@ -1,0 +1,64 @@
+<h2>What is SVG?</h2>
+<ul>
+  <li>SVG stands for Scalable Vector Graphics</li>
+  <li>SVG is used to define graphics for the Web</li>
+  <li>SVG is a W3C recommendation</li>
+  <li>SVG graphics do NOT lose any quality if they are zoomed or resized</li>
+  <li>Every element and every attribute in SVG files can be animated</li>
+</ul>
+
+<h2>Differences Between SVG and Canvas</h2>
+<p>SVG is a language for describing 2D graphics in XML.</p>
+
+<p>Canvas draws 2D graphics, on the fly (with a JavaScript).</p>
+
+<p>SVG is XML based, which means that every element is available within the SVG DOM. You can attach JavaScript event handlers for an element.</p>
+
+<p>In SVG, each drawn shape is remembered as an object. If attributes of an SVG object are changed, the browser can automatically re-render the shape.</p>
+
+<p>Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten by the browser. If its position should be changed, the entire scene needs to be redrawn, including any objects that might have been covered by the graphic.</p>
+
+<div class="col-sm-12">
+  <div class="col-sm-4">
+    <h3>Circle</h3>
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+  </div>
+  <div class="col-sm-4">
+      <h3>Rectangle</h3>
+    <svg width="400" height="100">
+      <rect width="200" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+    </svg>
+  </div>
+  <div class="col-sm-4">
+    <h3>Rectangle with border radius</h3>
+    <svg width="200" height="180">
+      <rect x="50" y="20" rx="20" ry="20" width="140" height="150"
+      style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+    </svg>
+  </div>
+</div>
+<div>
+  <div class="col-sm-4">
+    <h3>Gradient Ellipse</h3>
+    <svg height="130" width="500">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+  </div>
+  <div class="col-sm-4">
+    <h3>Ellipse</h3>
+    <svg height="140" width="500">
+      <ellipse cx="200" cy="80" rx="100" ry="50"
+      style="fill:yellow;stroke:purple;stroke-width:2" />
+    </svg>
+  </div>
+</div>
