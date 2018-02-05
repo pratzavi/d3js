@@ -1,0 +1,52 @@
+<h2>What is a Data Join?</h2>
+<span>
+  Data join enables us to inject, modify and remove elements (HTML element as well as embedded SVG elements) based on the data set in the existing HTML document. By default, each data item in the data set corresponds to an element (graphical) in the document.<br/>
+  As the data set changes, the corresponding element can also be manipulated easily. Data join creates a close relationship between our data and graphical elements of the document. Data join makes manipulation of the elements based on the data set a very simple and easy process.
+</span>
+<ul id="list">
+  <li></li>
+  <li></li>
+</ul>
+<div>
+  <button class="btn btn-default" (click)="addData()">Bind Data</button>
+  <button class="btn btn-default" (click)="updateData()">Update Data</button>
+  <button class="btn btn-default" (click)="createNew()">Create</button>
+  <button class="btn btn-default" (click)="exit()">Exit</button>
+</div>
+<h2>Data Join Methods</h2>
+<span>Data join provides the following four methods to work with data set −</span>
+<ul id="methods">
+  <li>datum()</li>
+  <li>data()</li>
+  <li>enter()</li>
+  <li>exit()</li>
+</ul>
+<div class="well well-sm">
+  <p></p>
+  <div id="fromDatum"></div>
+</div>
+<div>
+  <button class="btn btn-default" (click)="datum()">Datum</button>
+  <button class="btn btn-default" (click)="dataFnUsage()">Data function Results</button>
+</div>
+<h2>Data Function</h2>
+<ul id="dumData">
+  <li>datum()</li>
+  <li>data()</li>
+  <li>enter()</li>
+</ul>
+<code>
+  <p>{{tempD}}</p>
+  <p>{{tempI}}</p>
+  <p>{{tempThis}}</p>
+</code>
+<div>
+  <svg id="my-svg"></svg>
+</div>
+<div>{{circles}}</div>
+<button class="btn btn-default" (click)="dataStructure()">Bind Data to circles</button>
+<button class="btn btn-default" (click)="createCircles()">Create circles</button>
+<button class="btn btn-default" (click)="dataChanges()">Change Data</button>
+<button class="btn btn-default" (click)="createNewCircle()">Create New circle</button>
+<button class="btn btn-default" (click)="updateExisting()">Update circles</button>
+<button class="btn btn-default" (click)="removeCircles()">Remove circles</button>
