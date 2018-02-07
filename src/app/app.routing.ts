@@ -8,6 +8,7 @@ import { SvgComponent } from './svg/svg.component';
 import { PrinciplesComponent } from './principles/principles.component';
 import { SelectionsComponent } from './selections/selections.component';
 import { BindingDataComponent } from './binding-data/binding-data.component';
+import { LoadExtDataComponent } from './load-ext-data/load-ext-data.component';
 
 export const appRoutes:Routes = [
     {path: '', component: HomeComponent},
@@ -17,7 +18,8 @@ export const appRoutes:Routes = [
     {path: 'drawing-shapes', component: ExamplesComponent},
     {path:'principles', component: PrinciplesComponent},
     {path: 'selections', component: SelectionsComponent},
-    {path: 'binding-data', component: BindingDataComponent}
+    {path: 'binding-data', component: BindingDataComponent},
+    {path: 'load-ext-data', component: LoadExtDataComponent}
 ]
 
 @NgModule({
@@ -40,5 +42,6 @@ export const RoutableComponents = [
     SvgComponent,
     PrinciplesComponent,
     SelectionsComponent,
-    BindingDataComponent
+    BindingDataComponent,
+    LoadExtDataComponent
 ]
