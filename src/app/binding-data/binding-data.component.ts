@@ -371,6 +371,9 @@ export class BindingDataComponent implements OnInit {
         })
         .attr('cy', function(d) {
             return d.y;
+        })
+        .attr('fill', function(d) {
+            return d.c;
         });
 
     // create new elements:
