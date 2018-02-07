@@ -43,7 +43,7 @@
 <div>
   <svg id="my-svg"></svg>
 </div>
-<div>{{circles}}</div>
+
 <button class="btn btn-default" (click)="dataStructure()">Bind Data to circles</button>
 <button class="btn btn-default" (click)="createCircles()">Create circles</button>
 <button class="btn btn-default" (click)="dataChanges()">Change Data</button>
@@ -59,3 +59,11 @@
 <button class="btn btn-default" (click)="UpdateDataWithIndex()">Update SVG</button>
 <button class="btn btn-default" (click)="createSvgWithID()">Create SVG with ID</button>
 <button class="btn btn-default" (click)="updateDataWithID()">Update SVG</button>
+<button class="btn btn-default" (click)="removeSpecificElement()">Remove Circle</button>
+<div>
+  <p>ID: <input type="text" [(ngModel)]="selectedID" /></p>
+  <p>Property: <input type="text" [(ngModel)]="property" /></p>
+  <p>Value: <input type="text" [(ngModel)]="value" /></p>
+</div>
+<button class="btn btn-default" (click)="updateSpecificElement()">Update Circle</button>
+<button class="btn btn-default" (click)="updateSpecific(selectedID, property, value)">Update Specific Circle</button>

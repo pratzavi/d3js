@@ -14,11 +14,12 @@ export class BindingDataComponent implements OnInit {
   tempThis: string;
   circles: any;
   circlesData: Array<any>;
+  mySvg: any;
 
   constructor() { }
 
   ngOnInit() {
-    
+    this.mySvg = d3.select('#my-svg');
   }
 
   addData(){
@@ -106,8 +107,7 @@ export class BindingDataComponent implements OnInit {
         c: 'blue'
     }];
 
-    const mySvg = d3.select('#my-svg');
-    this.circles = mySvg
+    this.circles = this.mySvg
       .selectAll('circle')
       .data(this.circlesData);
     console.log(this.circles);
@@ -144,24 +144,28 @@ export class BindingDataComponent implements OnInit {
         r: 15,
         c: 'yellow'
     });
-    const mySvg = d3.select('#my-svg');
-    this.circles = mySvg
+
+    this.circles = this.mySvg
     .selectAll('circle')
     .data(this.circlesData);
   }
 
   createNewCircle(){
     // change coordinates of the first circle:
-    this.circlesData[0].x = "10%";
-    this.circlesData[0].y = "10%";
+    this.circlesData[0].x = '10%';
+    this.circlesData[0].y = '10%';
 
     // add a new circle:
     this.circlesData.push({
-        x: "80%",
-        y: "80%",
+        x: '80%',
+        y: '80%',
         r: 15,
         c: 'yellow'
     });
+
+    this.circles = this.mySvg
+    .selectAll('circle')
+    .data(this.circlesData);
     this.createCircles();
   }
 
@@ -177,8 +181,7 @@ export class BindingDataComponent implements OnInit {
   }
 
   removeCircles(){
-    const mySvg = d3.select('#my-svg');
-    mySvg
+    this.mySvg
     .selectAll('circle')
     .data([])
     .exit()
@@ -395,6 +398,59 @@ export class BindingDataComponent implements OnInit {
         .transition()
         .attr('r', 0)
         .remove();
+  }
+
+  removeSpecificElement() {
+    const data = [{
+        id: 'before1',
+        x: '33%',
+        y: '33%',
+        r: '5%',
+        c: 'orange'
+    }, {
+        id: 'before3',
+        x: '25%',
+        y: '25%',
+        r: '5%',
+        c: 'magenta'
+    }];
+    const mySvg = d3.select('#my-svg3');
+    const circles = mySvg
+        .selectAll('circle')
+        .data(data, function(d){ return d.id; })
+        .exit()
+        .transition()
+        .attr('r', 0)
+        .remove();
+  }
+
+  updateSpecificElement() {
+    const data = [{
+        id: 'before1',
+        x: '33%',
+        y: '33%',
+        r: '5%',
+        c: 'yellow'
+    }];
+    const mySvg = d3.select('#my-svg3');
+    const circles = mySvg
+        .selectAll('circle')
+        .data(data, function(d){ return d.id; })
+        .transition()
+        .attr('fill', function(d){ return d.c; });
+  }
+
+  updateSpecific(id, property, value) {
+    const data = {
+        id: id,
+    };
+    data[property] = value;
+    const mySvg = d3.select('#my-svg3');
+    const circles = mySvg
+        .selectAll('circle')
+        .data([data], function(d){ return d.id; })
+        .transition()
+        .attr('fill', function(d){ return d.c; });
   }
 
 }
