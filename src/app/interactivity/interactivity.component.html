@@ -1,0 +1,24 @@
+<h1>Events in D3</h1>
+<code class="well well-sm">
+  Syntax:
+  d3.selection.on(type[, listener[, capture]]);
+</code>
+<div class="col-sm-12">
+  <h4>selection.on()</h4>
+  Add or remove event listeners to capture event types like click, mouseover, mouseout etc.
+
+  <h4>selection.dispatch()</h4>
+  Captures event types like click, mouseover, mouseout. Typenames is the eventname, listener is the event listener
+
+  <h4>d3.event</h4>
+  Event object to access standard event fields such as timestamp or methods like preventDefault
+
+  <h4>d3.mouse(container)()</h4>
+  Gets the x and y coordinates of the current mouse position in the specified DOM element.
+
+  <h4>d3.touch()</h4>
+  Gets the touch coordinates to a container
+</div>
+<div>
+<svg id='svg-container' width="500" height="200"></svg>
+</div>

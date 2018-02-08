@@ -1,0 +1,45 @@
+<p>
+  Transition is the process of changing from one state to another of an item. D3.js provides a transition() method to perform transition in the HTML page. 
+</p>
+<p>
+  The transition() method is available for all selectors and it starts the transition process. This method supports most of the selection methods such as – attr(), style(), etc. But, It does not support the append() and the data() methods, which need to be called before the transition() method. Also, it provides methods specific to transition like duration(), ease(), etc.
+</p>
+<ul>
+  <li>transition.duration</li>
+  <li>transition.ease</li>
+  <li>transition.delay</li>
+</ul>
+<h3>Example for Delay</h3>
+<button class="btn btn-default" (click)="simpleTransition()">Simple Transition</button>
+<button class="btn btn-default" (click)="transitionWithDuration()">Transition with duration</button>
+<button class="btn btn-default" (click)="simpleEaseTransition()">Simple Ease Transition</button>
+<button class="btn btn-default" (click)="transitionWithEase()">Transition with ease</button>
+<button class="btn btn-default" (click)="transitionWithDelay()">Transition with Delay</button>
+<button class="btn btn-default btn-warning" (click)="hideTransition = !hideTransition">Toogle</button>
+<div [hidden]="hideTransition">
+  <h2>Transition with Ease</h2>
+  <svg id="svg-container" width="960" height="500"></svg>
+</div>
+
+<h2>Lifecycle of Transition</h2>
+<p>
+Transition has a four-phased lifecycle −
+</p>
+<ul>
+  <li>The transition is scheduled.</li>
+  <li>The transition starts.</li>
+  <li>The transition runs.</li>
+  <li>The transition ends.</li>
+</ul>
+
+<h4>The Transition Starts</h4>
+<p>
+A transition starts based on its delay, which was specified when the transition was scheduled. If no delay was specified, then the transition starts as soon as possible, which is typically after a few milliseconds.
+</p>
+<p>
+If the transition has a delay, then the starting value should be set only when the transition starts. We can do this by listening to the start event −
+</p>
+<button class="btn btn-default" (click)="identifyTransitionStart()">Identify Transition Delay</button>
+<ul>
+  <li *ngFor="let item of methods">{{item}}</li>
+</ul>

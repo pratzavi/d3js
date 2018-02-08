@@ -9,6 +9,10 @@ import { PrinciplesComponent } from './principles/principles.component';
 import { SelectionsComponent } from './selections/selections.component';
 import { BindingDataComponent } from './binding-data/binding-data.component';
 import { LoadExtDataComponent } from './load-ext-data/load-ext-data.component';
+import { AnimationsComponent } from './animations/animations.component';
+import { InteractivityComponent } from './interactivity/interactivity.component';
+import { ScalesComponent } from './scales/scales.component';
+import { AxesComponent } from './axes/axes.component';
 
 export const appRoutes:Routes = [
     {path: '', component: HomeComponent},
@@ -19,7 +23,11 @@ export const appRoutes:Routes = [
     {path:'principles', component: PrinciplesComponent},
     {path: 'selections', component: SelectionsComponent},
     {path: 'binding-data', component: BindingDataComponent},
-    {path: 'load-ext-data', component: LoadExtDataComponent}
+    {path: 'load-ext-data', component: LoadExtDataComponent},
+    {path: 'animations', component: AnimationsComponent},
+    {path: 'interactivity', component: InteractivityComponent},
+    {path: 'scales', component: ScalesComponent},
+    {path: 'axes', component: AxesComponent}
 ]
 
 @NgModule({
@@ -43,5 +51,9 @@ export const RoutableComponents = [
     PrinciplesComponent,
     SelectionsComponent,
     BindingDataComponent,
-    LoadExtDataComponent
+    LoadExtDataComponent,
+    AnimationsComponent,
+    InteractivityComponent,
+    ScalesComponent,
+    AxesComponent
 ]
