@@ -20,3 +20,18 @@
 #main-logo img{
     width: 150px;
 }
+
+.main-content{
+    border-left: 1px solid #000;
+    /* height: stretch; */
+    margin-bottom: 30px;
+}
+
+.navigation{    
+    position: fixed;
+    right: 0;
+    margin-right: 15px;
+    overflow-y: auto;
+    background: #f1eded;
+    padding: 15px 0;
+}

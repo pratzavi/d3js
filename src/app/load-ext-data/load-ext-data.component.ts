@@ -20,7 +20,7 @@ export class LoadExtDataComponent implements OnInit {
   onDataReady(animal_data) {
     console.log(animal_data);
 
-    d3.select('body').selectAll('p')
+    d3.select('p.ext').selectAll('p')
       .data(animal_data)
       .enter()
       .append('p')

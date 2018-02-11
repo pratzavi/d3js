@@ -43,7 +43,7 @@ export class BindingDataComponent implements OnInit {
   }
 
   exit(){
-    d3.selectAll("li")
+    d3.select("#list").selectAll("li")
    .data([10, 20, 30, 15])
    .exit()
    .remove()

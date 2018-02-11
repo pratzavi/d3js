@@ -1,10 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    margin:15px;
+    color: #000;
+    background-color: #fafafa;
 }
 
 h1{
-    margin-bottom: 25px;
+    background: linear-gradient(#b7c1cc, #e2e7e8);
+    margin-top: 0;
+    padding: 15px;
 }
 
 svg{

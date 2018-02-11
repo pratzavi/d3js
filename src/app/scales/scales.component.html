@@ -1,21 +1,280 @@
-<h1>Intro to SVG Charts</h1>
+<h2>d3-scale</h2>
+<p>
+    -> D3.js provides functions to perform data transformations.
+</p>
+<p>
+    -> These functions map an input domain to an output range.
+</p>
+<p>
+    -> Said another way, these functions take an interval and transform it into a new interval.
+</p>
+<p>
+    -> Because the D3.js Scales are functions, not only can we map one <b>input domain</b> to an <b>output range</b>, the functions can convert a number in the domain to an output in the range.
+</p>
+<p>
+    -> Scales are an optional feature in D3; you don't have to use them, if you prefer to do the math yourself. However, using scales can greatly simplify the code needed to map a dimension of data to a visual representation.
+</p>
+<p>
+    Scales are a convenient abstraction for a fundamental task in visualization: mapping a dimension of abstract data to a visual representation. Although most often used for position-encoding quantitative data, such as mapping a measurement in meters to a position in pixels for dots in a scatterplot, scales can represent virtually any visual encoding, such as diverging colors, stroke widths, or symbol size. Scales can also be used with virtually any type of data, such as named categorical data or discrete data that requires sensible breaks.
+</p>
+<p>Scales have no intrinsic visual representation. However, most scales can generate and format ticks for reference marks to aid in the construction of axes.</p>
+<h3>D3 scale types</h3>
+<p>D3 has around 12 different scale types (scaleLinear, scalePow, scaleQuantise, scaleOrdinal etc.) and broadly speaking they can be classified into 3 groups:</p>
+<ul>
+    <li>scales with continuous input and continuous output</li>
+    <li>scales with continuous input and discrete output</li>
+    <li>scales with discrete input and discrete output</li>
+</ul>
+<h3>D3 scale types as per D3 API</h3>
+<ul>
+    <li>Continuous Scales (For continuous quantitative data)</li>
+    <ul>
+        <li>Linear Scales</li>
+        <li>Power Scales</li>
+        <li>Log Scales</li>
+        <li>Identity Scales</li>
+        <li>Time Scales</li>
+    </ul>
+    <li>Sequential Scales</li>
+    <li>Quantize Scales (may aid differentiation by rounding continuous data to a fixed set of discrete values) </li>
+    <li>Quantile Scales (computes quantiles from a sample population)</li>
+    <li>Threshold Scales</li>
+    <li>Ordinal Scales (For discrete ordinal (ordered) or categorical (unordered) data)</li>
+    <ul>
+        <li>Band Scales</li>
+        <li>Point Scales</li>
+    </ul>
+</ul>
+<h4>scaleLinear</h4>
+<p>
+They use a linear function (y = m * x + b) to interpolate across the domain and range.
+</p>
+<p>
+Typical uses are to transform data values into positions and lengths, so when creating bar charts, line charts (as well as many other chart types) they are the scale to use.
+</p>
+Min: <input type="number" [(ngModel)]="minDomain"/>
+Max: <input type="number" [(ngModel)]="maxDomain"/>
+<button class='btn btn-default' (click)="simpleExample(minDomain, maxDomain)">Run</button>
 <div>
-  <svg class="chart" width="420" height="120">
-      <g transform="translate(0,0)">
-          <rect width="50" height="19"></rect>
-          <text x="47" y="9.5" dy=".35em">5</text>
-      </g>
-      <g transform="translate(0,20)">
-          <rect width="100" height="19"></rect>
-          <text x="97" y="9.5" dy=".35em">10</text>
-      </g>
-      <g transform="translate(0,40)">
-          <rect width="120" height="19"></rect>
-          <text x="117" y="9.5" dy=".35em">12</text>
-      </g>
-  </svg>
+    <svg width="700" height="40">
+        <g class="inner" transform="translate(40, 30)">
+        </g>
+    </svg>
 </div>
+<p>The output range can also be specified as colours:</p>
+<p>This can be useful for visualisations such as choropleth maps</p>
+<button class='btn btn-default' (click)="linearScaleColor()">Run</button>
 <div>
-  <button class="btn btn-default" (click)="svgBarWithD3()">Create SVG with D3</button>
+    <svg class="ex-2" width="700" height="100"></svg>
 </div>
-<div id="scales"></div>
+<div class="well well-sm">
+    Version 4 uses a different naming convention to v3. We use d3.scaleLinear() in v4 and d3.scale.linear() in v3.
+</div>
+<h4>scalePow</h4>
+<p>More included for completeness, rather than practical usefulness, the power scale interpolates using a power (y = m * x^k + b) function. The exponent k is set using .exponent():</p>
+<pre>
+    <code>
+    var powerScale = d3.scale.pow()
+    .exponent(0.5)
+    .domain([0, 100])
+    .range([0, 30]);
+      
+    powerScale(0);   // returns 0
+    powerScale(50);  // returns 21.21...
+    powerScale(100); // returns 30
+</code>
+</pre>
+<h4>scaleSqrt</h4>
+<p>
+The scaleSqrt scale is a special case of the power scale (where k = 0.5) and is useful for sizing circles by area (rather than radius). (When using circle size to represent data, it’s considered better practice to set the area, rather than the radius proportionally to the data.)
+</p>
+<button class='btn btn-default' (click)="scaleSqrt()">Run</button>
+<div>
+    <svg class="ex-3" width="700" height="100"></svg>
+</div>
+<h4>scaleLog</h4>
+<p>
+Log scales interpolate using a log function (y = m * log(x) + b) and can be useful when the data has an exponential nature to it.
+</p>
+<button class='btn btn-default' (click)="scaleLog()">Run</button>
+<div>
+    <svg class="ex-4" width="700" height="100"></svg>
+</div>
+<h4>scaleTime</h4>
+<p>
+scaleTime is similar to scaleLinear except the domain is expressed as an array of dates. (It’s very useful when dealing with time series data.)
+</p>
+<button class='btn btn-default' (click)="scaleTime()">Run</button>
+<div>
+    <svg class="ex-5" width="700" height="100">
+        <g class="inner" transform="translate(5, 50)"></g>
+    </svg>
+</div>
+<h4>Clamping</h4>
+<p>
+By default scaleLinear, scalePow, scaleSqrt, scaleLog, scaleTime and scaleSequential allow input outside the domain. For example:
+</p>
+<pre>
+    <code>
+    var linearScale = d3.scale.linear()
+    .domain([0, 10])
+    .range([0, 100]);
+    
+    linearScale(20);  // returns 200
+    linearScale(-10); // returns -100
+    </code>
+</pre>
+<p>
+In this instance the scale function uses extrapolation for values outside the domain.
+</p>
+<p>
+If we’d like the scale function to be restricted to input values inside the domain we can ‘clamp’ the scale function using .clamp():
+</p>
+<pre>
+    <code>
+    linearScale.clamp(true);
+
+    linearScale(20);  // returns 100
+    linearScale(-10); // returns 0
+    </code>
+</pre>
+<h4>D3 Extent & Nice</h4>
+<p>
+If the domain has been computed automatically from real data (e.g. by using d3.extent) the start and end values might not be round figures. This isn’t necessarily a problem, but if using the scale to define an axis, it can look a bit untidy:
+</p>
+<button class='btn btn-default' (click)="withoutNice()">Run without Nice</button>
+<button class='btn btn-default' (click)="withNice()">Run with Nice</button>
+<div>
+    <svg class="ex-6" width="700" height="100">
+        <g class="withoutnice" transform="translate(10, 50)"></g>
+    </svg>
+    <svg class="ex-7" width="700" height="100">
+        <g class="withnice" transform="translate(10, 50)"></g>
+    </svg>
+</div>
+<h4>Multi Segment Scale</h4>
+<button class='btn btn-default' (click)="multiSegment()">Run</button>
+<div>
+    <svg class="ex-8" width="700" height="100">
+        <g class="multiSegment" transform="translate(10, 50)"></g>
+    </svg>
+</div>
+<h4>Inversion</h4>
+<p>
+The .invert() method allows us to determine a scale function’s input value given an output value (provided the scale function has a numeric domain):
+</p>
+<button class='btn btn-default' (click)="invert()">Run</button>
+<div>
+    <svg class="ex-9" width="650" height="100">
+        <g transform="translate(25, 10)">
+            <g class="inner" transform="translate(0, 40)"></g>
+            <rect width="600" height="40" style="fill: rgb(1, 102, 63); cursor: pointer;" class="click-area" transform="translate(0, 0)"></rect>
+        </g>
+    </svg>
+    <div class="info">Hover on the green band</div>
+</div>
+<h3>Scales with continuous input and discrete output</h3>
+<h4>scaleQuantize</h4>
+<pre>
+    <code>
+    var quantizeScale = d3.scale.quantize()
+    .domain([0, 100])
+    .range(['lightblue', 'orange', 'lightgreen', 'pink']);
+    
+    quantizeScale(10);   // returns 'lightblue'
+    quantizeScale(30);  // returns 'orange'
+    quantizeScale(90);  // returns 'pink'
+    </code>
+</pre>
+<button class='btn btn-default' (click)="quantizeScale()">Run</button>
+<div>
+    <svg class="ex-10" width="700" height="100">
+        <g transform="translate(50, 40)"></g>
+    </svg>
+</div>
+<h4>scaleQuantile</h4>
+<button class='btn btn-default' (click)="quantileScale()">Run</button>
+<div>
+    <svg class="ex-11" width="700" height="100">
+        <g transform="translate(50, 40)"></g>
+    </svg>
+</div>
+<p>
+The (sorted) domain array is divided into n equal sized groups where n is the number of range values.
+</p>
+<p>
+Therefore in the above example the domain array is split into 3 groups where:
+</p>
+<pre>
+-> the first 5 values are mapped to ‘lightblue’
+-> the next 5 values to ‘orange’ and
+-> the last 5 values to ‘lightgreen’.
+</pre>
+<pre>
+The split points of the domain can be accessed using .quantiles():
+    <code>
+    quantileScale.quantiles();  // returns [26.66..., 63]
+    </code>
+</pre>
+<p>
+If the range contains 4 values quantileScale computes the quartiles of the data. In other words, the lowest 25% of the data is mapped to range[0], the next 25% of the data is mapped to range[1] etc.
+</p>
+<h4>scaleThreshold</h4>
+<p>
+scaleThreshold maps continuous numeric input to discrete values defined by the range. n-1 domain split points are specified where n is the number of range values.
+</p>
+<button class='btn btn-default' (click)="thresholdScale()">Run</button>
+<div>
+    <svg class="ex-12" width="700" height="100">
+        <g transform="translate(50, 40)"></g>
+    </svg>
+</div>
+<h3>Scales with discrete input and discrete output</h3>
+<h4>scaleOrdinal</h4>
+<p>
+scaleOrdinal maps discrete values (specified by an array) to discrete values (also specified by an array). The domain array specifies the possible input values and the range array the output values. The range array will repeat if it’s shorter than the domain array.
+</p>
+<button class='btn btn-default' (click)="ordinalScale()">Run</button>
+<div>
+    <svg class="ex-13" width="700" height="100">
+        <g transform="translate(10, 40)"></g>
+    </svg>
+</div>
+<button class='btn btn-default' (click)="categoricalScale10()">Run 10</button>
+<button class='btn btn-default' (click)="categoricalScale20()">Run 20</button>
+<button class='btn btn-default' (click)="categoricalScale20b()">Run 20b</button>
+<button class='btn btn-default' (click)="categoricalScale20c()">Run 20c</button>
+<div>
+    <svg class="ex-14" width="700" height="100">
+        <g transform="translate(10, 40)"></g>
+    </svg>
+    <svg class="ex-15" width="700" height="100">
+        <g transform="translate(10, 40)"></g>
+    </svg>
+    <svg class="ex-16" width="700" height="100">
+        <g transform="translate(10, 40)"></g>
+    </svg>
+    <svg class="ex-17" width="700" height="100">
+        <g transform="translate(10, 40)"></g>
+    </svg>
+</div>
+<h4>scaleBand</h4>
+<p>
+When creating bar charts scaleBand helps to determine the geometry of the bars, taking into account padding between each bar. The domain is specified as an array of values (one value for each band) and the range as the minimum and maximum extents of the bands (e.g. the total width of the bar chart).
+</p>
+<p>
+In effect scaleBand will split the range into n bands (where n is the number of values in the domain array) and compute the positions and widths of the bands taking into account any specified padding.
+</p>
+<pre>
+    <code>
+    var bandScale = d3.scale.ordinal()
+    .domain(['Mon', 'Tue', 'Wed', 'Thu', 'Fri'])
+    .rangeBands([0, 100]);
+    </code>
+</pre>
+<button class='btn btn-default' (click)="bandScale()">Run</button>
+<div>
+    <svg class="ex-18" width="700" height="100">
+        <g transform="translate(10, 0)"></g>
+    </svg>
+</div>
