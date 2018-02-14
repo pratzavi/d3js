@@ -14,3 +14,20 @@ svg{
     background: #efefef;
     border: 1px solid #5f5f5f;
 }
+
+.line{
+    fill: none;
+    stroke: black;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: brown;
+}
+
+.axis--x path {
+    display: none;
+}

@@ -14,6 +14,7 @@ import { InteractivityComponent } from './interactivity/interactivity.component'
 import { ScalesComponent } from './scales/scales.component';
 import { AxesComponent } from './axes/axes.component';
 import { ChartsIntroComponent } from './charts-intro/charts-intro.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
 
 export const appRoutes:Routes = [
     {path: '', component: IntroComponent},
@@ -29,7 +30,8 @@ export const appRoutes:Routes = [
     {path: 'interactivity', component: InteractivityComponent},
     {path: 'scales', component: ScalesComponent},
     {path: 'axes', component: AxesComponent},
-    {path: 'intro-to-charts', component: ChartsIntroComponent}
+    {path: 'intro-to-charts', component: ChartsIntroComponent},
+    {path: 'bar-chart', component: BarChartComponent}
 ]
 
 @NgModule({
@@ -58,5 +60,6 @@ export const RoutableComponents = [
     InteractivityComponent,
     ScalesComponent,
     AxesComponent,
-    ChartsIntroComponent
+    ChartsIntroComponent,
+    BarChartComponent
 ]

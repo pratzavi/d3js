@@ -54,9 +54,6 @@
 <button class="btn btn-default" (click)="axisWithTick()">Run with Ticks</button>
 <!-- <button class="btn btn-default" (click)="axisWithTickFormat()">Run with Tick Format</button> -->
 <button class="btn btn-default" (click)="axisWithTickValues()">Run with Tick Values</button>
-<p>Inner: <input [(ngModel)]="inner"/>
-Outer: <input [(ngModel)]="outer"/></p>
-<button class="btn btn-default" (click)="axisWithTickSize(inner,outer)">Run with Tick Size</button>
 <div class="ex-2"></div>
 <h4>axis.tickSize([inner, outer])</h4>
 <p>If inner, outer are specified, sets the inner and outer tick sizes to the specified value and returns the axis. If inner, outer are not specified, returns the current inner tick size, which defaults to 6.</p>
@@ -64,6 +61,9 @@ Outer: <input [(ngModel)]="outer"/></p>
 <p>
 If size is specified, sets the inner tick size to the specified value and returns the axis. If size is not specified, returns the current inner tick size, which defaults to 6. The inner tick size controls the length of the tick lines, offset from the native position of the axis.
 </p>
+<p>Inner: <input [(ngModel)]="inner"/>
+Outer: <input [(ngModel)]="outer"/></p>
+<button class="btn btn-default" (click)="axisWithTickSize(inner,outer)">Run with Tick Size</button>
 <button class="btn btn-default" (click)="getInnerTickSize()">Get Inner TickSize</button>
 <p>Inner Tick Size: <input [(ngModel)]="innerTickSize"/>
 <button class="btn btn-default" (click)="setInnerTickSize(innerTickSize)">Set Inner TickSize</button>
