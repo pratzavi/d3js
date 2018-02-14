@@ -115,6 +115,256 @@ var AxesComponent = (function () {
     }
     AxesComponent.prototype.ngOnInit = function () {
     };
+    AxesComponent.prototype.simpleAxis = function () {
+        var axis = d3.svg.axis();
+        d3.select(".ex-1").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+    };
+    AxesComponent.prototype.axisWithScale = function () {
+        var axis = d3.svg
+            .axis()
+            .scale();
+        d3.select(".ex-1").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+    };
+    AxesComponent.prototype.axisWithScale2 = function () {
+        var scale = d3.scale.linear()
+            .domain([0, 100])
+            .range([0, 600]);
+        var axis = d3.svg
+            .axis()
+            .scale(scale);
+        d3.select(".ex-1").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+    };
+    AxesComponent.prototype.axisWithOrient = function (orient) {
+        var scale = d3.scale.linear()
+            .domain([0, 10])
+            .range([0, 600]);
+        var axis = d3.svg
+            .axis()
+            .scale(scale)
+            .orient(orient);
+        d3.select(".ex-1").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 600)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+    };
+    AxesComponent.prototype.axisWithTick = function (orient) {
+        var scale = d3.scale.linear()
+            .domain([0, 10])
+            .range([0, 600]);
+        var axis = d3.svg
+            .axis()
+            .scale(scale)
+            .orient(orient)
+            .ticks(20);
+        d3.select(".ex-2").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+    };
+    AxesComponent.prototype.axisWithTickFormat = function (orient) {
+        var scale = d3.scale.linear()
+            .domain([-1, 1])
+            .range([0, 600]);
+        scale.ticks(10)
+            .map(scale.tickFormat(10, "+%"));
+        var axis = d3.svg
+            .axis()
+            .scale(scale)
+            .orient(orient);
+        d3.select(".ex-2").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+    };
+    AxesComponent.prototype.axisWithTickValues = function (orient) {
+        var scale = d3.scale.linear()
+            .domain([0, 25])
+            .range([0, 600]);
+        var axis = d3.svg
+            .axis()
+            .scale(scale)
+            .orient(orient)
+            .tickValues([1, 2, 3, 5, 8, 13, 21]);
+        d3.select(".ex-2").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+    };
+    AxesComponent.prototype.axisWithTickSize = function (inner, outer) {
+        var scale = d3.scale.linear()
+            .domain([0, 25])
+            .range([0, 600]);
+        var axis = d3.svg
+            .axis()
+            .scale(scale)
+            .tickSize(inner, outer);
+        d3.select(".ex-3").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+    };
+    AxesComponent.prototype.getInnerTickSize = function () {
+        var scale = d3.scale.linear()
+            .domain([0, 25])
+            .range([0, 600]);
+        var axis = d3.svg
+            .axis()
+            .scale(scale);
+        d3.select(".ex-3").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+        this.innerTickSize = axis.innerTickSize();
+    };
+    AxesComponent.prototype.setInnerTickSize = function (innerTickSize) {
+        var scale = d3.scale.linear()
+            .domain([0, 25])
+            .range([0, 600]);
+        var axis = d3.svg
+            .axis()
+            .scale(scale)
+            .innerTickSize(innerTickSize);
+        d3.select(".ex-3").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+    };
+    AxesComponent.prototype.getOuterTickSize = function () {
+        var scale = d3.scale.linear()
+            .domain([0, 25])
+            .range([0, 600]);
+        var axis = d3.svg
+            .axis()
+            .scale(scale);
+        d3.select(".ex-4").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+        this.outerTickSize = axis.outerTickSize();
+    };
+    AxesComponent.prototype.setOuterTickSize = function (outerTickSize) {
+        var scale = d3.scale.linear()
+            .domain([0, 25])
+            .range([0, 600]);
+        var axis = d3.svg
+            .axis()
+            .scale(scale)
+            .outerTickSize(outerTickSize);
+        d3.select(".ex-4").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+    };
+    AxesComponent.prototype.getTickPadding = function () {
+        var scale = d3.scale.linear()
+            .domain([0, 25])
+            .range([0, 600]);
+        var axis = d3.svg
+            .axis()
+            .scale(scale);
+        d3.select(".ex-5").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+        this.tickPadding = axis.tickPadding();
+    };
+    AxesComponent.prototype.setTickPadding = function (padding) {
+        var scale = d3.scale.linear()
+            .domain([0, 25])
+            .range([0, 600]);
+        var axis = d3.svg
+            .axis()
+            .scale(scale)
+            .tickPadding(padding);
+        d3.select(".ex-5").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+    };
+    AxesComponent.prototype.getTickFormat = function () {
+        var scale = d3.scale.linear()
+            .domain([0, 25])
+            .range([0, 600]);
+        var axis = d3.svg
+            .axis()
+            .scale(scale);
+        d3.select(".ex-6").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+        this.tickFormat = axis.tickFormat();
+    };
+    AxesComponent.prototype.setTickFormat = function (format) {
+        var commasFormatter = d3.format(format);
+        var scale = d3.scale.linear()
+            .domain([0, 100])
+            .range([0, 600]);
+        var axis = d3.svg
+            .axis()
+            .scale(scale)
+            .tickFormat(function (d) { return "$" + commasFormatter(d); });
+        d3.select(".ex-6").append("svg")
+            .attr("class", "axis")
+            .attr("width", 700)
+            .attr("height", 60)
+            .append("g")
+            .attr("transform", "translate(10,30)")
+            .call(axis);
+    };
     return AxesComponent;
 }());
 AxesComponent = __decorate([
@@ -1692,7 +1942,7 @@ module.exports = "<!-- <h4 class=\"pull-right\">\r\n  <a href=\"/d3js\">Go Home<
 /***/ 186:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  axes works!\r\n</p>\r\n"
+module.exports = "<h2>Axis</h2>\r\n<p>The axis component is designed to work with D3’s quantitative, time and ordinal scales.</p>\r\n<h4>d3.svg.axis()</h4>\r\n<h4>axis(selection)</h4>\r\n<p>Apply the axis to a selection or transition. The selection must contain an svg or g element.</p>\r\n<pre>\r\n  <code>\r\n    d3.select(\".ex-1\").append(\"svg\")\r\n    .attr(\"class\", \"axis\")\r\n    .attr(\"width\", 600)\r\n    .attr(\"height\", 30)\r\n    .append(\"g\")\r\n    .attr(\"transform\", \"translate(0,30)\")\r\n    .call(axis);\r\n  </code>\r\n</pre>\r\n<button class=\"btn btn-default\" (click)=\"simpleAxis()\">Run</button>\r\n<button class=\"btn btn-default\" (click)=\"axisWithScale()\">Run with Scale</button>\r\n<button class=\"btn btn-default\" (click)=\"axisWithScale2()\">Run with Scale 2</button>\r\n<p>Orientation: <input type=\"text\" [(ngModel)]=\"orient\"/></p>\r\n<button class=\"btn btn-default\" (click)=\"axisWithOrient(orient)\">Run with Orientation</button>\r\n<div class=\"ex-1\"></div>\r\n<h4>axis.scale([scale])</h4>\r\n<p>If scale is specified, sets the scale and returns the axis. If scale is not specified, returns the current scale which defaults to a linear scale.</p>\r\n<h4>axis.orient([orientation])</h4>\r\n<p>\r\n  If orientation is specified, sets the orientation and returns the axis. If orientation is not specified, returns the current orientation which defaults to \"bottom\". The following orientations are supported:\r\n</p>\r\n<pre>\r\n  \"top\" - horizontal axis with ticks above the domain path\r\n  \"bottom\" - horizontal axis with ticks below the domain path\r\n  \"left\" - vertical axis with ticks to the left of the domain path\r\n  \"right\" - vertical axis with ticks to the right of the domain path  \r\n</pre>\r\n<p>\r\n  If the specified orientation is not one of the supported values, the axis reverts to the default orientation. Changing the orientation affects the position of the ticks and their labels in relation to the axis path, but does not change the position of the axis itself; to change the position of the axis with respect to the plot, specify a transform attribute on the containing g element.\r\n</p>\r\n<h4>axis.ticks([arguments…])</h4>\r\n<p>\r\n  If arguments are specified, stores the specified arguments for subsequent use in generating ticks and returns the axis. The arguments will later be passed to scale.ticks to generate tick values (unless tick values are specified explicitly via axis.tickValues). The arguments are also passed to the scale’s tickFormat method to generate the default tick format. If no arguments are specified, returns the current tick arguments, which default to [10].\r\n</p>\r\n<h4>axis.tickValues([values])</h4>\r\n<p>\r\n  If a values array is specified, the specified values are used for ticks, rather than using the scale's automatic tick generator. If values is null, clears any previously-set explicit tick values, reverting back to the scale's tick generator. If values is not specified, returns the currently-set tick values, which defaults to null. For example, to generate ticks at specific values:\r\n</p>\r\n<pre>\r\n  var xAxis = d3.svg.axis()\r\n    .scale(x)\r\n    .tickValues([1, 2, 3, 5, 8, 13, 21]);\r\n</pre>\r\n<p>\r\n  The explicit tick values take precedent over the tick arguments set by axis.ticks. However, any tick arguments will still be passed to the scale's tickFormat function if a tick format is not also set; thus, it may be valid to set both axis.ticks and axis.tickValues.\r\n</p>\r\n<button class=\"btn btn-default\" (click)=\"axisWithTick()\">Run with Ticks</button>\r\n<!-- <button class=\"btn btn-default\" (click)=\"axisWithTickFormat()\">Run with Tick Format</button> -->\r\n<button class=\"btn btn-default\" (click)=\"axisWithTickValues()\">Run with Tick Values</button>\r\n<p>Inner: <input [(ngModel)]=\"inner\"/>\r\nOuter: <input [(ngModel)]=\"outer\"/></p>\r\n<button class=\"btn btn-default\" (click)=\"axisWithTickSize(inner,outer)\">Run with Tick Size</button>\r\n<div class=\"ex-2\"></div>\r\n<h4>axis.tickSize([inner, outer])</h4>\r\n<p>If inner, outer are specified, sets the inner and outer tick sizes to the specified value and returns the axis. If inner, outer are not specified, returns the current inner tick size, which defaults to 6.</p>\r\n<h4>axis.innerTickSize([size])</h4>\r\n<p>\r\nIf size is specified, sets the inner tick size to the specified value and returns the axis. If size is not specified, returns the current inner tick size, which defaults to 6. The inner tick size controls the length of the tick lines, offset from the native position of the axis.\r\n</p>\r\n<button class=\"btn btn-default\" (click)=\"getInnerTickSize()\">Get Inner TickSize</button>\r\n<p>Inner Tick Size: <input [(ngModel)]=\"innerTickSize\"/>\r\n<button class=\"btn btn-default\" (click)=\"setInnerTickSize(innerTickSize)\">Set Inner TickSize</button>\r\n<div class=\"ex-3\"></div>\r\n<h4>axis.outerTickSize([size])</h4>\r\n<p>\r\n  If size is specified, sets the outer tick size to the specified value and returns the axis. If size is not specified, returns the current outer tick size, which defaults to 6. The outer tick size controls the length of the square ends of the domain path, offset from the native position of the axis. Thus, the “outer ticks” are not actually ticks but part of the domain path, and their position is determined by the associated scale's domain extent. Thus, outer ticks may overlap with the first or last inner tick. An outer tick size of 0 suppresses the square ends of the domain path, instead producing a straight line.\r\n</p>\r\n<button class=\"btn btn-default\" (click)=\"getOuterTickSize()\">Get Outer TickSize</button>\r\n<p>Outer Tick Size: <input [(ngModel)]=\"outerTickSize\"/>\r\n<button class=\"btn btn-default\" (click)=\"setOuterTickSize(outerTickSize)\">Set Outer TickSize</button>\r\n<div class=\"ex-4\"></div>\r\n<h4>axis.tickPadding</h4>\r\n<p>\r\n  If padding is specified, sets the padding to the specified value in pixels and returns the axis. If padding is not specified, returns the current padding which defaults to 3 pixels.\r\n</p>\r\n<button class=\"btn btn-default\" (click)=\"getTickPadding()\">Get TickPadding</button>\r\n<p>Tick Padding: <input [(ngModel)]=\"tickPadding\"/>\r\n<button class=\"btn btn-default\" (click)=\"setTickPadding(tickPadding)\">Set TickPadding</button>\r\n<div class=\"ex-5\"></div>\r\n<h4>axis.tickFormat([format])</h4>\r\n<p>\r\n  If format is specified, sets the format to the specified function and returns the axis. If format is not specified, returns the current format function, which defaults to null. A null format indicates that the scale's default formatter should be used, which is generated by calling scale.tickFormat. In this case, the arguments specified by ticks are likewise passed to scale.tickFormat.\r\n</p>\r\n<a target=\"_blank\" href=\"https://github.com/d3/d3-3.x-api-reference/blob/master/Formatting.md#d3_format\">d3.format</a>\r\n\r\n<button class=\"btn btn-default\" (click)=\"getTickFormat()\">Get TickFormat</button>\r\n<p>Tick Format: <input [(ngModel)]=\"tickFormat\"/>\r\n<button class=\"btn btn-default\" (click)=\"setTickFormat(tickFormat)\">Set TickFormat</button>\r\n<div class=\"ex-6\"></div>\r\n<strong>\r\n  Note: for log scales, the number of ticks cannot be customized; however, the number of tick labels can be customized via ticks. Likewise, the tick formatter for log scales is typically specified via ticks rather than tickFormat, so as to preserve the default label-hiding behavior.\r\n</strong>"
 
 /***/ }),
 
@@ -1706,7 +1956,7 @@ module.exports = "<h2>What is a Data Join?</h2>\r\n<span>\r\n  Data join enables
 /***/ 188:
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Intro to SVG Charts</h2>\n<div>\n  <svg class=\"chart\" width=\"420\" height=\"120\">\n      <g transform=\"translate(0,0)\">\n          <rect width=\"50\" height=\"19\"></rect>\n          <text x=\"47\" y=\"9.5\" dy=\".35em\">5</text>\n      </g>\n      <g transform=\"translate(0,20)\">\n          <rect width=\"100\" height=\"19\"></rect>\n          <text x=\"97\" y=\"9.5\" dy=\".35em\">10</text>\n      </g>\n      <g transform=\"translate(0,40)\">\n          <rect width=\"120\" height=\"19\"></rect>\n          <text x=\"117\" y=\"9.5\" dy=\".35em\">12</text>\n      </g>\n  </svg>\n</div>\n<div>\n  <button class=\"btn btn-default\" (click)=\"svgBarWithD3()\">Create SVG with D3</button>\n</div>\n<div id=\"scales\"></div>"
+module.exports = "<h2>Intro to SVG Charts</h2>\r\n<div>\r\n  <svg class=\"chart\" width=\"420\" height=\"120\">\r\n      <g transform=\"translate(0,0)\">\r\n          <rect width=\"50\" height=\"19\"></rect>\r\n          <text x=\"47\" y=\"9.5\" dy=\".35em\">5</text>\r\n      </g>\r\n      <g transform=\"translate(0,20)\">\r\n          <rect width=\"100\" height=\"19\"></rect>\r\n          <text x=\"97\" y=\"9.5\" dy=\".35em\">10</text>\r\n      </g>\r\n      <g transform=\"translate(0,40)\">\r\n          <rect width=\"120\" height=\"19\"></rect>\r\n          <text x=\"117\" y=\"9.5\" dy=\".35em\">12</text>\r\n      </g>\r\n  </svg>\r\n</div>\r\n<div>\r\n  <button class=\"btn btn-default\" (click)=\"svgBarWithD3()\">Create SVG with D3</button>\r\n</div>\r\n<div id=\"scales\"></div>"
 
 /***/ }),
 
