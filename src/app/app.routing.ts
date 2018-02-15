@@ -15,6 +15,8 @@ import { ScalesComponent } from './scales/scales.component';
 import { AxesComponent } from './axes/axes.component';
 import { ChartsIntroComponent } from './charts-intro/charts-intro.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 export const appRoutes:Routes = [
     {path: '', component: IntroComponent},
@@ -22,7 +24,7 @@ export const appRoutes:Routes = [
     {path: 'intro', component: IntroComponent},
     {path: 'svg', component: SvgComponent},
     {path: 'drawing-shapes', component: ExamplesComponent},
-    {path:'principles', component: PrinciplesComponent},
+    {path: 'principles', component: PrinciplesComponent},
     {path: 'selections', component: SelectionsComponent},
     {path: 'binding-data', component: BindingDataComponent},
     {path: 'load-ext-data', component: LoadExtDataComponent},
@@ -31,7 +33,9 @@ export const appRoutes:Routes = [
     {path: 'scales', component: ScalesComponent},
     {path: 'axes', component: AxesComponent},
     {path: 'intro-to-charts', component: ChartsIntroComponent},
-    {path: 'bar-chart', component: BarChartComponent}
+    {path: 'bar-chart', component: BarChartComponent},
+    {path: 'line-chart', component: LineChartComponent},
+    {path: 'pie-chart', component: PieChartComponent}
 ]
 
 @NgModule({
@@ -61,5 +65,7 @@ export const RoutableComponents = [
     ScalesComponent,
     AxesComponent,
     ChartsIntroComponent,
-    BarChartComponent
+    BarChartComponent,
+    LineChartComponent,
+    PieChartComponent
 ]

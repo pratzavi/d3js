@@ -31,3 +31,62 @@ svg{
 .axis--x path {
     display: none;
 }
+
+.toolTip {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: -3px 3px 15px #888888;
+    color: black;
+    font: 12px sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+
+text {
+    font: 10px sans-serif;
+    color: white;
+}
+text.value {
+    font-size: 120%;
+    fill: white;
+}
+
+.axisHorizontal path{
+    fill: none;
+}
+
+.axisHorizontal .tick line {
+    stroke-width: 1;
+    stroke: rgba(0, 0, 0, 0.2);
+}
+
+path,line { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+    shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+    stroke-dasharray: 3,3;
+}
+
+.arc text {
+    font: 10px sans-serif;
+    text-anchor: middle;
+}
+
+.arc path {
+    stroke: #fff;
+}
