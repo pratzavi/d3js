@@ -11,11 +11,52 @@ export class PieChartComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.drawPieChart();
+    this.pieChartWithArc();
+    // this.drawPieChart();
+  }
+
+  pieChartWithArc(){
+    const svg = d3.select("#pie-chart1");
+    const width = svg.attr("width");
+    const height = svg.attr("height");
+    const arc = d3.svg.arc()
+                .innerRadius(Math.min(width/6, height/6))
+                .outerRadius(Math.min(width/3, height/3))
+                .startAngle(0);
+    const data = [10,20,50,40,15,7.5];
+    const scale = d3.scale.linear()
+                  .domain(d3.extent(data))
+                  .range([0, Math.PI]);
+    const colorScale = d3.scale.linear()
+                  .domain(d3.extent(data))
+                  .range(['#f00', '#0f0']);
+    svg
+      .append('g')
+      .attr('transform',`translate(${width/2},${height/2}) rotate(-90)`)
+      .append('path')
+      .datum({endAngle: Math.PI})
+      .attr('d', arc);
+
+    svg
+      .append('g')
+      .attr('transform',`translate(${width/2},${height/2}) rotate(-90)`)
+      .append('path')
+      .datum(data)
+      .attr('d', function(d){
+        d.forEach(function(c){
+          return arc({
+            endAngle: scale(c)
+          })
+        });
+      })
+      .style('fill', function(d){
+        console.log(d);
+        return colorScale(d);
+      });
   }
 
   drawPieChart(){
-    var svg = d3.select("#pie-chart"),
+    var svg = d3.select("#pie-chart2"),
     width = +svg.attr("width"),
     height = +svg.attr("height"),
     radius = Math.min(width, height) / 2,
