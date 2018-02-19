@@ -66,12 +66,12 @@ text.value {
     stroke: rgba(0, 0, 0, 0.2);
 }
 
-path,line { 
+/*path,line { 
     stroke: steelblue;
     stroke-width: 2;
     fill: none;
     shape-rendering: crispEdges;
-}
+}*/
 
 .axis path,
 .axis line {
@@ -89,4 +89,9 @@ path,line {
 
 .arc path {
     stroke: #fff;
+}
+
+.pie path, .pie line{
+    fill: #fff;
+    stroke: #00f;
 }

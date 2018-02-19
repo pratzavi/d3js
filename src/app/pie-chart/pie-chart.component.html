@@ -1,5 +1,19 @@
 <h3>Pie Chart</h3>
+<pre>
+Evaluates the pie function on the specified array of values. An optional index may be specified, which is passed along to the start and end angle functions. The return value is an array of arc descriptors:
 
+    value - the data value, returned by the value accessor.
+    startAngle - the start angle of the arc in radians.
+    endAngle - the end angle of the arc in radians.
+    padAngle - the pad angle of the arc in radians.
+    data - the original datum for this arc.
+
+    The elements are returned in the original order, matching values, even if a sort order is applied; this preserves the original index of each element in the values array, which is nice if you are using the index to generate a categorical color or other display property.
+</pre>
+<a href="https://github.com/d3/d3-3.x-api-reference/blob/master/Pie-Layout.md">Reference</a>
+<h4>Curve Generator</h4>
 <svg id="pie-chart1" width="700" height="500"></svg>
 
-<!-- <svg id="pie-chart2" width="700" height="500"></svg> -->
+ <svg id="pie-chart2" width="700" height="500"></svg> 
+
+ <svg id="donut-chart" width="700" height="500"></svg>
