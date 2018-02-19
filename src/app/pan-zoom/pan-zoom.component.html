@@ -1,0 +1,141 @@
+<h3>D3 Behaviors</h3>
+<p>D3’s behaviors and higher level components, such as the brush, use d3.dispatch to broadcast custom events.</p>
+<p>For visualizations with coordinated views, d3.dispatch provides a convenient lightweight mechanism for loosely-coupled components. Organizing your code with d3.dispatch can assist with separation of concerns and make your code easier to maintain.</p>
+<h4>d3.dispatch</h4>
+<p>Creates a new dispatcher object for the specified types. Each argument is a string representing the name of the event type, such as "zoom" or "change". The returned object is an associative array; each type name is associated with a dispatch object. For example, if you wanted to create an event dispatcher for "start" and "end" events, you can say:</p>
+<pre>
+  var dispatch = d3.dispatch("start", "end");
+</pre>
+<p>
+  Then, you can access the dispatchers for the different event types as dispatch.start and dispatch.end. For example, you might add an event listener:
+</p>
+<pre>
+  dispatch.on("start", listener);
+</pre>
+<pre>
+  dispatch.start();
+</pre>
+<pre>
+  If an event listener was already registered for the same type, 
+  the existing listener is removed before the new listener is added. To register multiple listeners
+  for the same event type, the type may be followed by an optional namespace, 
+  such as "click.foo" and "click.bar". 
+  Likewise, you can remove all registered listeners for a 
+  given namespace by saying dispatch.on(".foo", null).
+  If listener is not specified, returns the currently-assigned listener 
+  for the specified type, if any.
+</pre>
+<h4>dispatch.type(arguments…)</h4>
+<p>The type method (such as dispatch.start) notifies each registered listener, 
+  passing the listener the specified arguments. 
+  The this context will be used as the context of the registered listeners. 
+  Eg. dispatch.call( foo, bar ). You can also control the "this" context of the listeners using call or apply.
+</p>
+<pre>
+  Example:
+    selection.on("click", function(d, i) {{"{"}}
+      dispatch.custom.apply(this, arguments);
+    });
+</pre>
+
+<h4>Demo</h4>
+<p>This example uses two custom events: a load event when data is available, and a statechange event when the displayed state is changed.</p>
+<p>Custom events allow loose coupling of components: views can listen for events and update the DOM accordingly, without needing to explicitly tie each view together. When the drop-down menu changes, a statechange event is triggered which causes any interested listeners to be notified.</p>
+<button class="btn btn-default" (click)="dispatchDemo()">Show Demo</button>
+<div id="d3-dispatch-demo"></div>
+<ul>
+  <li>Drag — tracks mouse or multitouch movement(s) relative to an origin</li>
+  <li>Zoom — emits zoom and pan events in response to common input idioms</li>
+</ul>
+<pre>
+    selection.call(d3.behavior.drag().on('dragstart', function (d) {{"{"}}
+      console.log("Started moving item with data:", d);
+    }));
+</pre>
+<strong>
+    Note carefully the nesting: the 'dragstart' event is registered on the d3.behavior.drag() instance, not on the selection! It is this same instance — which is itself also a function — that gets called on the selection. This call allows the behavior to do its own internal setup on the selection.
+</strong>
+<pre>
+    var drag = d3.behavior.drag();
+    selection.call(drag);
+    selection.on(".drag", null);
+    
+    drag.on(type[, listener])
+    <ul><li>dragstart - when a drag gesture starts.</li>
+      <li>drag - when the drag gesture moves.</li>
+      <li>dragend - when the drag gesture finishes.</li></ul>
+</pre>
+<p>
+  Drag events (but not dragstart and dragend events) expose "x" and "y" properties representing the current position of the drag gesture in local coordinates.
+</p>
+<h4>Simple Drag Example</h4>
+<button class="btn btn-default" (click)="basicDragExample()">Run</button>
+<svg id="simple-drag" width="700" height="300"></svg>
+<h4>Prevent Default</h4>
+<pre>
+    selection.on("click", function() {{"{"}}
+      if (d3.event.defaultPrevented) return; // click suppressed
+      console.log("clicked!");
+    });
+</pre>
+<p>
+  When combining drag behaviors with other event listeners for interaction events (such as having drag take precedence over zoom), you may also consider stopping propagation on the source event to prevent multiple actions:
+</p>
+<pre>
+  drag.on("dragstart", function() {{"{"}}
+    d3.event.sourceEvent.stopPropagation(); // silence other listeners
+  });
+</pre>
+<h4>drag.origin([origin])</h4>
+<p>If origin is specified, sets the origin accessor to the specified function. If origin is not specified, returns the current origin accessor which defaults to null.</p>
+
+<p>The origin accessor function is used to determine the starting position (the “origin”) of the element being dragged; this allows the drag behavior to preserve the offset between the mouse position and the starting element position during drag.</p>
+<div id="drag-multiples"></div>
+<button class="btn btn-default" (click)="dragMultiples()">Run</button>
+
+<h3>Zoom</h3>
+<h3>d3.behavior.zoom()</h3>
+<pre>
+    var zoom = d3.behavior.zoom();
+    selection.call(zoom);
+
+    selection.on(".zoom", null);
+
+    zoom.translate([translate])
+
+    zoom.scale([scale])
+
+    zoom.scaleExtent([extent])  => ([minimum, maximum])
+
+    zoom.center([center])
+
+    zoom.size([size])
+
+    zoom.x([x])
+
+    zoom.y([y])
+
+    zoom.on(type, listener)
+        zoomstart - at the start of a zoom gesture (e.g., touchstart).
+        zoom - when the view changes (e.g., touchmove).
+        zoomend - at the end of the current zoom gesture (e.g., touchend).
+</pre>
+
+<p>
+  For mousewheel events, which happen discretely with no explicit start and end reported by the browser, events that occur within 50 milliseconds of each other are grouped into a single zoom gesture.
+</p>
+<pre>
+    When fired, the d3.event object will contain the following properties:
+
+    scale - a number; the current scale.
+    translate - a two-element array representing the current translation vector.
+</pre>
+<h4>zoom.event(selection)</h4>
+<p>If selection is a selection, immediately dispatches a zoom gesture to registered listeners, as the three event sequence zoomstart, zoom and zoomend. This can be useful in triggering listeners after setting the translate or scale programatically.</p>
+<p>
+  If selection is a transition, registers the appropriate tweens so that the zoom behavior dispatches events over the course of the transition: a zoomstart event when the transition starts from the previously-set view, zoom events for each tick of the transition, and finally a zoomend event when the transition ends. 
+</p>
+<strong>Note that the transition will be interrupted if the user starts zooming before the transition ends.</strong>
+<h4>Example</h4>
+<button class="btn btn-default" (click)="zoomExample()">Run</button>
+<div id="zoom-section"></div>

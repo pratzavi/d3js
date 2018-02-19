@@ -17,6 +17,8 @@ import { ChartsIntroComponent } from './charts-intro/charts-intro.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { D3LayoutsComponent } from './d3-layouts/d3-layouts.component';
+import { PanZoomComponent } from './pan-zoom/pan-zoom.component';
 
 export const appRoutes:Routes = [
     {path: '', component: IntroComponent},
@@ -35,7 +37,9 @@ export const appRoutes:Routes = [
     {path: 'intro-to-charts', component: ChartsIntroComponent},
     {path: 'bar-chart', component: BarChartComponent},
     {path: 'line-chart', component: LineChartComponent},
-    {path: 'pie-chart', component: PieChartComponent}
+    {path: 'pie-chart', component: PieChartComponent},
+    {path: 'layouts', component: D3LayoutsComponent},
+    {path: 'panning-dragging', component: PanZoomComponent}
 ]
 
 @NgModule({
@@ -67,5 +71,7 @@ export const RoutableComponents = [
     ChartsIntroComponent,
     BarChartComponent,
     LineChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    D3LayoutsComponent,
+    PanZoomComponent
 ]
