@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <meta charset="utf-8">
+  <title>Application Demo</title>
+  <script type="text/javascript" src="lib/angular.js"></script>
+  <script src="lib/d3/d3.v3.min.js"></script>
+  <script src="lib/dagre-d3.min.js"></script>
+  <script src="lib/jquery-1.11.1.js"></script>
+  <script src="lib/tipsy.js"></script>
+
+  <script type="text/javascript" src="data/mockData.js"></script>
+  <script type="text/javascript" src="src/graph/graph-layout.controller.js"></script>
+  <script type="text/javascript" src="src/graph/graph-layout.service.js"></script>
+
+  <link href="css/styles.css" rel="stylesheet"/>
+  <link href="lib/tipsy.css" rel="stylesheet"/>
+
+  <body ng-app="graphApp" ng-controller="graphController">
+    <div class="button-group">
+      <button ng-click="highlightPath()">Highlight Tree</button>
+      <button ng-click="highlightParent()">Highlight Parent</button>
+      <button ng-click="highlightChildren()">Highlight Children</button>
+      <button ng-click="unHighlightPath()">UnHighlight Tree</button>
+    </div>
+      <svg width=1280 height=800></svg>
+  </body>
+</html>

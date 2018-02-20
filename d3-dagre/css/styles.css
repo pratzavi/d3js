@@ -1,0 +1,61 @@
+body {
+  font: 300 14px 'Helvetica Neue', Helvetica;
+}
+
+.node rect {
+   -moz-transition: all 0.3s;
+   -o-transition: all 0.3s;
+   -webkit-transition: all 0.3s;
+   transition: all 0.3s;
+}
+
+.node rect:hover{
+        fill: orange;
+}
+
+.node rect{
+  stroke: #333;
+  fill: #0ff;
+  stroke-width: 1.5px;
+}
+
+.node.highlight rect{
+        fill: orange;
+}
+
+.edgePath path {
+  stroke: #333;
+  fill: #333;
+  stroke-width: 1.5px;
+}
+
+
+/* This styles the title of the tooltip */
+.tipsy .name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #60b1fc;
+  margin: 0;
+}
+
+/* This styles the body of the tooltip */
+.tipsy .description {
+  font-size: 1.2em;
+}
+
+.button-group{
+  margin:10px 0;
+}
+
+.button-group button{
+  background-color: #fd0;
+  height:30px;
+  border:1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-group button:hover{
+  background-color: #a50;
+  color:#fff;
+  cursor:pointer;
+}
