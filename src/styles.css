@@ -1,69 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    color: #000;
-    background-color: #fafafa;
+
+body {
+  color: #000;
+  background-color: #fafafa;
 }
 
-h1{
-    background: linear-gradient(#b7c1cc, #e2e7e8);
-    margin-top: 0;
-    padding: 15px;
+h1 {
+  background: linear-gradient(#b7c1cc, #e2e7e8);
+  margin-top: 0;
+  padding: 15px;
 }
 
-svg{
-    background: #efefef;
-    border: 1px solid #5f5f5f;
+svg {
+  background: #efefef;
+  border: 1px solid #5f5f5f;
 }
 
-.line{
-    fill: none;
-    stroke: black;
+.line {
+  fill: none;
+  stroke: black;
 }
 
 .bar {
-    fill: steelblue;
+  fill: steelblue;
 }
 
 .bar:hover {
-    fill: brown;
+  fill: brown;
 }
 
 .axis--x path {
-    display: none;
+  display: none;
 }
 
 .toolTip {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    position: absolute;
-    display: none;
-    width: auto;
-    height: auto;
-    background: none repeat scroll 0 0 white;
-    border: 0 none;
-    border-radius: 8px 8px 8px 8px;
-    box-shadow: -3px 3px 15px #888888;
-    color: black;
-    font: 12px sans-serif;
-    padding: 5px;
-    text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  display: none;
+  width: auto;
+  height: auto;
+  background: none repeat scroll 0 0 white;
+  border: 0 none;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: -3px 3px 15px #888888;
+  color: black;
+  font: 12px sans-serif;
+  padding: 5px;
+  text-align: center;
 }
 
 text {
-    font: 10px sans-serif;
-    color: white;
-}
-text.value {
-    font-size: 120%;
-    fill: white;
+  font: 10px sans-serif;
+  color: white;
 }
 
-.axisHorizontal path{
-    fill: none;
+text.value {
+  font-size: 120%;
+  fill: white;
+}
+
+.axisHorizontal path {
+  fill: none;
 }
 
 .axisHorizontal .tick line {
-    stroke-width: 1;
-    stroke: rgba(0, 0, 0, 0.2);
+  stroke-width: 1;
+  stroke: rgba(0, 0, 0, 0.2);
 }
 
 /*path,line { 
@@ -75,23 +77,57 @@ text.value {
 
 .axis path,
 .axis line {
-    fill: none;
-    stroke: grey;
-    stroke-width: 1;
-    shape-rendering: crispEdges;
-    stroke-dasharray: 3,3;
+  fill: none;
+  stroke: grey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+  stroke-dasharray: 3, 3;
 }
 
 .arc text {
-    font: 10px sans-serif;
-    text-anchor: middle;
+  font: 10px sans-serif;
+  text-anchor: middle;
 }
 
 .arc path {
-    stroke: #fff;
+  stroke: #fff;
 }
 
-.pie path, .pie line{
-    fill: #fff;
-    stroke: #00f;
+.pie path,
+.pie line {
+  fill: #fff;
+  stroke: #00f;
+}
+
+/* #projection-menu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+} */
+
+.stroke {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3px;
+}
+
+.fill {
+  fill: #fff;
+}
+
+.graticule {
+  fill: none;
+  stroke: #777;
+  stroke-width: .5px;
+  stroke-opacity: .5;
+}
+
+.land {
+  fill: #222;
+}
+
+.boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
 }

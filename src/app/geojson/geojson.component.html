@@ -1,0 +1,136 @@
+<h3>Introduction to <a href="http://geojson.org/" target="_blank">GeoJSON</a>
+  [<a href="https://en.wikipedia.org/wiki/GeoJSON" target="_blank">Wiki</a>]
+</h3>
+<p>
+  D3’s approach differs to so called raster methods such as Leaflet and Google Maps. These pre-render map features as image tiles and these are served up and pieced together in the browser to form a map. Typically D3 requests vector geographic information in the form of GeoJSON and renders this to SVG or Canvas in the browser.
+</p>
+<p>
+  Raster maps often look more like traditional print maps where a lot of detail (e.g. place names, roads, rivers etc.) can be shown without an impact on performance. However, dynamic content such as animation and interaction is more easily implemented using a vector approach. (It’s also quite common to combine the two approaches.)
+</p>
+<ul>
+  <li>Geographic Information Systems (GIS) is defined by Wikipedia as a system designed to capture, store, manipulate, analyze, manage, and present any and all types of geographical information.</li>
+  <li>GeoJSON is a geospatial data interchange format based on the JavaScript Object Notation.</li>
+  <li>GeoJSON has a strict set of specifications that allow you to ingest, digest, and produce the GeoJSON data in a standardized way</li>
+  <li>A GeoJSON Object always consists of a single object</li>
+  <li>A GeoJSON Geometry Object can represent: a) a "Point", b) a "MultiPoint", a "LineString", a "MultiLineString", a "Polygon", a "MultiPolygon", and a "GeometryCollection".</li>
+  <li>A GeoJSON Feature Object encapsulates a GeoJSON Geometry Object and adds to it a Feature Object (a JSON object with non-spatial attributes related to the Geometry Object)</li>
+  <li>A GeoJSON Feature Collection Object is a collection of GeoJSON Feature Objects</li>
+</ul>
+Example 1:
+<pre>
+  {{"{ "}}
+    "type": "FeatureCollection",
+    "features": [
+        {{"{"}}
+            "type": "Feature",
+            "geometry": {{"{"}}"type": "Point", "coordinates": [2.3470, 48.8742]},
+            "properties": {{"{"}}"name": "Paris"}
+        }
+    ]
+  }
+</pre>
+Example 2:
+<pre>
+  {{"{"}}
+    "type": "FeatureCollection",
+    "features": [
+      {{"{"}}
+        "type": "Feature",
+        "properties": {{"{"}}
+          "name": "Africa"
+        },
+        "geometry": {{""}}
+          "type": "Polygon",
+          "coordinates": [[[-6, 36], [33, 30], ... , [-6, 36]]]
+        }
+      },
+      {{""}}
+        "type": "Feature",
+        "properties": {{""}}
+          "name": "Australia"
+        },
+        "geometry": {{""}}
+          "type": "Polygon",
+          "coordinates": [[[143, -11], [153, -28], ... , [143, -11]]]
+        }
+      },
+      {{""}}
+        "type": "Feature",
+        "properties": {{""}}
+          "name": "Timbuktu"
+        },
+        "geometry": {{""}}
+          "type": "Point",
+          "coordinates": [-3.0026, 16.7666]
+        }
+      }
+    ]
+  }
+</pre>
+<a href="http://geojsonlint.com/" target="_blank">Try GeoJSON Validator</a>
+
+<h3>D3js Geo</h3>
+<p>
+  The primary mechanism for displaying geographic data is d3.geo.path. This class is similar to d3.svg.line and the other SVG shape generators
+</p>
+
+<canvas width="700" height="600"></canvas>
+<p>To display multiple features, you can place them in a single feature collection and a single path element:</p>
+<pre>
+  svg.append("path")
+  .datum({{"{"}}type: "FeatureCollection", features: features})
+  .attr("d", d3.geo.path());
+</pre>
+<p>Alternatively, you can create multiple distinct path elements:</p>
+<pre>
+    svg.selectAll("path")
+    .data(features)
+    .enter().append("path")
+    .attr("d", d3.geo.path());
+</pre>
+<h4>path.projection([projection])</h4>
+<p>If projection is specified, sets the projection used by the path generator to the specified projection function. If projection is not specified, returns the current projection, which defaults to albersUsa. The projection is typically one of D3's built-in geographic projections;however, any function can be used. </p>
+<p>A projection function takes a two-element array of numbers representing the coordinates of a location, [longitude, latitude], and returns a similar two-element array of numbers representing the projected pixel position [x, y].</p>
+<h4>path.context([context])</h4>
+<p>If context is specified, sets the render context and returns the path generator. If the context is null, then the path generator will return an SVG path string when invoked on a given feature. If the context is non-null, the path generator will instead call methods on the specified context to render geometry. The context must implement the following methods:</p>
+<ul>
+  <li>beginPath()</li>
+  <li>moveTo(x, y)</li>
+  <li>lineTo(x, y)</li>
+  <li>arc(x, y, radius, startAngle, endAngle)</li>
+  <li>closePath()</li>
+</ul>
+<p>
+  Note that this is a subset of the canvas element’s 2D rendering context, and thus a canvas context can be passed to the path generator, in which case geometry will be rendered directly to the canvas. If context is not specified, returns the current render context, which defaults to null.
+</p>
+<h4>path.area(feature)</h4>
+<p>Computes the projected area (in square pixels) for the specified feature. </p>
+<h4>path.centroid(feature)</h4>
+<p>Computes the projected centroid (in pixels) for the specified feature. This is handy for, say, labeling state or country boundaries, or displaying a symbol map. </p>
+<h4>path.bounds(feature)</h4>
+<p>Computes the projected bounding box (in pixels) for the specified feature. The bounding box is represented by a two-dimensional array: [[left, top], [right, bottom]] , different from GIS geo.bounds' convention. This is handy for, say, zooming in to a particular feature. </p>
+<h4>path.pointRadius([radius])</h4>
+<p>If radius is specified, sets the radius used to display Point and MultiPoint features to the specified number. If radius is not specified, returns the current radius. While the radius is commonly specified as a number constant, it may also be specified as a function which is computed per feature, being passed the feature and index arguments from the path function. </p>
+<h3>Shape Generators</h3>
+<h4>d3.geo.graticule</h4>
+<p>Constructs a feature generator for creating graticules.</p>
+<h3>Spherical Math</h3>
+<h4>d3.geo.area(feature)</h4>
+<p>Returns the spherical area of the specified feature in steradians. See also path.area, which computes the projected area on the Cartesian plane.</p>
+<h3>
+  <a target="_blank" href="https://github.com/d3/d3-3.x-api-reference/blob/master/Geo-Projections.md">
+    Geo Projections
+  </a>
+</h3>
+<select id="projection-menu"></select>
+<div id="geo-path-projections"></div>
+<a href="https://bl.ocks.org/d3indepth/f7ece0ab9a3df06a8cecd2c0e33e54ef" target="_blank">
+  Detailed understanding of individual fields of geo.projection
+</a>
+<h3>Geo Streams 
+    <a target="_blank" href="https://github.com/d3/d3-3.x-api-reference/blob/master/Geo-Streams.md">
+      (d3.geo.stream(object, listener))</a>
+</h3>
+<p>
+  For fast transformations of geometry without temporary copies of geometry objects, D3 uses geometry streams. The main d3.geo.stream method converts a GeoJSON input object to a stream: a series of method calls on a stream listener. In addition, D3 provides several stream transformations that wrap listeners and transform the geometry. For example, the projection.stream interface transforms spherical coordinates to Cartesian coordinates, and d3.geo.path serializes geometry to either SVG or Canvas. Internally, clipping and rotating are also implemented as stream transformations.
+</p>
