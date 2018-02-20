@@ -20,7 +20,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(119);
 
 
 
@@ -189,8 +189,8 @@ var AnimationsComponent = (function () {
 AnimationsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-animations',
-        template: __webpack_require__(194),
-        styles: [__webpack_require__(174)]
+        template: __webpack_require__(196),
+        styles: [__webpack_require__(175)]
     }),
     __metadata("design:paramtypes", [])
 ], AnimationsComponent);
@@ -220,8 +220,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(195),
-        styles: [__webpack_require__(175)]
+        template: __webpack_require__(197),
+        styles: [__webpack_require__(176)]
     })
 ], AppComponent);
 
@@ -282,24 +282,25 @@ AppModule = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_component__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__intro_intro_component__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_component__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__intro_intro_component__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__examples_examples_component__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__svg_svg_component__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__principles_principles_component__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__selections_selections_component__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__svg_svg_component__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__principles_principles_component__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__selections_selections_component__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__binding_data_binding_data_component__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__load_ext_data_load_ext_data_component__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__load_ext_data_load_ext_data_component__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__animations_animations_component__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__interactivity_interactivity_component__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__scales_scales_component__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__interactivity_interactivity_component__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__scales_scales_component__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__axes_axes_component__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__charts_intro_charts_intro_component__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__bar_chart_bar_chart_component__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__line_chart_line_chart_component__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pie_chart_pie_chart_component__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__line_chart_line_chart_component__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pie_chart_pie_chart_component__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__d3_layouts_d3_layouts_component__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pan_zoom_pan_zoom_component__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pan_zoom_pan_zoom_component__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__geojson_geojson_component__ = __webpack_require__(107);
 /* unused harmony export appRoutes */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return AppRoutingModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoutableComponents; });
@@ -309,6 +310,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -348,7 +350,8 @@ var appRoutes = [
     { path: 'line-chart', component: __WEBPACK_IMPORTED_MODULE_16__line_chart_line_chart_component__["a" /* LineChartComponent */] },
     { path: 'pie-chart', component: __WEBPACK_IMPORTED_MODULE_17__pie_chart_pie_chart_component__["a" /* PieChartComponent */] },
     { path: 'layouts', component: __WEBPACK_IMPORTED_MODULE_18__d3_layouts_d3_layouts_component__["a" /* D3LayoutsComponent */] },
-    { path: 'panning-dragging', component: __WEBPACK_IMPORTED_MODULE_19__pan_zoom_pan_zoom_component__["a" /* PanZoomComponent */] }
+    { path: 'panning-dragging', component: __WEBPACK_IMPORTED_MODULE_19__pan_zoom_pan_zoom_component__["a" /* PanZoomComponent */] },
+    { path: 'geojson', component: __WEBPACK_IMPORTED_MODULE_20__geojson_geojson_component__["a" /* GeojsonComponent */] }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -384,7 +387,8 @@ var RoutableComponents = [
     __WEBPACK_IMPORTED_MODULE_16__line_chart_line_chart_component__["a" /* LineChartComponent */],
     __WEBPACK_IMPORTED_MODULE_17__pie_chart_pie_chart_component__["a" /* PieChartComponent */],
     __WEBPACK_IMPORTED_MODULE_18__d3_layouts_d3_layouts_component__["a" /* D3LayoutsComponent */],
-    __WEBPACK_IMPORTED_MODULE_19__pan_zoom_pan_zoom_component__["a" /* PanZoomComponent */]
+    __WEBPACK_IMPORTED_MODULE_19__pan_zoom_pan_zoom_component__["a" /* PanZoomComponent */],
+    __WEBPACK_IMPORTED_MODULE_20__geojson_geojson_component__["a" /* GeojsonComponent */]
 ];
 //# sourceMappingURL=app.routing.js.map
 
@@ -665,8 +669,8 @@ var AxesComponent = (function () {
 AxesComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-axes',
-        template: __webpack_require__(196),
-        styles: [__webpack_require__(176)]
+        template: __webpack_require__(198),
+        styles: [__webpack_require__(177)]
     }),
     __metadata("design:paramtypes", [])
 ], AxesComponent);
@@ -932,8 +936,8 @@ var BarChartComponent = (function () {
 BarChartComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-bar-chart',
-        template: __webpack_require__(197),
-        styles: [__webpack_require__(177)]
+        template: __webpack_require__(199),
+        styles: [__webpack_require__(178)]
     }),
     __metadata("design:paramtypes", [])
 ], BarChartComponent);
@@ -1363,8 +1367,8 @@ var BindingDataComponent = (function () {
 BindingDataComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-binding-data',
-        template: __webpack_require__(198),
-        styles: [__webpack_require__(178)]
+        template: __webpack_require__(200),
+        styles: [__webpack_require__(179)]
     }),
     __metadata("design:paramtypes", [])
 ], BindingDataComponent);
@@ -1495,8 +1499,8 @@ var ChartsIntroComponent = (function () {
 ChartsIntroComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-charts-intro',
-        template: __webpack_require__(199),
-        styles: [__webpack_require__(179)]
+        template: __webpack_require__(201),
+        styles: [__webpack_require__(180)]
     }),
     __metadata("design:paramtypes", [])
 ], ChartsIntroComponent);
@@ -1524,14 +1528,430 @@ var D3LayoutsComponent = (function () {
     function D3LayoutsComponent() {
     }
     D3LayoutsComponent.prototype.ngOnInit = function () {
+        this.histogram();
+        this.chord();
+        this.force();
+        this.pack();
+        this.partition();
+        this.stack();
+        this.tree();
+        this.treeMap();
+        this.cluster();
+    };
+    D3LayoutsComponent.prototype.histogram = function () {
+        var width = 800, height = 300, pad = 20, left_pad = 100;
+        var x = d3.scale.ordinal().rangeRoundBands([left_pad, width - pad], 0.1);
+        var y = d3.scale.linear().range([height - pad, pad]);
+        var xAxis = d3.svg.axis().scale(x).orient("bottom");
+        var yAxis = d3.svg.axis().scale(y).orient("left");
+        var svg = d3.select("#graph")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+        d3.json('assets/histogram-hours.json', function (data) {
+            data = d3.keys(data).map(function (key) {
+                return { bucket: Number(key),
+                    N: data[key] };
+            });
+            x.domain(data.map(function (d) { return d.bucket; }));
+            y.domain([0, d3.max(data, function (d) { return d.N; })]);
+            svg.append("g")
+                .attr("class", "axis")
+                .attr("transform", "translate(0, " + (height - pad) + ")")
+                .call(xAxis);
+            svg.append("g")
+                .attr("class", "axis")
+                .attr("transform", "translate(" + (left_pad - pad) + ", 0)")
+                .call(yAxis);
+            svg.selectAll('rect')
+                .data(data)
+                .enter()
+                .append('rect')
+                .attr('class', 'bar')
+                .attr('x', function (d) { return x(d.bucket); })
+                .attr('width', x.rangeBand())
+                .attr('y', height - pad)
+                .transition()
+                .delay(function (d) { return d.bucket * 20; })
+                .duration(800)
+                .attr('y', function (d) { return y(d.N); })
+                .attr('height', function (d) { return height - pad - y(d.N); });
+        });
+    };
+    D3LayoutsComponent.prototype.chord = function () {
+        var width = 800, height = 1024, svg = d3.select('#chord')
+            .append('svg')
+            .attr({ width: width,
+            height: height });
+        d3.json('assets/karma_matrix.json', function (data) {
+            var uniques = helpers.uniques(data, function (d) { return d.from; }), matrix = helpers.connection_matrix(data);
+            var innerRadius = Math.min(width, height) * 0.3, outerRadius = innerRadius * 1.1;
+            var chord = d3.layout.chord()
+                .padding(.05)
+                .sortGroups(d3.descending)
+                .sortSubgroups(d3.descending)
+                .sortChords(d3.descending)
+                .matrix(matrix);
+            var diagram = svg.append('g')
+                .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+            var group = diagram.selectAll('.group')
+                .data(chord.groups)
+                .enter()
+                .append('g'), arc = d3.svg.arc()
+                .innerRadius(innerRadius)
+                .outerRadius(outerRadius);
+            group.append('path')
+                .attr('d', arc)
+                .attr('fill', function (d) { return helpers.color(d.index); });
+            group.call(helpers.arc_labels(function (d) { return uniques[d.index]; }, function () { return outerRadius + 10; }));
+            diagram.append('g')
+                .classed('chord', true)
+                .selectAll('path')
+                .data(chord.chords)
+                .enter()
+                .append('path')
+                .attr('d', d3.svg.chord().radius(innerRadius))
+                .attr('fill', function (d, i) { return helpers.color(d.target.index); });
+        });
+    };
+    D3LayoutsComponent.prototype.force = function () {
+        var width = 800, height = 1000, svg = d3.select('#force')
+            .append('svg')
+            .attr({ width: width,
+            height: height });
+        d3.json('assets/karma_matrix.json', function (data) {
+            var nick_id = helpers.nick_id(data, function (d) { return d.from; }), uniques = nick_id.domain(), matrix = helpers.connection_matrix(data);
+            var nodes = uniques.map(function (nick) {
+                return { nick: nick };
+            });
+            var links = data.map(function (d) {
+                return { source: nick_id(d.from),
+                    target: nick_id(d.to),
+                    count: matrix[nick_id(d.from)][nick_id(d.to)] };
+            });
+            var force = d3.layout.force()
+                .nodes(nodes)
+                .links(links)
+                .gravity(0.5)
+                .size([width, height]);
+            force.start();
+            var weight = d3.scale.linear()
+                .domain(d3.extent(nodes.map(function (d) { return d.weight; })))
+                .range([5, 30]), distance = d3.scale.linear()
+                .domain(d3.extent(d3.merge(matrix)))
+                .range([300, 100]), given = d3.scale.linear()
+                .range([2, 35]);
+            force.linkDistance(function (d) {
+                return distance(d.count);
+            });
+            force.start();
+            var link = svg.selectAll("line")
+                .data(links)
+                .enter()
+                .append("line")
+                .classed('link', true);
+            var node = svg.selectAll("circle")
+                .data(nodes)
+                .enter()
+                .append("circle")
+                .attr({ r: function (d) { return weight(d.weight); },
+                fill: function (d) { return helpers.color(d.index); },
+                class: function (d) { return 'nick_' + nick_id(d.nick); } })
+                .classed('node', true)
+                .on('mouseover', function (d) {
+                highlight(d, uniques, given, matrix, nick_id);
+            })
+                .on('mouseout', function (d) {
+                dehighlight(d, weight);
+            });
+            node.call(helpers.tooltip(function (d) { return d.nick; }));
+            node.call(force.drag);
+            force.on("tick", function () {
+                link.attr("x1", function (d) { return d.source.x; })
+                    .attr("y1", function (d) { return d.source.y; })
+                    .attr("x2", function (d) { return d.target.x; })
+                    .attr("y2", function (d) { return d.target.y; });
+                node.attr("cx", function (d) { return d.x; })
+                    .attr("cy", function (d) { return d.y; });
+            });
+        });
+        function highlight(d, uniques, given, matrix, nick_id) {
+            given.domain(d3.extent(matrix[nick_id(d.nick)]));
+            uniques.map(function (nick) {
+                var count = matrix[nick_id(d.nick)][nick_id(nick)];
+                if (nick != d.nick) {
+                    d3.selectAll('circle.nick_' + nick_id(nick))
+                        .transition()
+                        .attr('r', given(count));
+                }
+            });
+        }
+        function dehighlight(d, weight) {
+            d3.selectAll('.node')
+                .transition()
+                .attr('r', function (d) { return weight(d.weight); });
+        }
+    };
+    D3LayoutsComponent.prototype.pack = function () {
+        var width = 800, height = 800, svg = d3.select('#pack')
+            .append('svg')
+            .attr({ width: width,
+            height: height });
+        d3.json('assets/karma_matrix.json', function (data) {
+            var tree = helpers.make_tree(data, function (d, nick) { return d.to == nick; }, function (d, nick) { return d.to == nick; }, function (d) { return d.from; }, function (d) { return d[0].from; });
+            helpers.fixate_colors(data);
+            var pack = d3.layout.pack()
+                .padding(5)
+                .size([width / 1.5, height / 1.5])
+                .value(function (d) { return d.count; });
+            var nodes = pack.nodes(tree);
+            svg.append('g')
+                .attr('transform', 'translate(100, 100)')
+                .selectAll('g')
+                .data(nodes)
+                .enter()
+                .append('circle')
+                .attr({ r: function (d) { return d.r; },
+                cx: function (d) { return d.x; },
+                cy: function (d) { return d.y; } })
+                .attr('fill', function (d) { return helpers.color(d.nick); })
+                .call(helpers.tooltip(function (d) { return d.nick; }));
+        });
+    };
+    D3LayoutsComponent.prototype.partition = function () {
+        var width = 800, height = 800, svg = d3.select('#partition')
+            .append('svg')
+            .attr({ width: width,
+            height: height });
+        d3.json('assets/karma_matrix.json', function (data) {
+            var tree = helpers.make_tree(data, function (d, nick) { return d.to == nick; }, function (d, nick) { return d.to == nick; }, function (d) { return d.from; }, function (d) { return d[0].from; });
+            helpers.fixate_colors(data);
+            var partition = d3.layout.partition()
+                .value(function (d) { return d.count; })
+                .sort(function (a, b) {
+                return d3.descending(a.count, b.count);
+            })
+                .size([2 * Math.PI, 300]);
+            var nodes = partition.nodes(tree);
+            var arc = d3.svg.arc()
+                .innerRadius(function (d) { return d.y; })
+                .outerRadius(function (d) { return d.depth ? d.y + d.dy / d.depth : 0; });
+            nodes = nodes.map(function (d) {
+                d.startAngle = d.x;
+                d.endAngle = d.x + d.dx;
+                return d;
+            });
+            nodes = nodes.filter(function (d) { return d.depth; });
+            var chart = svg.append('g')
+                .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+            var node = chart.selectAll('g')
+                .data(nodes)
+                .enter()
+                .append('g');
+            node.append('path')
+                .attr({ d: arc,
+                fill: function (d) { return helpers.color(d.nick); } });
+            node.filter(function (d) { return d.depth > 1 && d.count > 10; })
+                .call(helpers.arc_labels(function (d) { return d.nick; }, arc.outerRadius()));
+            node.call(helpers.tooltip(function (d) { return d.nick; }));
+        });
+    };
+    D3LayoutsComponent.prototype.stack = function () {
+        var width = 800, height = 768, svg = d3.select('#stack')
+            .append('svg')
+            .attr({ width: width,
+            height: height });
+        d3.json('assets/karma_matrix.json', function (data) {
+            var time = d3.time.format('%Y-%m-%d %H:%M:%S'), extent = d3.extent(data.map(function (d) { return time.parse(d.time); })), time_bins = d3.time.days(extent[0], extent[1], 12);
+            var per_nick = helpers.bin_per_nick(data, function (d) { return d.to; });
+            var time_binned = per_nick.map(function (nick_layer) {
+                return { to: nick_layer[0].to,
+                    values: d3.layout.histogram()
+                        .bins(time_bins)
+                        .value(function (d) { return time.parse(d.time); })(nick_layer) };
+            });
+            var layers = d3.layout.stack()
+                .order('inside-out')
+                .offset('wiggle')
+                .values(function (d) { return d.values; })(time_binned);
+            var margins = {
+                top: 220,
+                right: 50,
+                bottom: 0,
+                left: 50
+            };
+            var x = d3.time.scale()
+                .domain(extent)
+                .range([margins.left, width - margins.right]), y = d3.scale.linear()
+                .domain([0, d3.max(layers, function (layer) {
+                    return d3.max(layer.values, function (d) {
+                        return d.y0 + d.y;
+                    });
+                })])
+                .range([height - margins.top, 0]);
+            var offset = 100, area = d3.svg.area()
+                .x(function (d) { return x(d.x); })
+                .y0(function (d) { return y(d.y0) + offset; })
+                .y1(function (d) { return y(d.y0 + d.y) + offset; });
+            svg.selectAll('path')
+                .data(layers)
+                .enter()
+                .append('path')
+                .attr('d', function (d) { return area(d.values); })
+                .style('fill', function (d, i) { return helpers.color(i); })
+                .call(helpers.tooltip(function (d) { return d.to; }));
+            var xAxis = d3.svg.axis()
+                .scale(x)
+                .tickFormat(d3.time.format('%b %Y'))
+                .ticks(d3.time.months, 2)
+                .orient('bottom');
+            svg.append('g')
+                .attr('transform', 'translate(0, ' + (height - 100) + ')')
+                .classed('axis', true)
+                .call(xAxis);
+        });
+    };
+    D3LayoutsComponent.prototype.tree = function () {
+        var width = 800, height = 1024, svg = d3.select('#tree')
+            .append('svg')
+            .attr({ width: width,
+            height: height });
+        d3.json('assets/karma_matrix.json', function (data) {
+            helpers.fixate_colors(data);
+            var tree = helpers.make_tree(data, function (d, nick) { return d.to == nick; }, function (d, nick) { return d.from == nick; }, function (d) { return d.to; }, function (d) { return d[0].to; });
+            var diagonal = d3.svg.diagonal.radial()
+                .projection(function (d) { return [d.y, d.x / 180 * Math.PI]; });
+            var layout = d3.layout.tree()
+                .size([360, width / 2 - 120]);
+            var nodes = layout.nodes(tree), links = layout.links(nodes);
+            var chart = svg.append('g')
+                .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+            var link = chart.selectAll(".link")
+                .data(links)
+                .enter().append("path")
+                .attr("class", "link")
+                .attr("d", diagonal);
+            var node = chart.selectAll(".node")
+                .data(nodes)
+                .enter().append("g")
+                .attr("class", "node")
+                .attr("transform", function (d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; });
+            node.append("circle")
+                .attr("r", 4.5)
+                .attr('fill', function (d) { return helpers.color(d.nick); });
+            node.append("text")
+                .attr("dy", ".31em")
+                .attr("text-anchor", function (d) { return d.x < 180 ? "start" : "end"; })
+                .attr("transform", function (d) { return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)"; })
+                .text(function (d) { return d.nick; })
+                .style('font-size', function (d) { return d.depth > 1 ? '0.8em' : '1.1em'; });
+        });
+    };
+    D3LayoutsComponent.prototype.treeMap = function () {
+        var width = 800, height = 800, svg = d3.select('#tree-map')
+            .append('svg')
+            .attr({ width: width,
+            height: height });
+        d3.json('assets/karma_matrix.json', function (data) {
+            var tree = helpers.make_tree(data, function (d, nick) { return d.to == nick; }, function (d, nick) { return d.to == nick; }, function (d) { return d.from; }, function (d) { return d[0].from; });
+            helpers.fixate_colors(data);
+            var treemap = d3.layout.treemap()
+                .size([width, height])
+                .padding(3)
+                .value(function (d) { return d.count; })
+                .sort(d3.ascending);
+            var nodes = treemap.nodes(tree)
+                .filter(function (d) { return d.depth; });
+            var node = svg.selectAll('g')
+                .data(nodes)
+                .enter()
+                .append('g')
+                .classed('node', true)
+                .attr('transform', function (d) { return 'translate(' + d.x + ',' + d.y + ')'; });
+            node.append('rect')
+                .attr({ width: function (d) { return d.dx; },
+                height: function (d) { return d.dy; },
+                fill: function (d) { return helpers.color(d.nick); } });
+            var leaves = node.filter(function (d) { return d.depth > 1; });
+            leaves.append('text')
+                .text(function (d) { return d.nick; })
+                .attr('text-anchor', 'middle')
+                .attr('transform', function (d) {
+                var box = this.getBBox(), transform = 'translate(' + (d.dx / 2) + ',' + (d.dy / 2 + box.height / 2) + ')';
+                if (d.dx < box.width && d.dx > box.height && d.dy > box.width) {
+                    transform += 'rotate(-90)';
+                }
+                else if (d.dx < box.width || d.dy < box.height) {
+                    d3.select(this).remove();
+                }
+                return transform;
+            });
+            leaves.call(helpers.tooltip(function (d) { return d.parent.nick; }));
+            leaves.on('mouseover', function (d) {
+                var belongs_to = d.parent.nick;
+                svg.selectAll('.node')
+                    .transition()
+                    .style('opacity', function (d) {
+                    if (d.depth > 1 && d.parent.nick != belongs_to) {
+                        return 0.3;
+                    }
+                    if (d.depth == 1 && d.nick != belongs_to) {
+                        return 0.3;
+                    }
+                    return 1;
+                });
+            })
+                .on('mouseout', function () {
+                d3.selectAll('.node')
+                    .transition()
+                    .style('opacity', 1);
+            });
+        });
+    };
+    D3LayoutsComponent.prototype.cluster = function () {
+        var width = 800, height = 2800, svg = d3.select('#cluster')
+            .append('svg')
+            .attr({ width: width,
+            height: height });
+        d3.json('assets/karma_matrix.json', function (data) {
+            var tree = helpers.make_tree(data, function (d, nick) { return d.to == nick; }, function (d, nick) { return d.from == nick; }, function (d) { return d.to; }, function (d) { return d[0].to; });
+            helpers.fixate_colors(data);
+            var diagonal = d3.svg.diagonal()
+                .projection(function (d) { return [d.y, d.x]; });
+            var cluster = d3.layout.cluster()
+                .size([height, width - 150])
+                .sort(function (a, b) { return d3.descending(a.count, b.count); });
+            var nodes = cluster.nodes(tree), links = cluster.links(nodes);
+            svg.selectAll('.link')
+                .data(links)
+                .enter()
+                .append('path')
+                .classed('link', true)
+                .attr('d', diagonal);
+            var node = svg.selectAll('.node')
+                .data(nodes)
+                .enter()
+                .append('g')
+                .classed('node', true)
+                .attr('transform', function (d) { return 'translate(' + d.y + ', ' + d.x + ')'; });
+            node.append('circle')
+                .attr({ r: 5,
+                fill: function (d) { return helpers.color(d.nick); } });
+            node.append('text')
+                .text(function (d) { return d.nick; })
+                .attr("dx", function (d) { return d.children.length ? -8 : 8; })
+                .attr("dy", function (d) { return d.depth > 1 ? 3 : 5; })
+                .attr("text-anchor", function (d) { return d.children.length ? "end" : "start"; })
+                .style('font-size', function (d) { return d.depth > 1 ? '0.8em' : '1.1em'; });
+        });
     };
     return D3LayoutsComponent;
 }());
 D3LayoutsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-d3-layouts',
-        template: __webpack_require__(200),
-        styles: [__webpack_require__(180)]
+        template: __webpack_require__(202),
+        styles: [__webpack_require__(181)]
     }),
     __metadata("design:paramtypes", [])
 ], D3LayoutsComponent);
@@ -1565,8 +1985,8 @@ var ExamplesComponent = (function () {
 ExamplesComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-examples',
-        template: __webpack_require__(201),
-        styles: [__webpack_require__(181)]
+        template: __webpack_require__(203),
+        styles: [__webpack_require__(182)]
     }),
     __metadata("design:paramtypes", [])
 ], ExamplesComponent);
@@ -1575,6 +1995,174 @@ ExamplesComponent = __decorate([
 
 /***/ }),
 /* 107 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GeojsonComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var GeojsonComponent = (function () {
+    function GeojsonComponent() {
+    }
+    GeojsonComponent.prototype.ngOnInit = function () {
+        this.drawGeoJSON();
+        this.drawMap();
+    };
+    GeojsonComponent.prototype.drawGeoJSON = function () {
+        var context = d3.select("canvas").node().getContext("2d"), path = d3.geo.path().context(context);
+        d3.json("assets/10m.json", function (error, us) {
+            if (error)
+                throw error;
+            context.beginPath();
+            path(topojson.mesh(us));
+            context.stroke();
+        });
+    };
+    GeojsonComponent.prototype.drawMap = function () {
+        var width = 960, height = 500;
+        var options = [
+            { name: "Aitoff", projection: d3.geo.aitoff() },
+            { name: "Albers", projection: d3.geo.albers().scale(145).parallels([20, 50]) },
+            { name: "August", projection: d3.geo.august().scale(60) },
+            { name: "Baker", projection: d3.geo.baker().scale(100) },
+            { name: "Boggs", projection: d3.geo.boggs() },
+            { name: "Bonne", projection: d3.geo.bonne().scale(120) },
+            { name: "Bromley", projection: d3.geo.bromley() },
+            { name: "Collignon", projection: d3.geo.collignon().scale(93) },
+            { name: "Craster Parabolic", projection: d3.geo.craster() },
+            { name: "Eckert I", projection: d3.geo.eckert1().scale(165) },
+            { name: "Eckert II", projection: d3.geo.eckert2().scale(165) },
+            { name: "Eckert III", projection: d3.geo.eckert3().scale(180) },
+            { name: "Eckert IV", projection: d3.geo.eckert4().scale(180) },
+            { name: "Eckert V", projection: d3.geo.eckert5().scale(170) },
+            { name: "Eckert VI", projection: d3.geo.eckert6().scale(170) },
+            { name: "Eisenlohr", projection: d3.geo.eisenlohr().scale(60) },
+            { name: "Equirectangular (Plate Carrée)", projection: d3.geo.equirectangular() },
+            { name: "Hammer", projection: d3.geo.hammer().scale(165) },
+            { name: "Hill", projection: d3.geo.hill() },
+            { name: "Goode Homolosine", projection: d3.geo.homolosine() },
+            { name: "Kavrayskiy VII", projection: d3.geo.kavrayskiy7() },
+            { name: "Lambert cylindrical equal-area", projection: d3.geo.cylindricalEqualArea() },
+            { name: "Lagrange", projection: d3.geo.lagrange().scale(120) },
+            { name: "Larrivée", projection: d3.geo.larrivee().scale(95) },
+            { name: "Laskowski", projection: d3.geo.laskowski().scale(120) },
+            { name: "Loximuthal", projection: d3.geo.loximuthal() },
+            // {name: "Mercator", projection: d3.geo.mercator().scale(490 / 2 / Math.PI)},
+            { name: "Miller", projection: d3.geo.miller().scale(100) },
+            { name: "McBryde–Thomas Flat-Polar Parabolic", projection: d3.geo.mtFlatPolarParabolic() },
+            { name: "McBryde–Thomas Flat-Polar Quartic", projection: d3.geo.mtFlatPolarQuartic() },
+            { name: "McBryde–Thomas Flat-Polar Sinusoidal", projection: d3.geo.mtFlatPolarSinusoidal() },
+            { name: "Mollweide", projection: d3.geo.mollweide().scale(165) },
+            { name: "Natural Earth", projection: d3.geo.naturalEarth() },
+            { name: "Nell–Hammer", projection: d3.geo.nellHammer() },
+            { name: "Polyconic", projection: d3.geo.polyconic().scale(100) },
+            { name: "Robinson", projection: d3.geo.robinson() },
+            { name: "Sinusoidal", projection: d3.geo.sinusoidal() },
+            { name: "Sinu-Mollweide", projection: d3.geo.sinuMollweide() },
+            { name: "van der Grinten", projection: d3.geo.vanDerGrinten().scale(75) },
+            { name: "van der Grinten IV", projection: d3.geo.vanDerGrinten4().scale(120) },
+            { name: "Wagner IV", projection: d3.geo.wagner4() },
+            { name: "Wagner VI", projection: d3.geo.wagner6() },
+            { name: "Wagner VII", projection: d3.geo.wagner7() },
+            { name: "Winkel Tripel", projection: d3.geo.winkel3() }
+        ];
+        options.forEach(function (o) {
+            o.projection.rotate([0, 0]).center([0, 0]);
+        });
+        var interval = setInterval(loop, 1500), i = 0, n = options.length - 1;
+        var projection = options[i].projection;
+        var path = d3.geo.path()
+            .projection(projection);
+        var graticule = d3.geo.graticule();
+        var svg = d3.select("#geo-path-projections").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+        svg.append("defs").append("path")
+            .datum({ type: "Sphere" })
+            .attr("id", "sphere")
+            .attr("d", path);
+        svg.append("use")
+            .attr("class", "stroke")
+            .attr("xlink:href", "#sphere");
+        svg.append("use")
+            .attr("class", "fill")
+            .attr("xlink:href", "#sphere");
+        svg.append("path")
+            .datum(graticule)
+            .attr("class", "graticule")
+            .attr("d", path);
+        d3.json("assets/world-110m.json", function (error, world) {
+            if (error)
+                throw error;
+            svg.insert("path", ".graticule")
+                .datum(topojson.feature(world, world.objects.land))
+                .attr("class", "land")
+                .attr("d", path);
+        });
+        var menu = d3.select("#projection-menu")
+            .on("change", change);
+        menu.selectAll("option")
+            .data(options)
+            .enter().append("option")
+            .text(function (d) { return d.name; });
+        function loop() {
+            var j = Math.floor(Math.random() * n);
+            menu.property("selectedIndex", i = j + (j >= i));
+            update(options[i]);
+        }
+        function change() {
+            clearInterval(interval);
+            update(options[this.selectedIndex]);
+        }
+        function update(option) {
+            svg.selectAll("path").transition()
+                .duration(750)
+                .attrTween("d", projectionTween(projection, projection = option.projection));
+        }
+        function projectionTween(projection0, projection1) {
+            return function (d) {
+                var t = 0;
+                var projection = d3.geo.projection(project)
+                    .scale(1)
+                    .translate([width / 2, height / 2]);
+                var path = d3.geo.path()
+                    .projection(projection);
+                function project(λ, φ) {
+                    λ *= 180 / Math.PI, φ *= 180 / Math.PI;
+                    var p0 = projection0([λ, φ]), p1 = projection1([λ, φ]);
+                    return [(1 - t) * p0[0] + t * p1[0], (1 - t) * -p0[1] + t * -p1[1]];
+                }
+                return function (_) {
+                    t = _;
+                    return path(d);
+                };
+            };
+        }
+    };
+    return GeojsonComponent;
+}());
+GeojsonComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'app-geojson',
+        template: __webpack_require__(204),
+        styles: [__webpack_require__(183)]
+    }),
+    __metadata("design:paramtypes", [])
+], GeojsonComponent);
+
+//# sourceMappingURL=geojson.component.js.map
+
+/***/ }),
+/* 108 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1600,8 +2188,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-home',
-        template: __webpack_require__(202),
-        styles: [__webpack_require__(182)]
+        template: __webpack_require__(205),
+        styles: [__webpack_require__(184)]
     }),
     __metadata("design:paramtypes", [])
 ], HomeComponent);
@@ -1609,7 +2197,7 @@ HomeComponent = __decorate([
 //# sourceMappingURL=home.component.js.map
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1645,8 +2233,8 @@ var InteractivityComponent = (function () {
 InteractivityComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-interactivity',
-        template: __webpack_require__(203),
-        styles: [__webpack_require__(183)]
+        template: __webpack_require__(206),
+        styles: [__webpack_require__(185)]
     }),
     __metadata("design:paramtypes", [])
 ], InteractivityComponent);
@@ -1654,7 +2242,7 @@ InteractivityComponent = __decorate([
 //# sourceMappingURL=interactivity.component.js.map
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1680,8 +2268,8 @@ var IntroComponent = (function () {
 IntroComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-intro',
-        template: __webpack_require__(204),
-        styles: [__webpack_require__(184)]
+        template: __webpack_require__(207),
+        styles: [__webpack_require__(186)]
     }),
     __metadata("design:paramtypes", [])
 ], IntroComponent);
@@ -1689,7 +2277,7 @@ IntroComponent = __decorate([
 //# sourceMappingURL=intro.component.js.map
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1846,8 +2434,8 @@ var LineChartComponent = (function () {
 LineChartComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-line-chart',
-        template: __webpack_require__(205),
-        styles: [__webpack_require__(185)]
+        template: __webpack_require__(208),
+        styles: [__webpack_require__(187)]
     }),
     __metadata("design:paramtypes", [])
 ], LineChartComponent);
@@ -1855,7 +2443,7 @@ LineChartComponent = __decorate([
 //# sourceMappingURL=line-chart.component.js.map
 
 /***/ }),
-/* 111 */
+/* 112 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1894,8 +2482,8 @@ var LoadExtDataComponent = (function () {
 LoadExtDataComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-load-ext-data',
-        template: __webpack_require__(206),
-        styles: [__webpack_require__(186)]
+        template: __webpack_require__(209),
+        styles: [__webpack_require__(188)]
     }),
     __metadata("design:paramtypes", [])
 ], LoadExtDataComponent);
@@ -1903,7 +2491,7 @@ LoadExtDataComponent = __decorate([
 //# sourceMappingURL=load-ext-data.component.js.map
 
 /***/ }),
-/* 112 */
+/* 113 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2126,8 +2714,8 @@ var PanZoomComponent = (function () {
 PanZoomComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-pan-zoom',
-        template: __webpack_require__(207),
-        styles: [__webpack_require__(187)]
+        template: __webpack_require__(210),
+        styles: [__webpack_require__(189)]
     }),
     __metadata("design:paramtypes", [])
 ], PanZoomComponent);
@@ -2135,7 +2723,7 @@ PanZoomComponent = __decorate([
 //# sourceMappingURL=pan-zoom.component.js.map
 
 /***/ }),
-/* 113 */
+/* 114 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2477,8 +3065,8 @@ var PieChartComponent = (function () {
 PieChartComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-pie-chart',
-        template: __webpack_require__(208),
-        styles: [__webpack_require__(188)]
+        template: __webpack_require__(211),
+        styles: [__webpack_require__(190)]
     }),
     __metadata("design:paramtypes", [])
 ], PieChartComponent);
@@ -2486,7 +3074,7 @@ PieChartComponent = __decorate([
 //# sourceMappingURL=pie-chart.component.js.map
 
 /***/ }),
-/* 114 */
+/* 115 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2512,8 +3100,8 @@ var PrinciplesComponent = (function () {
 PrinciplesComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-principles',
-        template: __webpack_require__(209),
-        styles: [__webpack_require__(189)]
+        template: __webpack_require__(212),
+        styles: [__webpack_require__(191)]
     }),
     __metadata("design:paramtypes", [])
 ], PrinciplesComponent);
@@ -2521,7 +3109,7 @@ PrinciplesComponent = __decorate([
 //# sourceMappingURL=principles.component.js.map
 
 /***/ }),
-/* 115 */
+/* 116 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2977,8 +3565,8 @@ var ScalesComponent = (function () {
 ScalesComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-scales',
-        template: __webpack_require__(210),
-        styles: [__webpack_require__(190)]
+        template: __webpack_require__(213),
+        styles: [__webpack_require__(192)]
     }),
     __metadata("design:paramtypes", [])
 ], ScalesComponent);
@@ -2986,7 +3574,7 @@ ScalesComponent = __decorate([
 //# sourceMappingURL=scales.component.js.map
 
 /***/ }),
-/* 116 */
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3018,8 +3606,8 @@ var SelectionsComponent = (function () {
 SelectionsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-selections',
-        template: __webpack_require__(211),
-        styles: [__webpack_require__(191)]
+        template: __webpack_require__(214),
+        styles: [__webpack_require__(193)]
     }),
     __metadata("design:paramtypes", [])
 ], SelectionsComponent);
@@ -3027,7 +3615,7 @@ SelectionsComponent = __decorate([
 //# sourceMappingURL=selections.component.js.map
 
 /***/ }),
-/* 117 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3053,8 +3641,8 @@ var SvgComponent = (function () {
 SvgComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-svg',
-        template: __webpack_require__(212),
-        styles: [__webpack_require__(192)]
+        template: __webpack_require__(215),
+        styles: [__webpack_require__(194)]
     }),
     __metadata("design:paramtypes", [])
 ], SvgComponent);
@@ -3062,7 +3650,7 @@ SvgComponent = __decorate([
 //# sourceMappingURL=svg.component.js.map
 
 /***/ }),
-/* 118 */
+/* 119 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3078,7 +3666,6 @@ var environment = {
 //# sourceMappingURL=environment.js.map
 
 /***/ }),
-/* 119 */,
 /* 120 */,
 /* 121 */,
 /* 122 */,
@@ -3133,7 +3720,8 @@ var environment = {
 /* 171 */,
 /* 172 */,
 /* 173 */,
-/* 174 */
+/* 174 */,
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -3150,23 +3738,6 @@ exports.push([module.i, "text {\r\n\tfill: 'black';\r\n    font-family: 'Arial';
 module.exports = module.exports.toString();
 
 /***/ }),
-/* 175 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, "@-webkit-keyframes spinnerRotate\r\n{\r\n    from{-webkit-transform:rotate(0deg);}\r\n    to{-webkit-transform:rotate(360deg);}\r\n}\r\n\r\n@keyframes spinnerRotate\r\n{\r\n    from{-webkit-transform:rotate(0deg);}\r\n    to{-webkit-transform:rotate(360deg);}\r\n}\r\n\r\n@-webkit-keyframes moveLinear\r\n{\r\n    from{float: left;}\r\n    to{float: right;}\r\n}\r\n\r\n@keyframes moveLinear\r\n{\r\n    from{float: left;}\r\n    to{float: right;}\r\n}\r\n\r\n#main-logo{\r\n    -webkit-animation-name: moveLinear;\r\n            animation-name: moveLinear;\r\n    -webkit-animation-duration: 5s;\r\n            animation-duration: 5s;\r\n    -webkit-animation-iteration-count: infinite;\r\n            animation-iteration-count: infinite;\r\n    -webkit-animation-timing-function: linear;\r\n            animation-timing-function: linear;\r\n}\r\n\r\n#main-logo img{\r\n    width: 150px;\r\n}\r\n\r\n.main-content{\r\n    border-left: 1px solid #000;\r\n    /* height: stretch; */\r\n    margin-bottom: 30px;\r\n}\r\n\r\n.navigation{    \r\n    position: fixed;\r\n    right: 0;\r\n    margin-right: 15px;\r\n    overflow-y: auto;\r\n    background: #f1eded;\r\n    padding: 15px 0;\r\n}", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
 /* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3175,7 +3746,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "@-webkit-keyframes spinnerRotate\r\n{\r\n    from{-webkit-transform:rotate(0deg);}\r\n    to{-webkit-transform:rotate(360deg);}\r\n}\r\n\r\n@keyframes spinnerRotate\r\n{\r\n    from{-webkit-transform:rotate(0deg);}\r\n    to{-webkit-transform:rotate(360deg);}\r\n}\r\n\r\n@-webkit-keyframes moveLinear\r\n{\r\n    from{float: left;}\r\n    to{float: right;}\r\n}\r\n\r\n@keyframes moveLinear\r\n{\r\n    from{float: left;}\r\n    to{float: right;}\r\n}\r\n\r\n#main-logo{\r\n    -webkit-animation-name: moveLinear;\r\n            animation-name: moveLinear;\r\n    -webkit-animation-duration: 5s;\r\n            animation-duration: 5s;\r\n    -webkit-animation-iteration-count: infinite;\r\n            animation-iteration-count: infinite;\r\n    -webkit-animation-timing-function: linear;\r\n            animation-timing-function: linear;\r\n}\r\n\r\n#main-logo img{\r\n    width: 150px;\r\n}\r\n\r\n.main-content{\r\n    border-left: 1px solid #000;\r\n    /* height: stretch; */\r\n    margin-bottom: 30px;\r\n}\r\n\r\n.navigation{    \r\n    position: fixed;\r\n    right: 0;\r\n    margin-right: 15px;\r\n    overflow-y: auto;\r\n    background: #f1eded;\r\n    padding: 15px 0;\r\n}", ""]);
 
 // exports
 
@@ -3226,7 +3797,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "svg rect {\r\n    fill: orange;\r\n}\r\n\r\nsvg text {\r\n    fill:white;\r\n    font: 10px sans-serif;\r\n    text-anchor: end;\r\n}\r\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -3243,7 +3814,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "svg rect {\r\n    fill: orange;\r\n}\r\n\r\nsvg text {\r\n    fill:white;\r\n    font: 10px sans-serif;\r\n    text-anchor: end;\r\n}\r\n", ""]);
 
 // exports
 
@@ -3362,7 +3933,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, ":host ::ng-deep svg{\r\n    border: none;\r\n}", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -3396,7 +3967,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ":host ::ng-deep svg{\r\n    border: none;\r\n}", ""]);
 
 // exports
 
@@ -3456,124 +4027,161 @@ exports.push([module.i, "", ""]);
 module.exports = module.exports.toString();
 
 /***/ }),
-/* 193 */,
+/* 193 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
 /* 194 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+/* 195 */,
+/* 196 */
 /***/ (function(module, exports) {
 
 module.exports = "<p>\r\n  Transition is the process of changing from one state to another of an item. D3.js provides a transition() method to perform transition in the HTML page. \r\n</p>\r\n<p>\r\n  The transition() method is available for all selectors and it starts the transition process. This method supports most of the selection methods such as – attr(), style(), etc. But, It does not support the append() and the data() methods, which need to be called before the transition() method. Also, it provides methods specific to transition like duration(), ease(), etc.\r\n</p>\r\n<ul>\r\n  <li>transition.duration</li>\r\n  <li>transition.ease</li>\r\n  <li>transition.delay</li>\r\n</ul>\r\n<h3>Example for Delay</h3>\r\n<button class=\"btn btn-default\" (click)=\"simpleTransition()\">Simple Transition</button>\r\n<button class=\"btn btn-default\" (click)=\"transitionWithDuration()\">Transition with duration</button>\r\n<button class=\"btn btn-default\" (click)=\"simpleEaseTransition()\">Simple Ease Transition</button>\r\n<button class=\"btn btn-default\" (click)=\"transitionWithEase()\">Transition with ease</button>\r\n<button class=\"btn btn-default\" (click)=\"transitionWithDelay()\">Transition with Delay</button>\r\n<button class=\"btn btn-default btn-warning\" (click)=\"hideTransition = !hideTransition\">Toogle</button>\r\n<div [hidden]=\"hideTransition\">\r\n  <h2>Transition with Ease</h2>\r\n  <svg id=\"svg-container\" width=\"960\" height=\"500\"></svg>\r\n</div>\r\n\r\n<h2>Lifecycle of Transition</h2>\r\n<p>\r\nTransition has a four-phased lifecycle −\r\n</p>\r\n<ul>\r\n  <li>The transition is scheduled.</li>\r\n  <li>The transition starts.</li>\r\n  <li>The transition runs.</li>\r\n  <li>The transition ends.</li>\r\n</ul>\r\n\r\n<h4>The Transition Starts</h4>\r\n<p>\r\nA transition starts based on its delay, which was specified when the transition was scheduled. If no delay was specified, then the transition starts as soon as possible, which is typically after a few milliseconds.\r\n</p>\r\n<p>\r\nIf the transition has a delay, then the starting value should be set only when the transition starts. We can do this by listening to the start event −\r\n</p>\r\n<button class=\"btn btn-default\" (click)=\"identifyTransitionStart()\">Identify Transition Delay</button>\r\n<ul>\r\n  <li *ngFor=\"let item of methods\">{{item}}</li>\r\n</ul>"
 
 /***/ }),
-/* 195 */
+/* 197 */
 /***/ (function(module, exports) {
 
 module.exports = "<!-- <h4 class=\"pull-right\">\r\n  <a href=\"/d3js\">Go Home</a>\r\n</h4>\r\n<div class=\"clearfix\"></div> \r\n<div id=\"main-logo\"><img src=\"assets/logo.jpg\"/></div>\r\n<div class=\"clearfix\"></div>-->\r\n<h1 class=\"text-center\">D3.js Tutorial</h1>\r\n<div class=\"col-sm-offset-2 col-sm-7 main-content\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n<div class=\"col-sm-offset-1 col-sm-2 navigation\">\r\n  <app-home></app-home>\r\n</div>"
 
 /***/ }),
-/* 196 */
+/* 198 */
 /***/ (function(module, exports) {
 
 module.exports = "<h2>Axis</h2>\r\n<p>The axis component is designed to work with D3’s quantitative, time and ordinal scales.</p>\r\n<h4>d3.svg.axis()</h4>\r\n<h4>axis(selection)</h4>\r\n<p>Apply the axis to a selection or transition. The selection must contain an svg or g element.</p>\r\n<pre>\r\n  <code>\r\n    d3.select(\".ex-1\").append(\"svg\")\r\n    .attr(\"class\", \"axis\")\r\n    .attr(\"width\", 600)\r\n    .attr(\"height\", 30)\r\n    .append(\"g\")\r\n    .attr(\"transform\", \"translate(0,30)\")\r\n    .call(axis);\r\n  </code>\r\n</pre>\r\n<button class=\"btn btn-default\" (click)=\"simpleAxis()\">Run</button>\r\n<button class=\"btn btn-default\" (click)=\"axisWithScale()\">Run with Scale</button>\r\n<button class=\"btn btn-default\" (click)=\"axisWithScale2()\">Run with Scale 2</button>\r\n<p>Orientation: <input type=\"text\" [(ngModel)]=\"orient\"/></p>\r\n<button class=\"btn btn-default\" (click)=\"axisWithOrient(orient)\">Run with Orientation</button>\r\n<div class=\"ex-1\"></div>\r\n<h4>axis.scale([scale])</h4>\r\n<p>If scale is specified, sets the scale and returns the axis. If scale is not specified, returns the current scale which defaults to a linear scale.</p>\r\n<h4>axis.orient([orientation])</h4>\r\n<p>\r\n  If orientation is specified, sets the orientation and returns the axis. If orientation is not specified, returns the current orientation which defaults to \"bottom\". The following orientations are supported:\r\n</p>\r\n<pre>\r\n  \"top\" - horizontal axis with ticks above the domain path\r\n  \"bottom\" - horizontal axis with ticks below the domain path\r\n  \"left\" - vertical axis with ticks to the left of the domain path\r\n  \"right\" - vertical axis with ticks to the right of the domain path  \r\n</pre>\r\n<p>\r\n  If the specified orientation is not one of the supported values, the axis reverts to the default orientation. Changing the orientation affects the position of the ticks and their labels in relation to the axis path, but does not change the position of the axis itself; to change the position of the axis with respect to the plot, specify a transform attribute on the containing g element.\r\n</p>\r\n<h4>axis.ticks([arguments…])</h4>\r\n<p>\r\n  If arguments are specified, stores the specified arguments for subsequent use in generating ticks and returns the axis. The arguments will later be passed to scale.ticks to generate tick values (unless tick values are specified explicitly via axis.tickValues). The arguments are also passed to the scale’s tickFormat method to generate the default tick format. If no arguments are specified, returns the current tick arguments, which default to [10].\r\n</p>\r\n<h4>axis.tickValues([values])</h4>\r\n<p>\r\n  If a values array is specified, the specified values are used for ticks, rather than using the scale's automatic tick generator. If values is null, clears any previously-set explicit tick values, reverting back to the scale's tick generator. If values is not specified, returns the currently-set tick values, which defaults to null. For example, to generate ticks at specific values:\r\n</p>\r\n<pre>\r\n  var xAxis = d3.svg.axis()\r\n    .scale(x)\r\n    .tickValues([1, 2, 3, 5, 8, 13, 21]);\r\n</pre>\r\n<p>\r\n  The explicit tick values take precedent over the tick arguments set by axis.ticks. However, any tick arguments will still be passed to the scale's tickFormat function if a tick format is not also set; thus, it may be valid to set both axis.ticks and axis.tickValues.\r\n</p>\r\n<button class=\"btn btn-default\" (click)=\"axisWithTick()\">Run with Ticks</button>\r\n<!-- <button class=\"btn btn-default\" (click)=\"axisWithTickFormat()\">Run with Tick Format</button> -->\r\n<button class=\"btn btn-default\" (click)=\"axisWithTickValues()\">Run with Tick Values</button>\r\n<div class=\"ex-2\"></div>\r\n<h4>axis.tickSize([inner, outer])</h4>\r\n<p>If inner, outer are specified, sets the inner and outer tick sizes to the specified value and returns the axis. If inner, outer are not specified, returns the current inner tick size, which defaults to 6.</p>\r\n<h4>axis.innerTickSize([size])</h4>\r\n<p>\r\nIf size is specified, sets the inner tick size to the specified value and returns the axis. If size is not specified, returns the current inner tick size, which defaults to 6. The inner tick size controls the length of the tick lines, offset from the native position of the axis.\r\n</p>\r\n<p>Inner: <input [(ngModel)]=\"inner\"/>\r\nOuter: <input [(ngModel)]=\"outer\"/></p>\r\n<button class=\"btn btn-default\" (click)=\"axisWithTickSize(inner,outer)\">Run with Tick Size</button>\r\n<button class=\"btn btn-default\" (click)=\"getInnerTickSize()\">Get Inner TickSize</button>\r\n<p>Inner Tick Size: <input [(ngModel)]=\"innerTickSize\"/>\r\n<button class=\"btn btn-default\" (click)=\"setInnerTickSize(innerTickSize)\">Set Inner TickSize</button>\r\n<div class=\"ex-3\"></div>\r\n<h4>axis.outerTickSize([size])</h4>\r\n<p>\r\n  If size is specified, sets the outer tick size to the specified value and returns the axis. If size is not specified, returns the current outer tick size, which defaults to 6. The outer tick size controls the length of the square ends of the domain path, offset from the native position of the axis. Thus, the “outer ticks” are not actually ticks but part of the domain path, and their position is determined by the associated scale's domain extent. Thus, outer ticks may overlap with the first or last inner tick. An outer tick size of 0 suppresses the square ends of the domain path, instead producing a straight line.\r\n</p>\r\n<button class=\"btn btn-default\" (click)=\"getOuterTickSize()\">Get Outer TickSize</button>\r\n<p>Outer Tick Size: <input [(ngModel)]=\"outerTickSize\"/>\r\n<button class=\"btn btn-default\" (click)=\"setOuterTickSize(outerTickSize)\">Set Outer TickSize</button>\r\n<div class=\"ex-4\"></div>\r\n<h4>axis.tickPadding</h4>\r\n<p>\r\n  If padding is specified, sets the padding to the specified value in pixels and returns the axis. If padding is not specified, returns the current padding which defaults to 3 pixels.\r\n</p>\r\n<button class=\"btn btn-default\" (click)=\"getTickPadding()\">Get TickPadding</button>\r\n<p>Tick Padding: <input [(ngModel)]=\"tickPadding\"/>\r\n<button class=\"btn btn-default\" (click)=\"setTickPadding(tickPadding)\">Set TickPadding</button>\r\n<div class=\"ex-5\"></div>\r\n<h4>axis.tickFormat([format])</h4>\r\n<p>\r\n  If format is specified, sets the format to the specified function and returns the axis. If format is not specified, returns the current format function, which defaults to null. A null format indicates that the scale's default formatter should be used, which is generated by calling scale.tickFormat. In this case, the arguments specified by ticks are likewise passed to scale.tickFormat.\r\n</p>\r\n<a target=\"_blank\" href=\"https://github.com/d3/d3-3.x-api-reference/blob/master/Formatting.md#d3_format\">d3.format</a>\r\n\r\n<button class=\"btn btn-default\" (click)=\"getTickFormat()\">Get TickFormat</button>\r\n<p>Tick Format: <input [(ngModel)]=\"tickFormat\"/>\r\n<button class=\"btn btn-default\" (click)=\"setTickFormat(tickFormat)\">Set TickFormat</button>\r\n<div class=\"ex-6\"></div>\r\n<strong>\r\n  Note: for log scales, the number of ticks cannot be customized; however, the number of tick labels can be customized via ticks. Likewise, the tick formatter for log scales is typically specified via ticks rather than tickFormat, so as to preserve the default label-hiding behavior.\r\n</strong>"
 
 /***/ }),
-/* 197 */
+/* 199 */
 /***/ (function(module, exports) {
 
 module.exports = "<h4>Bar Chart</h4>\r\n<svg width=\"700\" height=\"500\"></svg>\r\n\r\n<h4>Bar Chart 2</h4>\r\n<svg id=\"bar-chart2\" width=\"700\" height=\"500\"></svg>\r\n\r\n<h4>Bar Chart 3</h4>\r\n<div id=\"bar-chart-with-tooltip\"></div>"
 
 /***/ }),
-/* 198 */
+/* 200 */
 /***/ (function(module, exports) {
 
 module.exports = "<h2>What is a Data Join?</h2>\r\n<span>\r\n  Data join enables us to inject, modify and remove elements (HTML element as well as embedded SVG elements) based on the data set in the existing HTML document. By default, each data item in the data set corresponds to an element (graphical) in the document.<br/>\r\n  As the data set changes, the corresponding element can also be manipulated easily. Data join creates a close relationship between our data and graphical elements of the document. Data join makes manipulation of the elements based on the data set a very simple and easy process.\r\n</span>\r\n<ul id=\"list\">\r\n  <li></li>\r\n  <li></li>\r\n</ul>\r\n<div>\r\n  <button class=\"btn btn-default\" (click)=\"addData()\">Bind Data</button>\r\n  <button class=\"btn btn-default\" (click)=\"updateData()\">Update Data</button>\r\n  <button class=\"btn btn-default\" (click)=\"createNew()\">Create</button>\r\n  <button class=\"btn btn-default\" (click)=\"exit()\">Exit</button>\r\n</div>\r\n<h2>Data Join Methods</h2>\r\n<span>Data join provides the following four methods to work with data set −</span>\r\n<ul id=\"methods\">\r\n  <li>datum()</li>\r\n  <li>data()</li>\r\n  <li>enter()</li>\r\n  <li>exit()</li>\r\n</ul>\r\n<div class=\"well well-sm\">\r\n  <p></p>\r\n  <div id=\"fromDatum\"></div>\r\n</div>\r\n<div>\r\n  <button class=\"btn btn-default\" (click)=\"datum()\">Datum</button>\r\n  <button class=\"btn btn-default\" (click)=\"dataFnUsage()\">Data function Results</button>\r\n</div>\r\n<h2>Data Function</h2>\r\n<ul id=\"dumData\">\r\n  <li>datum()</li>\r\n  <li>data()</li>\r\n  <li>enter()</li>\r\n</ul>\r\n<code>\r\n  <p>{{tempD}}</p>\r\n  <p>{{tempI}}</p>\r\n  <p>{{tempThis}}</p>\r\n</code>\r\n<div>\r\n  <svg id=\"my-svg\"></svg>\r\n</div>\r\n\r\n<button class=\"btn btn-default\" (click)=\"dataStructure()\">Bind Data to circles</button>\r\n<button class=\"btn btn-default\" (click)=\"createCircles()\">Create circles</button>\r\n<button class=\"btn btn-default\" (click)=\"dataChanges()\">Change Data</button>\r\n<button class=\"btn btn-default\" (click)=\"createNewCircle()\">Create New circle</button>\r\n<button class=\"btn btn-default\" (click)=\"updateExisting()\">Update circles</button>\r\n<button class=\"btn btn-default\" (click)=\"removeCircles()\">Remove circles</button>\r\n<h2>Uniquely identifying datums</h2>\r\n<div>\r\n  <svg id=\"my-svg2\"></svg>\r\n  <svg id=\"my-svg3\"></svg>\r\n</div>\r\n<button class=\"btn btn-default\" (click)=\"createMySvg()\">Create SVG</button>\r\n<button class=\"btn btn-default\" (click)=\"UpdateDataWithIndex()\">Update SVG</button>\r\n<button class=\"btn btn-default\" (click)=\"createSvgWithID()\">Create SVG with ID</button>\r\n<button class=\"btn btn-default\" (click)=\"updateDataWithID()\">Update SVG</button>\r\n<button class=\"btn btn-default\" (click)=\"removeSpecificElement()\">Remove Circle</button>\r\n<div>\r\n  <p>ID: <input type=\"text\" [(ngModel)]=\"selectedID\" /></p>\r\n  <p>Property: <input type=\"text\" [(ngModel)]=\"property\" /></p>\r\n  <p>Value: <input type=\"text\" [(ngModel)]=\"value\" /></p>\r\n</div>\r\n<button class=\"btn btn-default\" (click)=\"updateSpecificElement()\">Update Circle</button>\r\n<button class=\"btn btn-default\" (click)=\"updateSpecific(selectedID, property, value)\">Update Specific Circle</button>"
 
 /***/ }),
-/* 199 */
+/* 201 */
 /***/ (function(module, exports) {
 
 module.exports = "<h2>Intro to SVG Charts</h2>\r\n<div>\r\n  <svg class=\"chart\" width=\"420\" height=\"120\">\r\n      <g transform=\"translate(0,0)\">\r\n          <rect width=\"50\" height=\"19\"></rect>\r\n          <text x=\"47\" y=\"9.5\" dy=\".35em\">5</text>\r\n      </g>\r\n      <g transform=\"translate(0,20)\">\r\n          <rect width=\"100\" height=\"19\"></rect>\r\n          <text x=\"97\" y=\"9.5\" dy=\".35em\">10</text>\r\n      </g>\r\n      <g transform=\"translate(0,40)\">\r\n          <rect width=\"120\" height=\"19\"></rect>\r\n          <text x=\"117\" y=\"9.5\" dy=\".35em\">12</text>\r\n      </g>\r\n  </svg>\r\n</div>\r\n<div>\r\n  <button class=\"btn btn-default\" (click)=\"svgBarWithD3()\">Create SVG with D3</button>\r\n</div>\r\n<div id=\"scales\"></div>\r\n<h4>Path Data Generators</h4>\r\n<p>\r\n    To simplify the construction of the d attribute for path elements, D3 includes a number of helper classes for generating path data. Each generator is a function of data. So, if your data is a sequence of xy coordinates, you can define accessor functions that the path generators use to produce path data. For example, you might define a line generator\r\n</p>\r\n<pre>\r\n    <code>\r\n    var line = d3.svg.line()\r\n    .x(function(d) {{'{'}} return d.x; {{'}'}})\r\n    .y(function(d) {{'{'}} return d.y; {{'}'}})\r\n    .interpolate(\"basis\");\r\n\r\n    g.append(\"path\")\r\n    .attr(\"d\", line);\r\n    </code>\r\n</pre>\r\n<input list=\"interpolations\" [(ngModel)]=\"interpolate\">\r\n<datalist id=\"interpolations\">\r\n    <option *ngFor=\"let i of sorted_names\" [value]=\"i\"></option>\r\n</datalist>\r\n<!-- <input value=\"basis\" [(ngModel)]=\"interpolate\" /> -->\r\n<button class=\"btn btn-default\" (click)=\"drawPath()\">Draw Path</button>\r\n<div id=\"ex-1\"></div>\r\n<h4>SVG Path Mini-Language</h4>\r\n<table class=\"table table-hover table-bordered\" style=\"margin-bottom:0px;\"> \r\n<thead>\r\n    <tr style=\"background-color: #82bddf;\">\r\n        <td>Command</td>\r\n        <td>Parameters</td>\r\n        <td>Repeatable</td>\r\n        <td>Explanation</td>\r\n    </tr>\r\n</thead>\r\n<tbody>\r\n    <!--Pen Commands-->\r\n    <tr style=\"background-color: #d7effd;\">\r\n        <td colspan=\"4\">Pen Command</td>\r\n    </tr><tr>\r\n    </tr><tr>\r\n        <td>M ( m )</td>\r\n        <td>x, y</td>\r\n        <td>Yes</td>\r\n        <td><strong>moveto</strong><br>Move the pen to a new location. No line is drawn. All path data must begin with a 'moveto' command.</td>\r\n    </tr><tr>\r\n    <!--/Pen Commands-->\r\n    <!--Line Commands-->\r\n    </tr><tr style=\"background-color: #e5f5bb;;\">\r\n        <td colspan=\"4\">Line Commands</td>\r\n    </tr><tr>\r\n    </tr><tr>\r\n        <td>L ( l )</td>\r\n        <td>x, y</td>\r\n        <td>Yes</td>\r\n        <td><strong>lineto</strong><br>Draw a line from the current point to the point (x,y).</td>\r\n    </tr><tr>\r\n    </tr><tr>\r\n        <td>H ( h )</td>\r\n        <td>x</td>\r\n        <td>Yes</td>\r\n        <td><strong>horizontal lineto</strong><br>Draw a horizontal line from the current point to x.</td>\r\n    </tr><tr>\r\n    </tr><tr>\r\n        <td>V ( v )</td>\r\n        <td>y</td>\r\n        <td>Yes</td>\r\n        <td><strong>vertical lineto</strong><br>Draw a horizontal line from the current point to y.</td>\r\n    </tr><tr>\r\n    <!--/Line Commands-->\r\n    <!--Cubic Bezier Curve Commands-->\r\n    </tr><tr style=\"background-color: #e5f5bb;;\">\r\n        <td colspan=\"4\">Cubic Bezier Curve Commands</td>\r\n    </tr><tr>\r\n    </tr><tr>\r\n        <td>C ( c )</td>\r\n        <td>x1 y1 x2 y2 x y</td>\r\n        <td>Yes</td>\r\n        <td><strong>curveto</strong><br>Draw a cubic Bézier curve from the current point to the point (x,y) using (x1,y1) as the control point at the beginning of the curve and (x2,y2) as the control point at the end of the curve.</td>\r\n    </tr><tr>\r\n    </tr><tr>\r\n        <td>S ( s )</td>\r\n        <td>x2 y2 x y</td>\r\n        <td>Yes</td>\r\n        <td><strong>shorthand/smooth curveto</strong><br>Draw a cubic Bézier curve from the current point to (x,y). The first control point is assumed to be the reflection of the last control point on the previous command relative to the current point. (x2,y2) is the second control point (i.e., the control point at the end of the curve).</td>\r\n    </tr><tr>\r\n    <!--/Cubic Bezier Curve Commands-->\r\n    <!--Quadratic Bezier Curve Commands-->\r\n    </tr><tr style=\"background-color: #e5f5bb;;\">\r\n        <td colspan=\"4\">Quadratic Bezier Curve Commands</td>\r\n    </tr><tr>\r\n    </tr><tr>\r\n        <td>Q ( q )</td>\r\n        <td>x1 y1 x y</td>\r\n        <td>Yes</td>\r\n        <td><strong>quadratic Bézier curveto</strong><br>Draw a quadratic Bézier curve from the current point to (x,y) using (x1,y1) as the control point.</td>\r\n    </tr><tr>\r\n    </tr><tr>\r\n        <td>T ( t )</td>\r\n        <td>x y</td>\r\n        <td>Yes</td>\r\n        <td><strong>Shorthand/smooth quadratic Bézier curveto</strong><br>Draw a quadratic Bézier curve from the current point to (x,y). The control point is assumed to be the reflection of the control point on the previous command relative to the current point.</td>\r\n    </tr><tr>\r\n    <!--/Quadratic Bezier Curve Commands-->\t\t\t\t\t\t\t\r\n    <!--Elliptical Arc Curve Command-->\r\n    </tr><tr style=\"background-color: #e5f5bb;;\">\r\n        <td colspan=\"4\">Elliptical Arc Curve Command</td>\r\n    </tr><tr>\r\n    </tr><tr>\r\n        <td>A ( a )</td>\r\n        <td>rx ry x-axis-rotation large-arc-flag sweep-flag x y</td>\r\n        <td>Yes</td>\r\n        <td><strong>elliptical arc</strong><br>Draws an elliptical arc from the current point to (x, y). The size and orientation of the ellipse are defined by two radii (rx, ry) and an x-axis-rotation, which indicate how the ellipse as a whole is rotated relative to the current SVG coordinate system. The center (cx, cy) of the ellipse is calculated automatically to satisfy the constraints imposed by the other parameters. large-arc-flag and sweep-flag contribute to the automatic calculations and help determine how the arc is drawn.</td>\r\n    </tr><tr>\r\n    <!--/Elliptical Arc Curve Command-->\t\t\t\t\t\t\t\r\n    <!--End Path Command-->\r\n    </tr><tr style=\"background-color: #e5f5bb;;\">\r\n        <td colspan=\"4\">End Path Command</td>\r\n    </tr><tr>\r\n    </tr><tr>\r\n        <td>Z ( z )</td>\r\n        <td>none</td>\r\n        <td>No</td>\r\n        <td><strong>closepath</strong><br>Closes the path. A line is drawn from the last point to the first point drawn.</td>\r\n    </tr><tr>\r\n    <!--/End Path Command-->\r\n</tr></tbody>\r\n</table>\r\n<button class=\"btn btn-default\" (click)=\"customInterpolator()\">Custom Interpolator</button>\r\n<div id=\"custom-interpolator\"></div>\r\n<pre>\r\n    d3.svg.line - create a new line generator\r\n    d3.svg.line.radial - create a new radial line generator\r\n    d3.svg.area - create a new area generator\r\n    d3.svg.area.radial - create a new radial area generator\r\n    d3.svg.arc - create a new arc generator\r\n    d3.svg.symbol - create a new symbol generator\r\n    d3.svg.chord - create a new chord generator\r\n    d3.svg.diagonal - create a new diagonal generator\r\n    d3.svg.diagonal.radial - create a new radial diagonal generator\r\n</pre>"
 
 /***/ }),
-/* 200 */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  d3-layouts works!\n</p>\n"
-
-/***/ }),
-/* 201 */
-/***/ (function(module, exports) {
-
-module.exports = "<h2>Different SVG Shapes</h2>\r\n\r\n<div class=\"col-sm-12\">\r\n  <div class=\"col-sm-4\">\r\n    <h3>Ring</h3>\r\n    <svg height=\"100\" width=\"300\">\r\n      <rect width=\"300\" height=\"100\" style=\"fill:rgb(0,0,255);\"/>\r\n      <circle cx=\"150\" cy=\"50\" r=\"50\" style=\"fill:yellow\" />\r\n      <circle cx=\"150\" cy=\"50\" r=\"30\" style=\"fill:rgb(0,0,255);\" />\r\n      Sorry, your browser does not support inline SVG.\r\n    </svg>\r\n  </div>\r\n  <div class=\"col-sm-4\">\r\n    <h3>Rectangle inside a circle</h3>\r\n    <svg height=\"100\" width=\"300\">\r\n      <circle cx=\"150\" cy=\"50\" r=\"50\" style=\"fill:yellow\" />\r\n      <rect x=\"125\" y=\"25\" width=\"50\" height=\"50\" style=\"fill:rgb(0,0,255);stroke-width:2;stroke:rgb(0,0,0)\" />\r\n      Sorry, your browser does not support inline SVG.\r\n    </svg>\r\n  </div>\r\n  <div class=\"col-sm-4\">\r\n    <h3>Circle inside a Rectangle</h3>\r\n    <svg height=\"100\" width=\"300\">\r\n      <rect x=\"0\" y=\"0\" width=\"300\" height=\"100\" style=\"fill:rgb(0,0,255);stroke-width:0;stroke:rgb(0,0,0)\" />  \r\n      <circle cx=\"150\" cy=\"50\" r=\"49\" style=\"fill:yellow\" />\r\n      Sorry, your browser does not support inline SVG.\r\n    </svg>\r\n  </div>\r\n</div>\r\n<div class=\"col-sm-12\">\r\n  <div class=\"col-sm-4\">\r\n    <h3>Triangle on a rectangle</h3>\r\n    <svg height=\"300\" width=\"200\">\r\n      <polygon points=\"100,0 0,150 200,150\" style=\"fill:lime;stroke:purple;stroke-width:1\" />\r\n      <rect x=\"0\" y=\"150\" width=\"200\" height=\"150\" style=\"fill:rgb(0,0,255);stroke-width:0;stroke:rgb(0,0,0)\" />  \r\n      Sorry, your browser does not support inline SVG.\r\n    </svg>\r\n  </div>\r\n</div>"
-
-/***/ }),
 /* 202 */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <nav class=\"navbar navbar-inverse\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-9\" aria-expanded=\"false\"> \r\n        <span class=\"sr-only\">Toggle navigation</span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> \r\n      </button> \r\n      <a href=\"#\" class=\"navbar-brand\">D3</a> \r\n    </div>\r\n    <div class=\"navbar-collapse collapse\" id=\"bs-example-navbar-collapse-9\" aria-expanded=\"false\" style=\"height: 1px;\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li class=\"active\"><a>Table of Contents</a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav> -->\r\n<section id=\"table-of-contents\">\r\n  <ul>\r\n    <li><a href=\"#\">Introduction</a></li>\r\n    <li><a href=\"#svg\">SVG objects</a></li>\r\n    <li><a href=\"#drawing-shapes\">Drawing shapes</a></li>\r\n    <li><a href=\"#principles\">D3 principles</a></li>\r\n    <li><a href=\"#selections\">selections</a></li>\r\n    <li><a href=\"#manipulating-selections\">Manipulating selections</a></li>\r\n    <li><a href=\"#binding-data\">Binding & Displaying Data</a></li>\r\n    <li><a href=\"#load-ext-data\">Loading data externally</a></li>\r\n    <li><a href=\"#animations\">Animations</a></li>\r\n    <li><a href=\"#interactivity\">Interactivity</a></li>\r\n    <li><a href=\"#scales\">Scales</a></li>\r\n    <li><a href=\"#axes\">Axes</a></li>\r\n    <li><a href=\"#intro-to-charts\">Intro to Charts</a></li>\r\n    <li><a href=\"#bar-chart\">Building a Bar Chart</a></li>\r\n    <li><a href=\"#line-chart\">Building a line Chart</a></li>\r\n    <li><a href=\"#pie-chart\">Building a Pie chart</a></li>\r\n    <li><a href=\"#donut\">Building a donut</a></li>\r\n    <li><a href=\"#layouts\">D3 Layouts</a></li>\r\n    <li><a href=\"#geojson\">GeoJSON overview</a></li>\r\n    <li><a href=\"#map\">Map and projections</a></li>\r\n    <li><a href=\"#panning-dragging\">Panning and dragging a map</a></li>\r\n    <li><a href=\"#zooming\">Zooming</a></li>\r\n    <li><a href=\"#best-practices\">Best Practices and Overview of D3 V4 Modules</a></li>\r\n  </ul>\r\n</section>\r\n"
+module.exports = "<h2>D3 Layouts</h2>\r\n<h4>Histogram</h4>\r\n<div id=\"graph\"></div>\r\n<h4>Chord</h4>\r\n<div id=\"chord\"></div>\r\n<h4>Force</h4>\r\n<div id=\"force\"></div>\r\n<h4>Pack</h4>\r\n<div id=\"pack\"></div>\r\n<h4>Partition</h4>\r\n<div id=\"partition\"></div>\r\n<h4>Stack</h4>\r\n<div id=\"stack\"></div>\r\n<h4>Tree</h4>\r\n<div id=\"tree\"></div>\r\n<h4>Tree Map</h4>\r\n<div id=\"tree-map\"></div>\r\n<h4>Cluster</h4>\r\n<div id=\"cluster\"></div>"
 
 /***/ }),
 /* 203 */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Events in D3</h2>\r\n<code class=\"well well-sm\">\r\n  Syntax:\r\n  d3.selection.on(type[, listener[, capture]]);\r\n</code>\r\n<div class=\"col-sm-12\">\r\n  <h4>selection.on()</h4>\r\n  Add or remove event listeners to capture event types like click, mouseover, mouseout etc.\r\n\r\n  <h4>selection.dispatch()</h4>\r\n  Captures event types like click, mouseover, mouseout. Typenames is the eventname, listener is the event listener\r\n\r\n  <h4>d3.event</h4>\r\n  Event object to access standard event fields such as timestamp or methods like preventDefault\r\n\r\n  <h4>d3.mouse(container)()</h4>\r\n  Gets the x and y coordinates of the current mouse position in the specified DOM element.\r\n\r\n  <h4>d3.touch()</h4>\r\n  Gets the touch coordinates to a container\r\n</div>\r\n<div>\r\n<svg id='svg-container' width=\"500\" height=\"200\"></svg>\r\n</div>"
+module.exports = "<h2>Different SVG Shapes</h2>\r\n\r\n<div class=\"col-sm-12\">\r\n  <div class=\"col-sm-4\">\r\n    <h3>Ring</h3>\r\n    <svg height=\"100\" width=\"300\">\r\n      <rect width=\"300\" height=\"100\" style=\"fill:rgb(0,0,255);\"/>\r\n      <circle cx=\"150\" cy=\"50\" r=\"50\" style=\"fill:yellow\" />\r\n      <circle cx=\"150\" cy=\"50\" r=\"30\" style=\"fill:rgb(0,0,255);\" />\r\n      Sorry, your browser does not support inline SVG.\r\n    </svg>\r\n  </div>\r\n  <div class=\"col-sm-4\">\r\n    <h3>Rectangle inside a circle</h3>\r\n    <svg height=\"100\" width=\"300\">\r\n      <circle cx=\"150\" cy=\"50\" r=\"50\" style=\"fill:yellow\" />\r\n      <rect x=\"125\" y=\"25\" width=\"50\" height=\"50\" style=\"fill:rgb(0,0,255);stroke-width:2;stroke:rgb(0,0,0)\" />\r\n      Sorry, your browser does not support inline SVG.\r\n    </svg>\r\n  </div>\r\n  <div class=\"col-sm-4\">\r\n    <h3>Circle inside a Rectangle</h3>\r\n    <svg height=\"100\" width=\"300\">\r\n      <rect x=\"0\" y=\"0\" width=\"300\" height=\"100\" style=\"fill:rgb(0,0,255);stroke-width:0;stroke:rgb(0,0,0)\" />  \r\n      <circle cx=\"150\" cy=\"50\" r=\"49\" style=\"fill:yellow\" />\r\n      Sorry, your browser does not support inline SVG.\r\n    </svg>\r\n  </div>\r\n</div>\r\n<div class=\"col-sm-12\">\r\n  <div class=\"col-sm-4\">\r\n    <h3>Triangle on a rectangle</h3>\r\n    <svg height=\"300\" width=\"200\">\r\n      <polygon points=\"100,0 0,150 200,150\" style=\"fill:lime;stroke:purple;stroke-width:1\" />\r\n      <rect x=\"0\" y=\"150\" width=\"200\" height=\"150\" style=\"fill:rgb(0,0,255);stroke-width:0;stroke:rgb(0,0,0)\" />  \r\n      Sorry, your browser does not support inline SVG.\r\n    </svg>\r\n  </div>\r\n</div>"
 
 /***/ }),
 /* 204 */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Introduction</h2>\r\n<p>\r\nD3.js stands for Data Driven Documents. It's a very comprehensive library which provides many tools for data-based calculations and document manipulations. It also handles (and that's one of its strong points) many of the math needed for the visualization of data. D3 has a steep learning curve, but once you experiment with it and manage to do simple visualization of some kind of data; the learning process will become much more compelling and interesting. That's the purpose of this post.\r\n</p>\r\n<p>\r\nD3 handles any kind of document, be it HTML or SVG, and it's not exclusively used to create graphics. That being said, D3 lends itself very well for manipulation of shapes and graphical objects based on static and dynamic data. As such, D3 makes it possible to create very appealing documents.\r\n</p>\r\n<p>\r\nSVG is one type of document which is often being used with D3. With SVG one can create graphical entities much like creating and styling HTML elements. In this article we will use SVG to visualize our data.\r\n</p>\r\n<p>\r\nD3 is not a monolithic framework that seeks to provide every conceivable feature. Instead, D3 solves the crux of the problem: efficient manipulation of documents based on data. This avoids proprietary representation and affords extraordinary flexibility, exposing the full capabilities of web standards such as HTML, SVG, and CSS. With minimal overhead, D3 is extremely fast, supporting large datasets and dynamic behaviors for interaction and animation. D3’s functional style allows code reuse through a diverse collection of official and community-developed modules.\r\n</p>"
+module.exports = "<h3>Introduction to <a href=\"http://geojson.org/\" target=\"_blank\">GeoJSON</a>\n  [<a href=\"https://en.wikipedia.org/wiki/GeoJSON\" target=\"_blank\">Wiki</a>]\n</h3>\n<p>\n  D3’s approach differs to so called raster methods such as Leaflet and Google Maps. These pre-render map features as image tiles and these are served up and pieced together in the browser to form a map. Typically D3 requests vector geographic information in the form of GeoJSON and renders this to SVG or Canvas in the browser.\n</p>\n<p>\n  Raster maps often look more like traditional print maps where a lot of detail (e.g. place names, roads, rivers etc.) can be shown without an impact on performance. However, dynamic content such as animation and interaction is more easily implemented using a vector approach. (It’s also quite common to combine the two approaches.)\n</p>\n<ul>\n  <li>Geographic Information Systems (GIS) is defined by Wikipedia as a system designed to capture, store, manipulate, analyze, manage, and present any and all types of geographical information.</li>\n  <li>GeoJSON is a geospatial data interchange format based on the JavaScript Object Notation.</li>\n  <li>GeoJSON has a strict set of specifications that allow you to ingest, digest, and produce the GeoJSON data in a standardized way</li>\n  <li>A GeoJSON Object always consists of a single object</li>\n  <li>A GeoJSON Geometry Object can represent: a) a \"Point\", b) a \"MultiPoint\", a \"LineString\", a \"MultiLineString\", a \"Polygon\", a \"MultiPolygon\", and a \"GeometryCollection\".</li>\n  <li>A GeoJSON Feature Object encapsulates a GeoJSON Geometry Object and adds to it a Feature Object (a JSON object with non-spatial attributes related to the Geometry Object)</li>\n  <li>A GeoJSON Feature Collection Object is a collection of GeoJSON Feature Objects</li>\n</ul>\nExample 1:\n<pre>\n  {{\"{ \"}}\n    \"type\": \"FeatureCollection\",\n    \"features\": [\n        {{\"{\"}}\n            \"type\": \"Feature\",\n            \"geometry\": {{\"{\"}}\"type\": \"Point\", \"coordinates\": [2.3470, 48.8742]},\n            \"properties\": {{\"{\"}}\"name\": \"Paris\"}\n        }\n    ]\n  }\n</pre>\nExample 2:\n<pre>\n  {{\"{\"}}\n    \"type\": \"FeatureCollection\",\n    \"features\": [\n      {{\"{\"}}\n        \"type\": \"Feature\",\n        \"properties\": {{\"{\"}}\n          \"name\": \"Africa\"\n        },\n        \"geometry\": {{\"\"}}\n          \"type\": \"Polygon\",\n          \"coordinates\": [[[-6, 36], [33, 30], ... , [-6, 36]]]\n        }\n      },\n      {{\"\"}}\n        \"type\": \"Feature\",\n        \"properties\": {{\"\"}}\n          \"name\": \"Australia\"\n        },\n        \"geometry\": {{\"\"}}\n          \"type\": \"Polygon\",\n          \"coordinates\": [[[143, -11], [153, -28], ... , [143, -11]]]\n        }\n      },\n      {{\"\"}}\n        \"type\": \"Feature\",\n        \"properties\": {{\"\"}}\n          \"name\": \"Timbuktu\"\n        },\n        \"geometry\": {{\"\"}}\n          \"type\": \"Point\",\n          \"coordinates\": [-3.0026, 16.7666]\n        }\n      }\n    ]\n  }\n</pre>\n<a href=\"http://geojsonlint.com/\" target=\"_blank\">Try GeoJSON Validator</a>\n\n<h3>D3js Geo</h3>\n<p>\n  The primary mechanism for displaying geographic data is d3.geo.path. This class is similar to d3.svg.line and the other SVG shape generators\n</p>\n\n<canvas width=\"700\" height=\"600\"></canvas>\n<p>To display multiple features, you can place them in a single feature collection and a single path element:</p>\n<pre>\n  svg.append(\"path\")\n  .datum({{\"{\"}}type: \"FeatureCollection\", features: features})\n  .attr(\"d\", d3.geo.path());\n</pre>\n<p>Alternatively, you can create multiple distinct path elements:</p>\n<pre>\n    svg.selectAll(\"path\")\n    .data(features)\n    .enter().append(\"path\")\n    .attr(\"d\", d3.geo.path());\n</pre>\n<h4>path.projection([projection])</h4>\n<p>If projection is specified, sets the projection used by the path generator to the specified projection function. If projection is not specified, returns the current projection, which defaults to albersUsa. The projection is typically one of D3's built-in geographic projections;however, any function can be used. </p>\n<p>A projection function takes a two-element array of numbers representing the coordinates of a location, [longitude, latitude], and returns a similar two-element array of numbers representing the projected pixel position [x, y].</p>\n<h4>path.context([context])</h4>\n<p>If context is specified, sets the render context and returns the path generator. If the context is null, then the path generator will return an SVG path string when invoked on a given feature. If the context is non-null, the path generator will instead call methods on the specified context to render geometry. The context must implement the following methods:</p>\n<ul>\n  <li>beginPath()</li>\n  <li>moveTo(x, y)</li>\n  <li>lineTo(x, y)</li>\n  <li>arc(x, y, radius, startAngle, endAngle)</li>\n  <li>closePath()</li>\n</ul>\n<p>\n  Note that this is a subset of the canvas element’s 2D rendering context, and thus a canvas context can be passed to the path generator, in which case geometry will be rendered directly to the canvas. If context is not specified, returns the current render context, which defaults to null.\n</p>\n<h4>path.area(feature)</h4>\n<p>Computes the projected area (in square pixels) for the specified feature. </p>\n<h4>path.centroid(feature)</h4>\n<p>Computes the projected centroid (in pixels) for the specified feature. This is handy for, say, labeling state or country boundaries, or displaying a symbol map. </p>\n<h4>path.bounds(feature)</h4>\n<p>Computes the projected bounding box (in pixels) for the specified feature. The bounding box is represented by a two-dimensional array: [[left, top], [right, bottom]] , different from GIS geo.bounds' convention. This is handy for, say, zooming in to a particular feature. </p>\n<h4>path.pointRadius([radius])</h4>\n<p>If radius is specified, sets the radius used to display Point and MultiPoint features to the specified number. If radius is not specified, returns the current radius. While the radius is commonly specified as a number constant, it may also be specified as a function which is computed per feature, being passed the feature and index arguments from the path function. </p>\n<h3>Shape Generators</h3>\n<h4>d3.geo.graticule</h4>\n<p>Constructs a feature generator for creating graticules.</p>\n<h3>Spherical Math</h3>\n<h4>d3.geo.area(feature)</h4>\n<p>Returns the spherical area of the specified feature in steradians. See also path.area, which computes the projected area on the Cartesian plane.</p>\n<h3>\n  <a target=\"_blank\" href=\"https://github.com/d3/d3-3.x-api-reference/blob/master/Geo-Projections.md\">\n    Geo Projections\n  </a>\n</h3>\n<select id=\"projection-menu\"></select>\n<div id=\"geo-path-projections\"></div>\n<a href=\"https://bl.ocks.org/d3indepth/f7ece0ab9a3df06a8cecd2c0e33e54ef\" target=\"_blank\">\n  Detailed understanding of individual fields of geo.projection\n</a>\n<h3>Geo Streams \n    <a target=\"_blank\" href=\"https://github.com/d3/d3-3.x-api-reference/blob/master/Geo-Streams.md\">\n      (d3.geo.stream(object, listener))</a>\n</h3>\n<p>\n  For fast transformations of geometry without temporary copies of geometry objects, D3 uses geometry streams. The main d3.geo.stream method converts a GeoJSON input object to a stream: a series of method calls on a stream listener. In addition, D3 provides several stream transformations that wrap listeners and transform the geometry. For example, the projection.stream interface transforms spherical coordinates to Cartesian coordinates, and d3.geo.path serializes geometry to either SVG or Canvas. Internally, clipping and rotating are also implemented as stream transformations.\n</p>"
 
 /***/ }),
 /* 205 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3>Line Charts</h3>\r\n<div id=\"simple-line-chart\"></div>\r\n<div id=\"line-chart\">\r\n  <svg width=\"700\" height=\"600\"></svg>\r\n</div>\r\n<div id=\"graph\"></div>"
+module.exports = "<!-- <nav class=\"navbar navbar-inverse\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"navbar-header\">\r\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-9\" aria-expanded=\"false\"> \r\n        <span class=\"sr-only\">Toggle navigation</span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> \r\n      </button> \r\n      <a href=\"#\" class=\"navbar-brand\">D3</a> \r\n    </div>\r\n    <div class=\"navbar-collapse collapse\" id=\"bs-example-navbar-collapse-9\" aria-expanded=\"false\" style=\"height: 1px;\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li class=\"active\"><a>Table of Contents</a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav> -->\r\n<section id=\"table-of-contents\">\r\n  <ul>\r\n    <li><a href=\"#\">Introduction</a></li>\r\n    <li><a href=\"#svg\">SVG objects</a></li>\r\n    <li><a href=\"#drawing-shapes\">Drawing shapes</a></li>\r\n    <li><a href=\"#principles\">D3 principles</a></li>\r\n    <li><a href=\"#selections\">selections</a></li>\r\n    <li><a href=\"#manipulating-selections\">Manipulating selections</a></li>\r\n    <li><a href=\"#binding-data\">Binding & Displaying Data</a></li>\r\n    <li><a href=\"#load-ext-data\">Loading data externally</a></li>\r\n    <li><a href=\"#animations\">Animations</a></li>\r\n    <li><a href=\"#interactivity\">Interactivity</a></li>\r\n    <li><a href=\"#scales\">Scales</a></li>\r\n    <li><a href=\"#axes\">Axes</a></li>\r\n    <li><a href=\"#intro-to-charts\">Intro to Charts</a></li>\r\n    <li><a href=\"#bar-chart\">Building a Bar Chart</a></li>\r\n    <li><a href=\"#line-chart\">Building a line Chart</a></li>\r\n    <li><a href=\"#pie-chart\">Building a Pie chart</a></li>\r\n    <li><a href=\"#donut\">Building a donut</a></li>\r\n    <li><a href=\"#panning-dragging\">Dragging, Panning and Zooming a map</a></li>\r\n    <li><a href=\"#geojson\">GeoJSON overview</a></li>\r\n    <li><a href=\"#map\">Map and projections</a></li>\r\n    <li><a href=\"#layouts\">D3 Layouts</a></li>\r\n    <li><a href=\"#best-practices\">Best Practices and Overview of D3 V4 Modules</a></li>\r\n  </ul>\r\n</section>\r\n"
 
 /***/ }),
 /* 206 */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Loading External Data </h2>\r\n<button class=\"btn btn-default\" (click)=\"loadCSV()\">Load CSV</button>\r\n<p class=\"ext\"></p>\r\n<div>\r\n** D3 can natively read a ton of different data types: d3.csv has other buddies like d3.json, d3.xml, and d3.tsv\r\n</div>"
+module.exports = "<h2>Events in D3</h2>\r\n<code class=\"well well-sm\">\r\n  Syntax:\r\n  d3.selection.on(type[, listener[, capture]]);\r\n</code>\r\n<div class=\"col-sm-12\">\r\n  <h4>selection.on()</h4>\r\n  Add or remove event listeners to capture event types like click, mouseover, mouseout etc.\r\n\r\n  <h4>selection.dispatch()</h4>\r\n  Captures event types like click, mouseover, mouseout. Typenames is the eventname, listener is the event listener\r\n\r\n  <h4>d3.event</h4>\r\n  Event object to access standard event fields such as timestamp or methods like preventDefault\r\n\r\n  <h4>d3.mouse(container)()</h4>\r\n  Gets the x and y coordinates of the current mouse position in the specified DOM element.\r\n\r\n  <h4>d3.touch()</h4>\r\n  Gets the touch coordinates to a container\r\n</div>\r\n<div>\r\n<svg id='svg-container' width=\"500\" height=\"200\"></svg>\r\n</div>"
 
 /***/ }),
 /* 207 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3>D3 Behaviors</h3>\n<p>D3’s behaviors and higher level components, such as the brush, use d3.dispatch to broadcast custom events.</p>\n<p>For visualizations with coordinated views, d3.dispatch provides a convenient lightweight mechanism for loosely-coupled components. Organizing your code with d3.dispatch can assist with separation of concerns and make your code easier to maintain.</p>\n<h4>d3.dispatch</h4>\n<p>Creates a new dispatcher object for the specified types. Each argument is a string representing the name of the event type, such as \"zoom\" or \"change\". The returned object is an associative array; each type name is associated with a dispatch object. For example, if you wanted to create an event dispatcher for \"start\" and \"end\" events, you can say:</p>\n<pre>\n  var dispatch = d3.dispatch(\"start\", \"end\");\n</pre>\n<p>\n  Then, you can access the dispatchers for the different event types as dispatch.start and dispatch.end. For example, you might add an event listener:\n</p>\n<pre>\n  dispatch.on(\"start\", listener);\n</pre>\n<pre>\n  dispatch.start();\n</pre>\n<pre>\n  If an event listener was already registered for the same type, \n  the existing listener is removed before the new listener is added. To register multiple listeners\n  for the same event type, the type may be followed by an optional namespace, \n  such as \"click.foo\" and \"click.bar\". \n  Likewise, you can remove all registered listeners for a \n  given namespace by saying dispatch.on(\".foo\", null).\n  If listener is not specified, returns the currently-assigned listener \n  for the specified type, if any.\n</pre>\n<h4>dispatch.type(arguments…)</h4>\n<p>The type method (such as dispatch.start) notifies each registered listener, \n  passing the listener the specified arguments. \n  The this context will be used as the context of the registered listeners. \n  Eg. dispatch.call( foo, bar ). You can also control the \"this\" context of the listeners using call or apply.\n</p>\n<pre>\n  Example:\n    selection.on(\"click\", function(d, i) {{\"{\"}}\n      dispatch.custom.apply(this, arguments);\n    });\n</pre>\n\n<h4>Demo</h4>\n<p>This example uses two custom events: a load event when data is available, and a statechange event when the displayed state is changed.</p>\n<p>Custom events allow loose coupling of components: views can listen for events and update the DOM accordingly, without needing to explicitly tie each view together. When the drop-down menu changes, a statechange event is triggered which causes any interested listeners to be notified.</p>\n<button class=\"btn btn-default\" (click)=\"dispatchDemo()\">Show Demo</button>\n<div id=\"d3-dispatch-demo\"></div>\n<ul>\n  <li>Drag — tracks mouse or multitouch movement(s) relative to an origin</li>\n  <li>Zoom — emits zoom and pan events in response to common input idioms</li>\n</ul>\n<pre>\n    selection.call(d3.behavior.drag().on('dragstart', function (d) {{\"{\"}}\n      console.log(\"Started moving item with data:\", d);\n    }));\n</pre>\n<strong>\n    Note carefully the nesting: the 'dragstart' event is registered on the d3.behavior.drag() instance, not on the selection! It is this same instance — which is itself also a function — that gets called on the selection. This call allows the behavior to do its own internal setup on the selection.\n</strong>\n<pre>\n    var drag = d3.behavior.drag();\n    selection.call(drag);\n    selection.on(\".drag\", null);\n    \n    drag.on(type[, listener])\n    <ul><li>dragstart - when a drag gesture starts.</li>\n      <li>drag - when the drag gesture moves.</li>\n      <li>dragend - when the drag gesture finishes.</li></ul>\n</pre>\n<p>\n  Drag events (but not dragstart and dragend events) expose \"x\" and \"y\" properties representing the current position of the drag gesture in local coordinates.\n</p>\n<h4>Simple Drag Example</h4>\n<button class=\"btn btn-default\" (click)=\"basicDragExample()\">Run</button>\n<svg id=\"simple-drag\" width=\"700\" height=\"300\"></svg>\n<h4>Prevent Default</h4>\n<pre>\n    selection.on(\"click\", function() {{\"{\"}}\n      if (d3.event.defaultPrevented) return; // click suppressed\n      console.log(\"clicked!\");\n    });\n</pre>\n<p>\n  When combining drag behaviors with other event listeners for interaction events (such as having drag take precedence over zoom), you may also consider stopping propagation on the source event to prevent multiple actions:\n</p>\n<pre>\n  drag.on(\"dragstart\", function() {{\"{\"}}\n    d3.event.sourceEvent.stopPropagation(); // silence other listeners\n  });\n</pre>\n<h4>drag.origin([origin])</h4>\n<p>If origin is specified, sets the origin accessor to the specified function. If origin is not specified, returns the current origin accessor which defaults to null.</p>\n\n<p>The origin accessor function is used to determine the starting position (the “origin”) of the element being dragged; this allows the drag behavior to preserve the offset between the mouse position and the starting element position during drag.</p>\n<div id=\"drag-multiples\"></div>\n<button class=\"btn btn-default\" (click)=\"dragMultiples()\">Run</button>\n\n<h3>Zoom</h3>\n<h3>d3.behavior.zoom()</h3>\n<pre>\n    var zoom = d3.behavior.zoom();\n    selection.call(zoom);\n\n    selection.on(\".zoom\", null);\n\n    zoom.translate([translate])\n\n    zoom.scale([scale])\n\n    zoom.scaleExtent([extent])  => ([minimum, maximum])\n\n    zoom.center([center])\n\n    zoom.size([size])\n\n    zoom.x([x])\n\n    zoom.y([y])\n\n    zoom.on(type, listener)\n        zoomstart - at the start of a zoom gesture (e.g., touchstart).\n        zoom - when the view changes (e.g., touchmove).\n        zoomend - at the end of the current zoom gesture (e.g., touchend).\n</pre>\n\n<p>\n  For mousewheel events, which happen discretely with no explicit start and end reported by the browser, events that occur within 50 milliseconds of each other are grouped into a single zoom gesture.\n</p>\n<pre>\n    When fired, the d3.event object will contain the following properties:\n\n    scale - a number; the current scale.\n    translate - a two-element array representing the current translation vector.\n</pre>\n<h4>zoom.event(selection)</h4>\n<p>If selection is a selection, immediately dispatches a zoom gesture to registered listeners, as the three event sequence zoomstart, zoom and zoomend. This can be useful in triggering listeners after setting the translate or scale programatically.</p>\n<p>\n  If selection is a transition, registers the appropriate tweens so that the zoom behavior dispatches events over the course of the transition: a zoomstart event when the transition starts from the previously-set view, zoom events for each tick of the transition, and finally a zoomend event when the transition ends. \n</p>\n<strong>Note that the transition will be interrupted if the user starts zooming before the transition ends.</strong>\n<h4>Example</h4>\n<button class=\"btn btn-default\" (click)=\"zoomExample()\">Run</button>\n<div id=\"zoom-section\"></div>"
+module.exports = "<h2>Introduction</h2>\r\n<p>\r\nD3.js stands for Data Driven Documents. It's a very comprehensive library which provides many tools for data-based calculations and document manipulations. It also handles (and that's one of its strong points) many of the math needed for the visualization of data. D3 has a steep learning curve, but once you experiment with it and manage to do simple visualization of some kind of data; the learning process will become much more compelling and interesting. That's the purpose of this post.\r\n</p>\r\n<p>\r\nD3 handles any kind of document, be it HTML or SVG, and it's not exclusively used to create graphics. That being said, D3 lends itself very well for manipulation of shapes and graphical objects based on static and dynamic data. As such, D3 makes it possible to create very appealing documents.\r\n</p>\r\n<p>\r\nSVG is one type of document which is often being used with D3. With SVG one can create graphical entities much like creating and styling HTML elements. In this article we will use SVG to visualize our data.\r\n</p>\r\n<p>\r\nD3 is not a monolithic framework that seeks to provide every conceivable feature. Instead, D3 solves the crux of the problem: efficient manipulation of documents based on data. This avoids proprietary representation and affords extraordinary flexibility, exposing the full capabilities of web standards such as HTML, SVG, and CSS. With minimal overhead, D3 is extremely fast, supporting large datasets and dynamic behaviors for interaction and animation. D3’s functional style allows code reuse through a diverse collection of official and community-developed modules.\r\n</p>"
 
 /***/ }),
 /* 208 */
 /***/ (function(module, exports) {
 
-module.exports = "<h3>Pie Chart</h3>\r\n<pre>\r\nEvaluates the pie function on the specified array of values. An optional index may be specified, which is passed along to the start and end angle functions. The return value is an array of arc descriptors:\r\n\r\n    value - the data value, returned by the value accessor.\r\n    startAngle - the start angle of the arc in radians.\r\n    endAngle - the end angle of the arc in radians.\r\n    padAngle - the pad angle of the arc in radians.\r\n    data - the original datum for this arc.\r\n\r\n    The elements are returned in the original order, matching values, even if a sort order is applied; this preserves the original index of each element in the values array, which is nice if you are using the index to generate a categorical color or other display property.\r\n</pre>\r\n<a href=\"https://github.com/d3/d3-3.x-api-reference/blob/master/Pie-Layout.md\">Reference</a>\r\n<h4>Curve Generator</h4>\r\n<svg id=\"pie-chart1\" width=\"700\" height=\"500\"></svg>\r\n\r\n <svg id=\"pie-chart2\" width=\"700\" height=\"500\"></svg> \r\n\r\n <svg id=\"donut-chart\" width=\"700\" height=\"500\"></svg>"
+module.exports = "<h3>Line Charts</h3>\r\n<div id=\"simple-line-chart\"></div>\r\n<div id=\"line-chart\">\r\n  <svg width=\"700\" height=\"600\"></svg>\r\n</div>\r\n<div id=\"graph\"></div>"
 
 /***/ }),
 /* 209 */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>D3 Principles</h2>\r\n<p>Embedded within an HTML webpage, the JavaScript D3.js library uses pre-built JavaScript functions to select elements, create SVG objects, style them, or add transitions, dynamic effects or tooltips to them. These objects can also be widely styled using CSS. Large datasets can be easily bound to SVG objects using simple D3.js functions to generate rich text/graphic charts and diagrams. The data can be in various formats, most commonly JSON, comma-separated values (CSV) or geoJSON, but, if required, JavaScript functions can be written to read other data formats.</p>\r\n<div class=\"col-sm-12\">\r\n    <h3>Selections</h3>\r\n    <p>\r\n      The central principle of D3.js design is to enable the programmer to first use a CSS-style selector to select a given set of Document Object Model (DOM) nodes, then use operators to manipulate them in a similar manner to jQuery.\r\n    </p>\r\n    <code>\r\n        <p>d3.selectAll(\"p\")                 // select all p elements</p>\r\n        <p>.style(\"color\", \"lavender\")     // set style \"color\" to value \"lavender\"</p>\r\n        <p>.attr(\"class\", \"squares\")       // set attribute \"class\" to value \"squares\"</p>\r\n        <p>.attr(\"x\", 50);                 // set attribute \"x\" (horizontal position) to value 50px</p>\r\n    </code>\r\n    <p>\r\n        The selection can be based on tag (as in the above example), class, identifier, attribute, or place in the hierarchy. Once elements are selected, one can apply operations to them. This includes getting and setting attributes, display texts, and styles (as in the above example). Elements may also be added and removed. This process of modifying, creating and removing HTML elements can be made dependent on data, which is the basic concept of D3.js.\r\n    </p>\r\n</div>\r\n<div class=\"col-sm-12\">\r\n  <h3>Transitions</h3>\r\n  <p>By declaring a transition, values for attributes and styles can be smoothly interpolated over a certain time. The following code will make all HTML p elements on a page gradually change their text color to pink:</p>\r\n  <code>\r\n    <p>d3.selectAll(\"p\")             // select all p elements</p>\r\n      <p>.transition(\"trans_1\")      // transition with name \"trans_1\"</p>\r\n      <p>.delay(0)                 // transition starting 0ms after trigger</p>\r\n      <p>.duration(500)            // transitioning during 500ms</p>\r\n      <p>.ease(\"linear\")           // transition easing progression is linear...</p>\r\n      <p>.style(\"color\", \"pink\");    // ... to color:pink</p>\r\n  </code>\r\n</div>\r\n<div class=\"col-sm-12\">\r\n  <h3>Data-binding</h3>\r\n  <p>For more advanced uses, loaded data drives the creation of elements. D3.js loads a given dataset, then, for each of its elements, creates an SVG object with associated properties (shape, colors, values) and behaviors (transitions, events).</p>\r\n  <code>\r\n    <p>var countriesData = [\r\n        ( name:\"Ireland\",  income:53000, life: 78, pop:6378, color: \"black\"),\r\n        ( name:\"Norway\",   income:73000, life: 87, pop:5084, color: \"blue\" ),\r\n        ( name:\"Tanzania\", income:27000, life: 50, pop:3407, color: \"grey\" )\r\n     ];</p>\r\n     <p>var svg = d3.select(\"#hook\").append(\"svg\")\r\n        .attr(\"width\", 120)\r\n        .attr(\"height\", 120)\r\n        .style(\"background-color\", \"#D0D0D0\");</p>\r\n      <p>svg.selectAll(\"circle\")                  // create virtual circle template</p>\r\n      <p>.data(countriesData)                   // bind data</p>\r\n      <p>.enter()                                 // for each row in data...</p>\r\n      <p>.append(\"circle\")                      // bind circle &amp; data row such that... </p>\r\n      <p>.attr(\"id\", function(d) ( return d.name ))            // set the circle's id according to the country name</p>\r\n  </code>\r\n</div>"
+module.exports = "<h2>Loading External Data </h2>\r\n<button class=\"btn btn-default\" (click)=\"loadCSV()\">Load CSV</button>\r\n<p class=\"ext\"></p>\r\n<div>\r\n** D3 can natively read a ton of different data types: d3.csv has other buddies like d3.json, d3.xml, and d3.tsv\r\n</div>"
 
 /***/ }),
 /* 210 */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>d3-scale</h2>\r\n<p>\r\n    -> D3.js provides functions to perform data transformations.\r\n</p>\r\n<p>\r\n    -> These functions map an input domain to an output range.\r\n</p>\r\n<p>\r\n    -> Said another way, these functions take an interval and transform it into a new interval.\r\n</p>\r\n<p>\r\n    -> Because the D3.js Scales are functions, not only can we map one <b>input domain</b> to an <b>output range</b>, the functions can convert a number in the domain to an output in the range.\r\n</p>\r\n<p>\r\n    -> Scales are an optional feature in D3; you don't have to use them, if you prefer to do the math yourself. However, using scales can greatly simplify the code needed to map a dimension of data to a visual representation.\r\n</p>\r\n<p>\r\n    Scales are a convenient abstraction for a fundamental task in visualization: mapping a dimension of abstract data to a visual representation. Although most often used for position-encoding quantitative data, such as mapping a measurement in meters to a position in pixels for dots in a scatterplot, scales can represent virtually any visual encoding, such as diverging colors, stroke widths, or symbol size. Scales can also be used with virtually any type of data, such as named categorical data or discrete data that requires sensible breaks.\r\n</p>\r\n<p>Scales have no intrinsic visual representation. However, most scales can generate and format ticks for reference marks to aid in the construction of axes.</p>\r\n<h3>D3 scale types</h3>\r\n<p>D3 has around 12 different scale types (scaleLinear, scalePow, scaleQuantise, scaleOrdinal etc.) and broadly speaking they can be classified into 3 groups:</p>\r\n<ul>\r\n    <li>scales with continuous input and continuous output</li>\r\n    <li>scales with continuous input and discrete output</li>\r\n    <li>scales with discrete input and discrete output</li>\r\n</ul>\r\n<h3>D3 scale types as per D3 API</h3>\r\n<ul>\r\n    <li>Continuous Scales (For continuous quantitative data)</li>\r\n    <ul>\r\n        <li>Linear Scales</li>\r\n        <li>Power Scales</li>\r\n        <li>Log Scales</li>\r\n        <li>Identity Scales</li>\r\n        <li>Time Scales</li>\r\n    </ul>\r\n    <li>Sequential Scales</li>\r\n    <li>Quantize Scales (may aid differentiation by rounding continuous data to a fixed set of discrete values) </li>\r\n    <li>Quantile Scales (computes quantiles from a sample population)</li>\r\n    <li>Threshold Scales</li>\r\n    <li>Ordinal Scales (For discrete ordinal (ordered) or categorical (unordered) data)</li>\r\n    <ul>\r\n        <li>Band Scales</li>\r\n        <li>Point Scales</li>\r\n    </ul>\r\n</ul>\r\n<h4>scaleLinear</h4>\r\n<p>\r\nThey use a linear function (y = m * x + b) to interpolate across the domain and range.\r\n</p>\r\n<p>\r\nTypical uses are to transform data values into positions and lengths, so when creating bar charts, line charts (as well as many other chart types) they are the scale to use.\r\n</p>\r\nMin: <input type=\"number\" [(ngModel)]=\"minDomain\"/>\r\nMax: <input type=\"number\" [(ngModel)]=\"maxDomain\"/>\r\n<button class='btn btn-default' (click)=\"simpleExample(minDomain, maxDomain)\">Run</button>\r\n<div>\r\n    <svg width=\"700\" height=\"40\">\r\n        <g class=\"inner\" transform=\"translate(40, 30)\">\r\n        </g>\r\n    </svg>\r\n</div>\r\n<p>The output range can also be specified as colours:</p>\r\n<p>This can be useful for visualisations such as choropleth maps</p>\r\n<button class='btn btn-default' (click)=\"linearScaleColor()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-2\" width=\"700\" height=\"100\"></svg>\r\n</div>\r\n<div class=\"well well-sm\">\r\n    Version 4 uses a different naming convention to v3. We use d3.scaleLinear() in v4 and d3.scale.linear() in v3.\r\n</div>\r\n<h4>scalePow</h4>\r\n<p>More included for completeness, rather than practical usefulness, the power scale interpolates using a power (y = m * x^k + b) function. The exponent k is set using .exponent():</p>\r\n<pre>\r\n    <code>\r\n    var powerScale = d3.scale.pow()\r\n    .exponent(0.5)\r\n    .domain([0, 100])\r\n    .range([0, 30]);\r\n      \r\n    powerScale(0);   // returns 0\r\n    powerScale(50);  // returns 21.21...\r\n    powerScale(100); // returns 30\r\n</code>\r\n</pre>\r\n<h4>scaleSqrt</h4>\r\n<p>\r\nThe scaleSqrt scale is a special case of the power scale (where k = 0.5) and is useful for sizing circles by area (rather than radius). (When using circle size to represent data, it’s considered better practice to set the area, rather than the radius proportionally to the data.)\r\n</p>\r\n<button class='btn btn-default' (click)=\"scaleSqrt()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-3\" width=\"700\" height=\"100\"></svg>\r\n</div>\r\n<h4>scaleLog</h4>\r\n<p>\r\nLog scales interpolate using a log function (y = m * log(x) + b) and can be useful when the data has an exponential nature to it.\r\n</p>\r\n<button class='btn btn-default' (click)=\"scaleLog()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-4\" width=\"700\" height=\"100\"></svg>\r\n</div>\r\n<h4>scaleTime</h4>\r\n<p>\r\nscaleTime is similar to scaleLinear except the domain is expressed as an array of dates. (It’s very useful when dealing with time series data.)\r\n</p>\r\n<button class='btn btn-default' (click)=\"scaleTime()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-5\" width=\"700\" height=\"100\">\r\n        <g class=\"inner\" transform=\"translate(5, 50)\"></g>\r\n    </svg>\r\n</div>\r\n<h4>Clamping</h4>\r\n<p>\r\nBy default scaleLinear, scalePow, scaleSqrt, scaleLog, scaleTime and scaleSequential allow input outside the domain. For example:\r\n</p>\r\n<pre>\r\n    <code>\r\n    var linearScale = d3.scale.linear()\r\n    .domain([0, 10])\r\n    .range([0, 100]);\r\n    \r\n    linearScale(20);  // returns 200\r\n    linearScale(-10); // returns -100\r\n    </code>\r\n</pre>\r\n<p>\r\nIn this instance the scale function uses extrapolation for values outside the domain.\r\n</p>\r\n<p>\r\nIf we’d like the scale function to be restricted to input values inside the domain we can ‘clamp’ the scale function using .clamp():\r\n</p>\r\n<pre>\r\n    <code>\r\n    linearScale.clamp(true);\r\n\r\n    linearScale(20);  // returns 100\r\n    linearScale(-10); // returns 0\r\n    </code>\r\n</pre>\r\n<h4>D3 Extent & Nice</h4>\r\n<p>\r\nIf the domain has been computed automatically from real data (e.g. by using d3.extent) the start and end values might not be round figures. This isn’t necessarily a problem, but if using the scale to define an axis, it can look a bit untidy:\r\n</p>\r\n<button class='btn btn-default' (click)=\"withoutNice()\">Run without Nice</button>\r\n<button class='btn btn-default' (click)=\"withNice()\">Run with Nice</button>\r\n<div>\r\n    <svg class=\"ex-6\" width=\"700\" height=\"100\">\r\n        <g class=\"withoutnice\" transform=\"translate(10, 50)\"></g>\r\n    </svg>\r\n    <svg class=\"ex-7\" width=\"700\" height=\"100\">\r\n        <g class=\"withnice\" transform=\"translate(10, 50)\"></g>\r\n    </svg>\r\n</div>\r\n<h4>Multi Segment Scale</h4>\r\n<button class='btn btn-default' (click)=\"multiSegment()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-8\" width=\"700\" height=\"100\">\r\n        <g class=\"multiSegment\" transform=\"translate(10, 50)\"></g>\r\n    </svg>\r\n</div>\r\n<h4>Inversion</h4>\r\n<p>\r\nThe .invert() method allows us to determine a scale function’s input value given an output value (provided the scale function has a numeric domain):\r\n</p>\r\n<button class='btn btn-default' (click)=\"invert()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-9\" width=\"650\" height=\"100\">\r\n        <g transform=\"translate(25, 10)\">\r\n            <g class=\"inner\" transform=\"translate(0, 40)\"></g>\r\n            <rect width=\"600\" height=\"40\" style=\"fill: rgb(1, 102, 63); cursor: pointer;\" class=\"click-area\" transform=\"translate(0, 0)\"></rect>\r\n        </g>\r\n    </svg>\r\n    <div class=\"info\">Hover on the green band</div>\r\n</div>\r\n<h3>Scales with continuous input and discrete output</h3>\r\n<h4>scaleQuantize</h4>\r\n<pre>\r\n    <code>\r\n    var quantizeScale = d3.scale.quantize()\r\n    .domain([0, 100])\r\n    .range(['lightblue', 'orange', 'lightgreen', 'pink']);\r\n    \r\n    quantizeScale(10);   // returns 'lightblue'\r\n    quantizeScale(30);  // returns 'orange'\r\n    quantizeScale(90);  // returns 'pink'\r\n    </code>\r\n</pre>\r\n<button class='btn btn-default' (click)=\"quantizeScale()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-10\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(50, 40)\"></g>\r\n    </svg>\r\n</div>\r\n<h4>scaleQuantile</h4>\r\n<button class='btn btn-default' (click)=\"quantileScale()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-11\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(50, 40)\"></g>\r\n    </svg>\r\n</div>\r\n<p>\r\nThe (sorted) domain array is divided into n equal sized groups where n is the number of range values.\r\n</p>\r\n<p>\r\nTherefore in the above example the domain array is split into 3 groups where:\r\n</p>\r\n<pre>\r\n-> the first 5 values are mapped to ‘lightblue’\r\n-> the next 5 values to ‘orange’ and\r\n-> the last 5 values to ‘lightgreen’.\r\n</pre>\r\n<pre>\r\nThe split points of the domain can be accessed using .quantiles():\r\n    <code>\r\n    quantileScale.quantiles();  // returns [26.66..., 63]\r\n    </code>\r\n</pre>\r\n<p>\r\nIf the range contains 4 values quantileScale computes the quartiles of the data. In other words, the lowest 25% of the data is mapped to range[0], the next 25% of the data is mapped to range[1] etc.\r\n</p>\r\n<h4>scaleThreshold</h4>\r\n<p>\r\nscaleThreshold maps continuous numeric input to discrete values defined by the range. n-1 domain split points are specified where n is the number of range values.\r\n</p>\r\n<button class='btn btn-default' (click)=\"thresholdScale()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-12\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(50, 40)\"></g>\r\n    </svg>\r\n</div>\r\n<h3>Scales with discrete input and discrete output</h3>\r\n<h4>scaleOrdinal</h4>\r\n<p>\r\nscaleOrdinal maps discrete values (specified by an array) to discrete values (also specified by an array). The domain array specifies the possible input values and the range array the output values. The range array will repeat if it’s shorter than the domain array.\r\n</p>\r\n<button class='btn btn-default' (click)=\"ordinalScale()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-13\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(10, 40)\"></g>\r\n    </svg>\r\n</div>\r\n<button class='btn btn-default' (click)=\"categoricalScale10()\">Run 10</button>\r\n<button class='btn btn-default' (click)=\"categoricalScale20()\">Run 20</button>\r\n<button class='btn btn-default' (click)=\"categoricalScale20b()\">Run 20b</button>\r\n<button class='btn btn-default' (click)=\"categoricalScale20c()\">Run 20c</button>\r\n<div>\r\n    <svg class=\"ex-14\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(10, 40)\"></g>\r\n    </svg>\r\n    <svg class=\"ex-15\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(10, 40)\"></g>\r\n    </svg>\r\n    <svg class=\"ex-16\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(10, 40)\"></g>\r\n    </svg>\r\n    <svg class=\"ex-17\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(10, 40)\"></g>\r\n    </svg>\r\n</div>\r\n<h4>scaleBand</h4>\r\n<p>\r\nWhen creating bar charts scaleBand helps to determine the geometry of the bars, taking into account padding between each bar. The domain is specified as an array of values (one value for each band) and the range as the minimum and maximum extents of the bands (e.g. the total width of the bar chart).\r\n</p>\r\n<p>\r\nIn effect scaleBand will split the range into n bands (where n is the number of values in the domain array) and compute the positions and widths of the bands taking into account any specified padding.\r\n</p>\r\n<pre>\r\n    <code>\r\n    var bandScale = d3.scale.ordinal()\r\n    .domain(['Mon', 'Tue', 'Wed', 'Thu', 'Fri'])\r\n    .rangeBands([0, 100]);\r\n    </code>\r\n</pre>\r\n<button class='btn btn-default' (click)=\"bandScale()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-18\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(10, 0)\"></g>\r\n    </svg>\r\n</div>"
+module.exports = "<h3>D3 Behaviors</h3>\r\n<p>D3’s behaviors and higher level components, such as the brush, use d3.dispatch to broadcast custom events.</p>\r\n<p>For visualizations with coordinated views, d3.dispatch provides a convenient lightweight mechanism for loosely-coupled components. Organizing your code with d3.dispatch can assist with separation of concerns and make your code easier to maintain.</p>\r\n<h4>d3.dispatch</h4>\r\n<p>Creates a new dispatcher object for the specified types. Each argument is a string representing the name of the event type, such as \"zoom\" or \"change\". The returned object is an associative array; each type name is associated with a dispatch object. For example, if you wanted to create an event dispatcher for \"start\" and \"end\" events, you can say:</p>\r\n<pre>\r\n  var dispatch = d3.dispatch(\"start\", \"end\");\r\n</pre>\r\n<p>\r\n  Then, you can access the dispatchers for the different event types as dispatch.start and dispatch.end. For example, you might add an event listener:\r\n</p>\r\n<pre>\r\n  dispatch.on(\"start\", listener);\r\n</pre>\r\n<pre>\r\n  dispatch.start();\r\n</pre>\r\n<pre>\r\n  If an event listener was already registered for the same type, \r\n  the existing listener is removed before the new listener is added. To register multiple listeners\r\n  for the same event type, the type may be followed by an optional namespace, \r\n  such as \"click.foo\" and \"click.bar\". \r\n  Likewise, you can remove all registered listeners for a \r\n  given namespace by saying dispatch.on(\".foo\", null).\r\n  If listener is not specified, returns the currently-assigned listener \r\n  for the specified type, if any.\r\n</pre>\r\n<h4>dispatch.type(arguments…)</h4>\r\n<p>The type method (such as dispatch.start) notifies each registered listener, \r\n  passing the listener the specified arguments. \r\n  The this context will be used as the context of the registered listeners. \r\n  Eg. dispatch.call( foo, bar ). You can also control the \"this\" context of the listeners using call or apply.\r\n</p>\r\n<pre>\r\n  Example:\r\n    selection.on(\"click\", function(d, i) {{\"{\"}}\r\n      dispatch.custom.apply(this, arguments);\r\n    });\r\n</pre>\r\n\r\n<h4>Demo</h4>\r\n<p>This example uses two custom events: a load event when data is available, and a statechange event when the displayed state is changed.</p>\r\n<p>Custom events allow loose coupling of components: views can listen for events and update the DOM accordingly, without needing to explicitly tie each view together. When the drop-down menu changes, a statechange event is triggered which causes any interested listeners to be notified.</p>\r\n<button class=\"btn btn-default\" (click)=\"dispatchDemo()\">Show Demo</button>\r\n<div id=\"d3-dispatch-demo\"></div>\r\n<ul>\r\n  <li>Drag — tracks mouse or multitouch movement(s) relative to an origin</li>\r\n  <li>Zoom — emits zoom and pan events in response to common input idioms</li>\r\n</ul>\r\n<pre>\r\n    selection.call(d3.behavior.drag().on('dragstart', function (d) {{\"{\"}}\r\n      console.log(\"Started moving item with data:\", d);\r\n    }));\r\n</pre>\r\n<strong>\r\n    Note carefully the nesting: the 'dragstart' event is registered on the d3.behavior.drag() instance, not on the selection! It is this same instance — which is itself also a function — that gets called on the selection. This call allows the behavior to do its own internal setup on the selection.\r\n</strong>\r\n<pre>\r\n    var drag = d3.behavior.drag();\r\n    selection.call(drag);\r\n    selection.on(\".drag\", null);\r\n    \r\n    drag.on(type[, listener])\r\n    <ul><li>dragstart - when a drag gesture starts.</li>\r\n      <li>drag - when the drag gesture moves.</li>\r\n      <li>dragend - when the drag gesture finishes.</li></ul>\r\n</pre>\r\n<p>\r\n  Drag events (but not dragstart and dragend events) expose \"x\" and \"y\" properties representing the current position of the drag gesture in local coordinates.\r\n</p>\r\n<h4>Simple Drag Example</h4>\r\n<button class=\"btn btn-default\" (click)=\"basicDragExample()\">Run</button>\r\n<svg id=\"simple-drag\" width=\"700\" height=\"300\"></svg>\r\n<h4>Prevent Default</h4>\r\n<pre>\r\n    selection.on(\"click\", function() {{\"{\"}}\r\n      if (d3.event.defaultPrevented) return; // click suppressed\r\n      console.log(\"clicked!\");\r\n    });\r\n</pre>\r\n<p>\r\n  When combining drag behaviors with other event listeners for interaction events (such as having drag take precedence over zoom), you may also consider stopping propagation on the source event to prevent multiple actions:\r\n</p>\r\n<pre>\r\n  drag.on(\"dragstart\", function() {{\"{\"}}\r\n    d3.event.sourceEvent.stopPropagation(); // silence other listeners\r\n  });\r\n</pre>\r\n<h4>drag.origin([origin])</h4>\r\n<p>If origin is specified, sets the origin accessor to the specified function. If origin is not specified, returns the current origin accessor which defaults to null.</p>\r\n\r\n<p>The origin accessor function is used to determine the starting position (the “origin”) of the element being dragged; this allows the drag behavior to preserve the offset between the mouse position and the starting element position during drag.</p>\r\n<div id=\"drag-multiples\"></div>\r\n<button class=\"btn btn-default\" (click)=\"dragMultiples()\">Run</button>\r\n\r\n<h3>Zoom</h3>\r\n<h3>d3.behavior.zoom()</h3>\r\n<pre>\r\n    var zoom = d3.behavior.zoom();\r\n    selection.call(zoom);\r\n\r\n    selection.on(\".zoom\", null);\r\n\r\n    zoom.translate([translate])\r\n\r\n    zoom.scale([scale])\r\n\r\n    zoom.scaleExtent([extent])  => ([minimum, maximum])\r\n\r\n    zoom.center([center])\r\n\r\n    zoom.size([size])\r\n\r\n    zoom.x([x])\r\n\r\n    zoom.y([y])\r\n\r\n    zoom.on(type, listener)\r\n        zoomstart - at the start of a zoom gesture (e.g., touchstart).\r\n        zoom - when the view changes (e.g., touchmove).\r\n        zoomend - at the end of the current zoom gesture (e.g., touchend).\r\n</pre>\r\n\r\n<p>\r\n  For mousewheel events, which happen discretely with no explicit start and end reported by the browser, events that occur within 50 milliseconds of each other are grouped into a single zoom gesture.\r\n</p>\r\n<pre>\r\n    When fired, the d3.event object will contain the following properties:\r\n\r\n    scale - a number; the current scale.\r\n    translate - a two-element array representing the current translation vector.\r\n</pre>\r\n<h4>zoom.event(selection)</h4>\r\n<p>If selection is a selection, immediately dispatches a zoom gesture to registered listeners, as the three event sequence zoomstart, zoom and zoomend. This can be useful in triggering listeners after setting the translate or scale programatically.</p>\r\n<p>\r\n  If selection is a transition, registers the appropriate tweens so that the zoom behavior dispatches events over the course of the transition: a zoomstart event when the transition starts from the previously-set view, zoom events for each tick of the transition, and finally a zoomend event when the transition ends. \r\n</p>\r\n<strong>Note that the transition will be interrupted if the user starts zooming before the transition ends.</strong>\r\n<h4>Example</h4>\r\n<button class=\"btn btn-default\" (click)=\"zoomExample()\">Run</button>\r\n<div id=\"zoom-section\"></div>"
 
 /***/ }),
 /* 211 */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Selections</h2>\r\n<button class=\"btn btn-primary pull-right\" (click)=\"showResults()\">Show selections</button>\r\n<p id=\"concept\">\r\n    Selections is one of the core concepts in D3.js. It is based on CSS selectors. It allows us to select one or more elements in a webpage. In addition, it allows us to modify, append, or remove elements in a relation to the pre-defined dataset.\r\n</p>\r\n<div class=\"methods\">\r\n    <p><b>select()</b> -  Selects only one DOM element by matching the given CSS selector. If there are more than one elements for the given CSS selector, it selects the first one only.</p>\r\n    <p><b>selectAll()</b> - Selects all DOM elements by matching the given CSS selector. If you are familiar with selecting elements with jQuery, D3.js selectors are almost the same.</p>\r\n</div>\r\n<code>\r\n  <h2>Selection by Tag</h2>\r\n  <div class=\"well well-sm\">\r\n      d3.select('p').text(): {{pSelector}}\r\n  </div>\r\n  <div class=\"well well-sm\">\r\n      d3.selectAll(\"p b\"): {{arraySelector}}\r\n  </div>\r\n\r\n  <h2>Selection by Classname</h2>\r\n  <div class=\"well well-sm\">\r\n      d3.selectAll('.methods'): {{classSelector}}\r\n  </div>\r\n\r\n  <h2>Selection by Id</h2>\r\n  <div class=\"well well-sm\">\r\n      d3.select('#concept'): {{idSelector}}\r\n  </div>\r\n</code>"
+module.exports = "<h3>Pie Chart</h3>\r\n<pre>\r\nEvaluates the pie function on the specified array of values. An optional index may be specified, which is passed along to the start and end angle functions. The return value is an array of arc descriptors:\r\n\r\n    value - the data value, returned by the value accessor.\r\n    startAngle - the start angle of the arc in radians.\r\n    endAngle - the end angle of the arc in radians.\r\n    padAngle - the pad angle of the arc in radians.\r\n    data - the original datum for this arc.\r\n\r\n    The elements are returned in the original order, matching values, even if a sort order is applied; this preserves the original index of each element in the values array, which is nice if you are using the index to generate a categorical color or other display property.\r\n</pre>\r\n<a href=\"https://github.com/d3/d3-3.x-api-reference/blob/master/Pie-Layout.md\">Reference</a>\r\n<h4>Curve Generator</h4>\r\n<svg id=\"pie-chart1\" width=\"700\" height=\"500\"></svg>\r\n\r\n <svg id=\"pie-chart2\" width=\"700\" height=\"500\"></svg> \r\n\r\n <svg id=\"donut-chart\" width=\"700\" height=\"500\"></svg>"
 
 /***/ }),
 /* 212 */
 /***/ (function(module, exports) {
 
+module.exports = "<h2>D3 Principles</h2>\r\n<p>Embedded within an HTML webpage, the JavaScript D3.js library uses pre-built JavaScript functions to select elements, create SVG objects, style them, or add transitions, dynamic effects or tooltips to them. These objects can also be widely styled using CSS. Large datasets can be easily bound to SVG objects using simple D3.js functions to generate rich text/graphic charts and diagrams. The data can be in various formats, most commonly JSON, comma-separated values (CSV) or geoJSON, but, if required, JavaScript functions can be written to read other data formats.</p>\r\n<div class=\"col-sm-12\">\r\n    <h3>Selections</h3>\r\n    <p>\r\n      The central principle of D3.js design is to enable the programmer to first use a CSS-style selector to select a given set of Document Object Model (DOM) nodes, then use operators to manipulate them in a similar manner to jQuery.\r\n    </p>\r\n    <code>\r\n        <p>d3.selectAll(\"p\")                 // select all p elements</p>\r\n        <p>.style(\"color\", \"lavender\")     // set style \"color\" to value \"lavender\"</p>\r\n        <p>.attr(\"class\", \"squares\")       // set attribute \"class\" to value \"squares\"</p>\r\n        <p>.attr(\"x\", 50);                 // set attribute \"x\" (horizontal position) to value 50px</p>\r\n    </code>\r\n    <p>\r\n        The selection can be based on tag (as in the above example), class, identifier, attribute, or place in the hierarchy. Once elements are selected, one can apply operations to them. This includes getting and setting attributes, display texts, and styles (as in the above example). Elements may also be added and removed. This process of modifying, creating and removing HTML elements can be made dependent on data, which is the basic concept of D3.js.\r\n    </p>\r\n</div>\r\n<div class=\"col-sm-12\">\r\n  <h3>Transitions</h3>\r\n  <p>By declaring a transition, values for attributes and styles can be smoothly interpolated over a certain time. The following code will make all HTML p elements on a page gradually change their text color to pink:</p>\r\n  <code>\r\n    <p>d3.selectAll(\"p\")             // select all p elements</p>\r\n      <p>.transition(\"trans_1\")      // transition with name \"trans_1\"</p>\r\n      <p>.delay(0)                 // transition starting 0ms after trigger</p>\r\n      <p>.duration(500)            // transitioning during 500ms</p>\r\n      <p>.ease(\"linear\")           // transition easing progression is linear...</p>\r\n      <p>.style(\"color\", \"pink\");    // ... to color:pink</p>\r\n  </code>\r\n</div>\r\n<div class=\"col-sm-12\">\r\n  <h3>Data-binding</h3>\r\n  <p>For more advanced uses, loaded data drives the creation of elements. D3.js loads a given dataset, then, for each of its elements, creates an SVG object with associated properties (shape, colors, values) and behaviors (transitions, events).</p>\r\n  <code>\r\n    <p>var countriesData = [\r\n        ( name:\"Ireland\",  income:53000, life: 78, pop:6378, color: \"black\"),\r\n        ( name:\"Norway\",   income:73000, life: 87, pop:5084, color: \"blue\" ),\r\n        ( name:\"Tanzania\", income:27000, life: 50, pop:3407, color: \"grey\" )\r\n     ];</p>\r\n     <p>var svg = d3.select(\"#hook\").append(\"svg\")\r\n        .attr(\"width\", 120)\r\n        .attr(\"height\", 120)\r\n        .style(\"background-color\", \"#D0D0D0\");</p>\r\n      <p>svg.selectAll(\"circle\")                  // create virtual circle template</p>\r\n      <p>.data(countriesData)                   // bind data</p>\r\n      <p>.enter()                                 // for each row in data...</p>\r\n      <p>.append(\"circle\")                      // bind circle &amp; data row such that... </p>\r\n      <p>.attr(\"id\", function(d) ( return d.name ))            // set the circle's id according to the country name</p>\r\n  </code>\r\n</div>"
+
+/***/ }),
+/* 213 */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>d3-scale</h2>\r\n<p>\r\n    -> D3.js provides functions to perform data transformations.\r\n</p>\r\n<p>\r\n    -> These functions map an input domain to an output range.\r\n</p>\r\n<p>\r\n    -> Said another way, these functions take an interval and transform it into a new interval.\r\n</p>\r\n<p>\r\n    -> Because the D3.js Scales are functions, not only can we map one <b>input domain</b> to an <b>output range</b>, the functions can convert a number in the domain to an output in the range.\r\n</p>\r\n<p>\r\n    -> Scales are an optional feature in D3; you don't have to use them, if you prefer to do the math yourself. However, using scales can greatly simplify the code needed to map a dimension of data to a visual representation.\r\n</p>\r\n<p>\r\n    Scales are a convenient abstraction for a fundamental task in visualization: mapping a dimension of abstract data to a visual representation. Although most often used for position-encoding quantitative data, such as mapping a measurement in meters to a position in pixels for dots in a scatterplot, scales can represent virtually any visual encoding, such as diverging colors, stroke widths, or symbol size. Scales can also be used with virtually any type of data, such as named categorical data or discrete data that requires sensible breaks.\r\n</p>\r\n<p>Scales have no intrinsic visual representation. However, most scales can generate and format ticks for reference marks to aid in the construction of axes.</p>\r\n<h3>D3 scale types</h3>\r\n<p>D3 has around 12 different scale types (scaleLinear, scalePow, scaleQuantise, scaleOrdinal etc.) and broadly speaking they can be classified into 3 groups:</p>\r\n<ul>\r\n    <li>scales with continuous input and continuous output</li>\r\n    <li>scales with continuous input and discrete output</li>\r\n    <li>scales with discrete input and discrete output</li>\r\n</ul>\r\n<h3>D3 scale types as per D3 API</h3>\r\n<ul>\r\n    <li>Continuous Scales (For continuous quantitative data)</li>\r\n    <ul>\r\n        <li>Linear Scales</li>\r\n        <li>Power Scales</li>\r\n        <li>Log Scales</li>\r\n        <li>Identity Scales</li>\r\n        <li>Time Scales</li>\r\n    </ul>\r\n    <li>Sequential Scales</li>\r\n    <li>Quantize Scales (may aid differentiation by rounding continuous data to a fixed set of discrete values) </li>\r\n    <li>Quantile Scales (computes quantiles from a sample population)</li>\r\n    <li>Threshold Scales</li>\r\n    <li>Ordinal Scales (For discrete ordinal (ordered) or categorical (unordered) data)</li>\r\n    <ul>\r\n        <li>Band Scales</li>\r\n        <li>Point Scales</li>\r\n    </ul>\r\n</ul>\r\n<h4>scaleLinear</h4>\r\n<p>\r\nThey use a linear function (y = m * x + b) to interpolate across the domain and range.\r\n</p>\r\n<p>\r\nTypical uses are to transform data values into positions and lengths, so when creating bar charts, line charts (as well as many other chart types) they are the scale to use.\r\n</p>\r\nMin: <input type=\"number\" [(ngModel)]=\"minDomain\"/>\r\nMax: <input type=\"number\" [(ngModel)]=\"maxDomain\"/>\r\n<button class='btn btn-default' (click)=\"simpleExample(minDomain, maxDomain)\">Run</button>\r\n<div>\r\n    <svg width=\"700\" height=\"40\">\r\n        <g class=\"inner\" transform=\"translate(40, 30)\">\r\n        </g>\r\n    </svg>\r\n</div>\r\n<p>The output range can also be specified as colours:</p>\r\n<p>This can be useful for visualisations such as choropleth maps</p>\r\n<button class='btn btn-default' (click)=\"linearScaleColor()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-2\" width=\"700\" height=\"100\"></svg>\r\n</div>\r\n<div class=\"well well-sm\">\r\n    Version 4 uses a different naming convention to v3. We use d3.scaleLinear() in v4 and d3.scale.linear() in v3.\r\n</div>\r\n<h4>scalePow</h4>\r\n<p>More included for completeness, rather than practical usefulness, the power scale interpolates using a power (y = m * x^k + b) function. The exponent k is set using .exponent():</p>\r\n<pre>\r\n    <code>\r\n    var powerScale = d3.scale.pow()\r\n    .exponent(0.5)\r\n    .domain([0, 100])\r\n    .range([0, 30]);\r\n      \r\n    powerScale(0);   // returns 0\r\n    powerScale(50);  // returns 21.21...\r\n    powerScale(100); // returns 30\r\n</code>\r\n</pre>\r\n<h4>scaleSqrt</h4>\r\n<p>\r\nThe scaleSqrt scale is a special case of the power scale (where k = 0.5) and is useful for sizing circles by area (rather than radius). (When using circle size to represent data, it’s considered better practice to set the area, rather than the radius proportionally to the data.)\r\n</p>\r\n<button class='btn btn-default' (click)=\"scaleSqrt()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-3\" width=\"700\" height=\"100\"></svg>\r\n</div>\r\n<h4>scaleLog</h4>\r\n<p>\r\nLog scales interpolate using a log function (y = m * log(x) + b) and can be useful when the data has an exponential nature to it.\r\n</p>\r\n<button class='btn btn-default' (click)=\"scaleLog()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-4\" width=\"700\" height=\"100\"></svg>\r\n</div>\r\n<h4>scaleTime</h4>\r\n<p>\r\nscaleTime is similar to scaleLinear except the domain is expressed as an array of dates. (It’s very useful when dealing with time series data.)\r\n</p>\r\n<button class='btn btn-default' (click)=\"scaleTime()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-5\" width=\"700\" height=\"100\">\r\n        <g class=\"inner\" transform=\"translate(5, 50)\"></g>\r\n    </svg>\r\n</div>\r\n<h4>Clamping</h4>\r\n<p>\r\nBy default scaleLinear, scalePow, scaleSqrt, scaleLog, scaleTime and scaleSequential allow input outside the domain. For example:\r\n</p>\r\n<pre>\r\n    <code>\r\n    var linearScale = d3.scale.linear()\r\n    .domain([0, 10])\r\n    .range([0, 100]);\r\n    \r\n    linearScale(20);  // returns 200\r\n    linearScale(-10); // returns -100\r\n    </code>\r\n</pre>\r\n<p>\r\nIn this instance the scale function uses extrapolation for values outside the domain.\r\n</p>\r\n<p>\r\nIf we’d like the scale function to be restricted to input values inside the domain we can ‘clamp’ the scale function using .clamp():\r\n</p>\r\n<pre>\r\n    <code>\r\n    linearScale.clamp(true);\r\n\r\n    linearScale(20);  // returns 100\r\n    linearScale(-10); // returns 0\r\n    </code>\r\n</pre>\r\n<h4>D3 Extent & Nice</h4>\r\n<p>\r\nIf the domain has been computed automatically from real data (e.g. by using d3.extent) the start and end values might not be round figures. This isn’t necessarily a problem, but if using the scale to define an axis, it can look a bit untidy:\r\n</p>\r\n<button class='btn btn-default' (click)=\"withoutNice()\">Run without Nice</button>\r\n<button class='btn btn-default' (click)=\"withNice()\">Run with Nice</button>\r\n<div>\r\n    <svg class=\"ex-6\" width=\"700\" height=\"100\">\r\n        <g class=\"withoutnice\" transform=\"translate(10, 50)\"></g>\r\n    </svg>\r\n    <svg class=\"ex-7\" width=\"700\" height=\"100\">\r\n        <g class=\"withnice\" transform=\"translate(10, 50)\"></g>\r\n    </svg>\r\n</div>\r\n<h4>Multi Segment Scale</h4>\r\n<button class='btn btn-default' (click)=\"multiSegment()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-8\" width=\"700\" height=\"100\">\r\n        <g class=\"multiSegment\" transform=\"translate(10, 50)\"></g>\r\n    </svg>\r\n</div>\r\n<h4>Inversion</h4>\r\n<p>\r\nThe .invert() method allows us to determine a scale function’s input value given an output value (provided the scale function has a numeric domain):\r\n</p>\r\n<button class='btn btn-default' (click)=\"invert()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-9\" width=\"650\" height=\"100\">\r\n        <g transform=\"translate(25, 10)\">\r\n            <g class=\"inner\" transform=\"translate(0, 40)\"></g>\r\n            <rect width=\"600\" height=\"40\" style=\"fill: rgb(1, 102, 63); cursor: pointer;\" class=\"click-area\" transform=\"translate(0, 0)\"></rect>\r\n        </g>\r\n    </svg>\r\n    <div class=\"info\">Hover on the green band</div>\r\n</div>\r\n<h3>Scales with continuous input and discrete output</h3>\r\n<h4>scaleQuantize</h4>\r\n<pre>\r\n    <code>\r\n    var quantizeScale = d3.scale.quantize()\r\n    .domain([0, 100])\r\n    .range(['lightblue', 'orange', 'lightgreen', 'pink']);\r\n    \r\n    quantizeScale(10);   // returns 'lightblue'\r\n    quantizeScale(30);  // returns 'orange'\r\n    quantizeScale(90);  // returns 'pink'\r\n    </code>\r\n</pre>\r\n<button class='btn btn-default' (click)=\"quantizeScale()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-10\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(50, 40)\"></g>\r\n    </svg>\r\n</div>\r\n<h4>scaleQuantile</h4>\r\n<button class='btn btn-default' (click)=\"quantileScale()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-11\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(50, 40)\"></g>\r\n    </svg>\r\n</div>\r\n<p>\r\nThe (sorted) domain array is divided into n equal sized groups where n is the number of range values.\r\n</p>\r\n<p>\r\nTherefore in the above example the domain array is split into 3 groups where:\r\n</p>\r\n<pre>\r\n-> the first 5 values are mapped to ‘lightblue’\r\n-> the next 5 values to ‘orange’ and\r\n-> the last 5 values to ‘lightgreen’.\r\n</pre>\r\n<pre>\r\nThe split points of the domain can be accessed using .quantiles():\r\n    <code>\r\n    quantileScale.quantiles();  // returns [26.66..., 63]\r\n    </code>\r\n</pre>\r\n<p>\r\nIf the range contains 4 values quantileScale computes the quartiles of the data. In other words, the lowest 25% of the data is mapped to range[0], the next 25% of the data is mapped to range[1] etc.\r\n</p>\r\n<h4>scaleThreshold</h4>\r\n<p>\r\nscaleThreshold maps continuous numeric input to discrete values defined by the range. n-1 domain split points are specified where n is the number of range values.\r\n</p>\r\n<button class='btn btn-default' (click)=\"thresholdScale()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-12\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(50, 40)\"></g>\r\n    </svg>\r\n</div>\r\n<h3>Scales with discrete input and discrete output</h3>\r\n<h4>scaleOrdinal</h4>\r\n<p>\r\nscaleOrdinal maps discrete values (specified by an array) to discrete values (also specified by an array). The domain array specifies the possible input values and the range array the output values. The range array will repeat if it’s shorter than the domain array.\r\n</p>\r\n<button class='btn btn-default' (click)=\"ordinalScale()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-13\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(10, 40)\"></g>\r\n    </svg>\r\n</div>\r\n<button class='btn btn-default' (click)=\"categoricalScale10()\">Run 10</button>\r\n<button class='btn btn-default' (click)=\"categoricalScale20()\">Run 20</button>\r\n<button class='btn btn-default' (click)=\"categoricalScale20b()\">Run 20b</button>\r\n<button class='btn btn-default' (click)=\"categoricalScale20c()\">Run 20c</button>\r\n<div>\r\n    <svg class=\"ex-14\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(10, 40)\"></g>\r\n    </svg>\r\n    <svg class=\"ex-15\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(10, 40)\"></g>\r\n    </svg>\r\n    <svg class=\"ex-16\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(10, 40)\"></g>\r\n    </svg>\r\n    <svg class=\"ex-17\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(10, 40)\"></g>\r\n    </svg>\r\n</div>\r\n<h4>scaleBand</h4>\r\n<p>\r\nWhen creating bar charts scaleBand helps to determine the geometry of the bars, taking into account padding between each bar. The domain is specified as an array of values (one value for each band) and the range as the minimum and maximum extents of the bands (e.g. the total width of the bar chart).\r\n</p>\r\n<p>\r\nIn effect scaleBand will split the range into n bands (where n is the number of values in the domain array) and compute the positions and widths of the bands taking into account any specified padding.\r\n</p>\r\n<pre>\r\n    <code>\r\n    var bandScale = d3.scale.ordinal()\r\n    .domain(['Mon', 'Tue', 'Wed', 'Thu', 'Fri'])\r\n    .rangeBands([0, 100]);\r\n    </code>\r\n</pre>\r\n<button class='btn btn-default' (click)=\"bandScale()\">Run</button>\r\n<div>\r\n    <svg class=\"ex-18\" width=\"700\" height=\"100\">\r\n        <g transform=\"translate(10, 0)\"></g>\r\n    </svg>\r\n</div>"
+
+/***/ }),
+/* 214 */
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Selections</h2>\r\n<button class=\"btn btn-primary pull-right\" (click)=\"showResults()\">Show selections</button>\r\n<p id=\"concept\">\r\n    Selections is one of the core concepts in D3.js. It is based on CSS selectors. It allows us to select one or more elements in a webpage. In addition, it allows us to modify, append, or remove elements in a relation to the pre-defined dataset.\r\n</p>\r\n<div class=\"methods\">\r\n    <p><b>select()</b> -  Selects only one DOM element by matching the given CSS selector. If there are more than one elements for the given CSS selector, it selects the first one only.</p>\r\n    <p><b>selectAll()</b> - Selects all DOM elements by matching the given CSS selector. If you are familiar with selecting elements with jQuery, D3.js selectors are almost the same.</p>\r\n</div>\r\n<code>\r\n  <h2>Selection by Tag</h2>\r\n  <div class=\"well well-sm\">\r\n      d3.select('p').text(): {{pSelector}}\r\n  </div>\r\n  <div class=\"well well-sm\">\r\n      d3.selectAll(\"p b\"): {{arraySelector}}\r\n  </div>\r\n\r\n  <h2>Selection by Classname</h2>\r\n  <div class=\"well well-sm\">\r\n      d3.selectAll('.methods'): {{classSelector}}\r\n  </div>\r\n\r\n  <h2>Selection by Id</h2>\r\n  <div class=\"well well-sm\">\r\n      d3.select('#concept'): {{idSelector}}\r\n  </div>\r\n</code>"
+
+/***/ }),
+/* 215 */
+/***/ (function(module, exports) {
+
 module.exports = "<h2>What is SVG?</h2>\r\n<ul>\r\n  <li>SVG stands for Scalable Vector Graphics</li>\r\n  <li>SVG is used to define graphics for the Web</li>\r\n  <li>SVG is a W3C recommendation</li>\r\n  <li>SVG graphics do NOT lose any quality if they are zoomed or resized</li>\r\n  <li>Every element and every attribute in SVG files can be animated</li>\r\n</ul>\r\n\r\n<h2>Differences Between SVG and Canvas</h2>\r\n<p>SVG is a language for describing 2D graphics in XML.</p>\r\n\r\n<p>Canvas draws 2D graphics, on the fly (with a JavaScript).</p>\r\n\r\n<p>SVG is XML based, which means that every element is available within the SVG DOM. You can attach JavaScript event handlers for an element.</p>\r\n\r\n<p>In SVG, each drawn shape is remembered as an object. If attributes of an SVG object are changed, the browser can automatically re-render the shape.</p>\r\n\r\n<p>Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten by the browser. If its position should be changed, the entire scene needs to be redrawn, including any objects that might have been covered by the graphic.</p>\r\n\r\n<div class=\"col-sm-12\">\r\n  <div class=\"col-sm-4\">\r\n    <h3>Circle</h3>\r\n    <svg width=\"100\" height=\"100\">\r\n      <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"green\" stroke-width=\"4\" fill=\"yellow\" />\r\n    </svg>\r\n  </div>\r\n  <div class=\"col-sm-4\">\r\n      <h3>Rectangle</h3>\r\n    <svg width=\"400\" height=\"100\">\r\n      <rect width=\"200\" height=\"100\" style=\"fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)\" />\r\n    </svg>\r\n  </div>\r\n  <div class=\"col-sm-4\">\r\n    <h3>Rectangle with border radius</h3>\r\n    <svg width=\"200\" height=\"180\">\r\n      <rect x=\"50\" y=\"20\" rx=\"20\" ry=\"20\" width=\"140\" height=\"150\"\r\n      style=\"fill:red;stroke:black;stroke-width:5;opacity:0.5\" />\r\n    </svg>\r\n  </div>\r\n</div>\r\n<div>\r\n  <div class=\"col-sm-4\">\r\n    <h3>Gradient Ellipse</h3>\r\n    <svg height=\"130\" width=\"500\">\r\n      <defs>\r\n        <linearGradient id=\"grad1\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\r\n          <stop offset=\"0%\" style=\"stop-color:rgb(255,255,0);stop-opacity:1\" />\r\n          <stop offset=\"100%\" style=\"stop-color:rgb(255,0,0);stop-opacity:1\" />\r\n        </linearGradient>\r\n      </defs>\r\n      <ellipse cx=\"100\" cy=\"70\" rx=\"85\" ry=\"55\" fill=\"url(#grad1)\" />\r\n      <text fill=\"#ffffff\" font-size=\"45\" font-family=\"Verdana\" x=\"50\" y=\"86\">SVG</text>\r\n      Sorry, your browser does not support inline SVG.\r\n    </svg>\r\n  </div>\r\n  <div class=\"col-sm-4\">\r\n    <h3>Ellipse</h3>\r\n    <svg height=\"140\" width=\"500\">\r\n      <ellipse cx=\"200\" cy=\"80\" rx=\"100\" ry=\"50\"\r\n      style=\"fill:yellow;stroke:purple;stroke-width:2\" />\r\n    </svg>\r\n  </div>\r\n</div>"
 
 /***/ }),
-/* 213 */,
-/* 214 */,
-/* 215 */,
 /* 216 */,
 /* 217 */,
 /* 218 */,
@@ -3621,12 +4229,15 @@ module.exports = "<h2>What is SVG?</h2>\r\n<ul>\r\n  <li>SVG stands for Scalable
 /* 260 */,
 /* 261 */,
 /* 262 */,
-/* 263 */
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(88);
 
 
 /***/ })
-]),[263]);
+]),[266]);
 //# sourceMappingURL=main.bundle.js.map
