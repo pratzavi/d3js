@@ -51,9 +51,9 @@
 <p>
   The explicit tick values take precedent over the tick arguments set by axis.ticks. However, any tick arguments will still be passed to the scale's tickFormat function if a tick format is not also set; thus, it may be valid to set both axis.ticks and axis.tickValues.
 </p>
-<button class="btn btn-default" (click)="axisWithTick()">Run with Ticks</button>
-<!-- <button class="btn btn-default" (click)="axisWithTickFormat()">Run with Tick Format</button> -->
-<button class="btn btn-default" (click)="axisWithTickValues()">Run with Tick Values</button>
+<button class="btn btn-default" (click)="axisWithTick('bottom')">Run with Ticks</button>
+<!-- <button class="btn btn-default" (click)="axisWithTickFormat('bottom')">Run with Tick Format</button> -->
+<button class="btn btn-default" (click)="axisWithTickValues('bottom')">Run with Tick Values</button>
 <div class="ex-2"></div>
 <h4>axis.tickSize([inner, outer])</h4>
 <p>If inner, outer are specified, sets the inner and outer tick sizes to the specified value and returns the axis. If inner, outer are not specified, returns the current inner tick size, which defaults to 6.</p>

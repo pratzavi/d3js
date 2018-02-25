@@ -7,7 +7,9 @@ declare var d3: any;
   styleUrls: ['./binding-data.component.css']
 })
 export class BindingDataComponent implements OnInit {
-
+  selectedID: any;
+  property: any;
+  value: any;
   dataSet: Array<number> = [10, 20, 30, 25, 15];
   tempD: string;
   tempI: string;

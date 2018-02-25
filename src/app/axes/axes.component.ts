@@ -11,6 +11,9 @@ export class AxesComponent implements OnInit {
   outerTickSize: any;
   tickPadding: any;
   tickFormat: any;
+  orient: any;
+  inner: any;
+  outer: any;
 
   constructor() { }
 

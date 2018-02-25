@@ -8,8 +8,8 @@ declare var d3: any;
   styleUrls: ['./selections.component.css']
 })
 export class SelectionsComponent implements OnInit {
-  private pSelector;
-  private arraySelector: Array<any>;
+  public pSelector;
+  public arraySelector: Array<any>;
   classSelector;
   idSelector;
 

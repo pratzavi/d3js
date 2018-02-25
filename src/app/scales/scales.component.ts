@@ -7,6 +7,8 @@ declare let d3: any;
   styleUrls: ['./scales.component.css']
 })
 export class ScalesComponent implements OnInit {
+  minDomain: any;
+  maxDomain: any;
 
   constructor() { }
 
